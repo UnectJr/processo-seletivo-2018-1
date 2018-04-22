@@ -2,6 +2,7 @@
 Bem vindo ao processo seletivo da Unect Jr.! :) 
 
 <br>
+
 ## Desafio
 Criar um site sobre você e utilizar o Git e Github para armazenar seu código. 
 
@@ -13,11 +14,13 @@ Criar um site sobre você e utilizar o Git e Github para armazenar seu código.
 ### Estrutura do projeto 
 * Organize todos os arquivos em uma pasta com seu nome, como por exemplos: Nome (index.html, style.csss...).
 
+
 ### Procedimento 
 * Crie um fork do projeto (https://github.com/UnectJr/processo-seletivo-2018-1)
 * Após finalizar, crie um pull request no projeto de origem.
 
 <br>
+
 ## Materiais de estudo 
 ### Desenvolvimento web
 * [Free Code Camp](freecodecamp.org)
@@ -25,6 +28,7 @@ Criar um site sobre você e utilizar o Git e Github para armazenar seu código.
 ### Git e Github
 * [Git e Github para iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/)
  
-<br><br>
+<br>
+
 ### Prove seu valor e venha fazer parte da iniciativa Unect Jr.!
 ### Nós da Unect Jr. desejamos um bom desafio a todos! :)
