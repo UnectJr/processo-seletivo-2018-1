@@ -1,0 +1,49 @@
+#menu-links{
+	font-size: 14px;
+	padding-right: 35px;
+	text-align: right;
+	position: relative;
+	bottom: 0;
+	right: 0;
+	border-bottom: 4px solid #333333;
+}
+
+.print{
+	position:relative;
+	padding-top :55px;
+	float: right;
+	margin: 0 0 0px 0px;
+}
+.git{
+	text-align:right;
+
+}
+header{
+	position:static;
+
+}
+p{	
+	font-size: 14px;
+	color : #333333;
+	padding: 1px;
+}
+
+body{
+	color: #333333;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	
+}
+
+h1{
+	text-align: center;
+	
+}
+
+h2{
+	margin-left: 20px;
+	text-align: left;
+}
+li{	
+	padding-top: 30px;
+	font-size: 30px;
+}
