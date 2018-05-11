@@ -6,6 +6,7 @@ body{
 }
 .header {
     font-family:Roboto;
+    font-weight:bolder;
     padding-top:20px;
     padding-bottom:20px;
     font-size: 40px;
@@ -14,11 +15,17 @@ body{
     width:75%;
     color:white;
 }
-.colunaprincipal{
+.container{
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:20px;
     display:block;
     background:#07889B;
     width:75%;
     color:white;
+    font-family:roboto;
+    font-size:20px;
+    text-align:left;
 }
 h2{
     padding:20px;
