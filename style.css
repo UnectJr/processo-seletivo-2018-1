@@ -4,6 +4,19 @@ body{
     background:#66B9Bf;
     color:white;
 }
+.dia{
+    padding:20px;
+    border-top:dashed;
+    border-color:#E37222;
+}
+.toggler{
+    margin:10px;
+    border:none;
+    float:right;
+    text-align:center;
+    color:#07889B;
+    background-color:#E37222;
+}
 .header {
     font-family:Roboto;
     font-weight:bolder;
@@ -32,6 +45,27 @@ h2{
     text-align:center;
     font-size:40px;
     font-family:roboto;
+}
+.topico{
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+    padding:20px;
+    text-align:center;
+    font-size:40px;
+    background:#E37222;
+    font-family:roboto;
+    border-width:100px;
+    border-radius:500px;
+    border:solid;
+    border-color:#E37222;
+}
+
+h3{
+    font-style:roboto;
+    text-align:center;
+    font-weight:bold;
+
 }
 .sidebar{
     color:white;
