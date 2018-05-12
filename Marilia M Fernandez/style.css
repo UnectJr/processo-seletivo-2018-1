@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body{
   background-color: #f4f4f4;
   color: #7F7182;
@@ -16,17 +22,22 @@ a:visited{
 h1{
     color: black;
     font-family: font;
-    /*font-weight:lighter;*/
-    font-size: 50px;
+    font-weight:lighter;
+    font-size: 40px;
+    line-height: 160%;
 }
 
+h2{
+  color: black;
+  font-family: font;
+  /*font-weight:lighter;*/
+  font-size: 50px;
+}
 
 .menu{
-  font-family: font;
-  /*text-shadow: 1px 2px grey;*/
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 385px 385px;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .menu > div{
@@ -54,15 +65,16 @@ opacity:1;
 .wrapper{
   display: grid;
   grid-template-columns: 3fr 1fr;
-  width: 100%; /*percentage responds to reducing window*/
-  margin: auto;
+  width: 100vw;   /*Full screen*/
+  height: 100vh;  /*Full screen*/
 }
 
 .name{
-  padding: 5em;
+  padding: 4em;
   background-image: url("img1.jpg");
   background-size: cover;
   text-align: left;
+  font-weight: normal;
 }
 
 .hobbies{
@@ -84,6 +96,7 @@ opacity:1;
   background-image: url("img4.jpg");
   grid-row: 2;
   background-size: cover;
+  background-position: right;
   padding: 6em;
 }
 
