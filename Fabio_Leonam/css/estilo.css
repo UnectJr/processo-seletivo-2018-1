@@ -1,0 +1,129 @@
+body{
+	background-color: #DCDCDC;
+}
+
+#centro{
+
+	background-color: #FFFFFF;
+	margin: 0 auto 0 auto;
+	width: 80%;
+	padding-top: 0; 
+	box-shadow: 0px 0px 1em #666;
+	-webkit-box-shadow: 7px 7px 1em #666;
+	-moz-box-shadow: 7px 7px 1em #666;
+	border-radius: 3px;		
+}
+
+#menu ul{
+	padding:15px;
+	margin:;
+	background-color:#000000; 
+	text-align:center;
+	border-color: #00000;
+	border-radius:2px;
+	font-family:Sans Serif;
+}
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 4px 30px;
+    display: inline-block;
+    margin-right: 3%;
+
+
+    /* visual do link */
+    background-color:#000000;
+    color: white;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    background-color:#00000;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+#eu{
+	
+	height: 200px;
+	padding: 0 auto;
+	margin-bottom: 30px;
+	font-size: 10px;
+	text-align: center;
+	font-family:sans-serif;
+}
+#text_eu{
+	font-size: 10 px;
+	font-family:sans-serif;
+}
+
+#origem{
+	border: 1px solid black;
+	height: 400px;
+	padding: 0 auto;
+	margin-bottom: 30px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+#slideshow_origem{
+	border: 1px solid black;
+	margin-top:50px;
+	margin-right: 60%;
+	margin-left: 5%;
+	height: 200px;
+}
+#texto_origem{
+		border: 1px solid black;
+		margin-left: 60%;
+		margin-right: 5%;
+		margin-top: -210px;
+		height: 200px;
+		font-family: Monteserrat, Sans Serif;
+		font-size: 10px;
+		text-align: justify;
+
+}
+#hobbies{
+	height: 400px;
+	margin-bottom: 30px;
+	background-color: #C0C0C0;
+}
+#img_hobbies{
+	border: 5px solid black;
+	margin-top:50px;
+	margin-right: 60%;
+	margin-left: 5%;
+	height: 200px;
+}
+#texto_hobbies{
+		border: 5px solid black;
+		margin-left: 60%;
+		margin-right: 5%;
+		margin-top: -210px;
+		height: 200px;
+		font-size: 1px;
+}
+#computação{
+	height: 300px;
+	background-color:#FFFFF;
+	padding-bottom: 10px;
+}
+
+#contatos{
+	height: 200px;
+	background-color: #708090;	
+	padding-top: 1px;
+}
+#Contatos{
+	margin-left: 3%;
+}
+#rodape{
+	background-color: #708090 ;
+	padding:1px;
+	margin:0 auto 0 auto;
+	text-align: center;
+	color:white;
+	font-family:Sans Serif;
+	line-height: 0px;
+	
+}
