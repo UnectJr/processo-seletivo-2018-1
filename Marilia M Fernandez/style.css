@@ -1,0 +1,92 @@
+body{
+  background-color: #f4f4f4;
+  color: #7F7182;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #7F7182;
+}
+
+h1{
+    text-align: center;
+    color: #f4f4f4;
+    font-family: font;
+    font-weight:lighter;
+    font-size: 50px;
+}
+
+
+.menu{
+  padding: 15px;
+  font-family: font;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  grid-gap: 2em;
+  text-align: center;
+}
+
+.menu > div{
+  padding:4em;
+}
+
+.name{
+  background: #c0b283;
+}
+
+.home{
+  background: #dcd0c0;
+}
+
+.about{
+  background: #373737;
+  grid-row: 2;
+}
+
+.social{
+  background: #440d0f;
+}
+
+.facebook {
+  background-image: url('facebook.png');
+}
+
+.github {
+    background-image: url('github.png');
+}
+
+.linkedin {
+    background-image: url('linkedin.png');
+}
+
+.instagram {
+    background-image: url('instagram.png');
+}
+
+.quote{
+  text-align:center;
+  font-family: Georgia;
+  float: left;
+  line-height: 300%;
+}
+
+@font-face {
+    font-family: 'font.ttf';
+    src: url('font.eot')/*Para navegadores Internet Explorer*/;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font';
+    src: url('font.ttf') /*Para os demais navegadores*/;
+    font-weight: normal;
+    font-style: normal;
+}
