@@ -30,7 +30,7 @@ h1{
 h2{
   color: black;
   font-family: font;
-  /*font-weight:lighter;*/
+  font-weight:lighter;
   font-size: 50px;
 }
 
