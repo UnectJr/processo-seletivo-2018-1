@@ -1,7 +1,6 @@
 body{
   background-color: #f4f4f4;
   color: #7F7182;
-
 }
 
 a{
@@ -15,43 +14,77 @@ a:visited{
 }
 
 h1{
-    text-align: center;
-    color: #f4f4f4;
+    color: black;
     font-family: font;
-    font-weight:lighter;
+    /*font-weight:lighter;*/
     font-size: 50px;
 }
 
 
 .menu{
-  padding: 15px;
   font-family: font;
+  /*text-shadow: 1px 2px grey;*/
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(300px, auto);
-  grid-gap: 2em;
-  text-align: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 385px 385px;
 }
 
 .menu > div{
-  padding:4em;
+  filter: alpha(opacity:0.5);
+  KHTMLOpacity: 0.5;
+  MozOpacity: 0.5;
+  -khtml-opacity:.50;
+  -ms-filter:"alpha(opacity=50)";
+  -moz-opacity:.50;
+  filter:alpha(opacity=50);
+  opacity:.70;
+}
+
+.menu > div:hover {
+filter: alpha(opacity:1);
+KHTMLOpacity: 1;
+MozOpacity: 1;
+-khtml-opacity:.1;
+-ms-filter:"alpha(opacity=100)";
+-moz-opacity:1;
+filter:alpha(opacity=100);
+opacity:1;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 100%; /*percentage responds to reducing window*/
+  margin: auto;
 }
 
 .name{
-  background: #c0b283;
+  padding: 5em;
+  background-image: url("img1.jpg");
+  background-size: cover;
+  text-align: left;
 }
 
-.home{
-  background: #dcd0c0;
+.hobbies{
+  background-image: url("img2.jpg");
+  background-size: cover;
+  text-align: left;
+  padding: 6em;
 }
 
 .about{
-  background: #373737;
+  background-image: url("img3.jpg");
   grid-row: 2;
+  background-size: cover;
+  background-position: center;
+  padding: 6em;
 }
 
 .social{
-  background: #440d0f;
+  background-image: url("img4.jpg");
+  grid-row: 2;
+  background-size: cover;
+  padding: 6em;
 }
 
 .facebook {
@@ -71,14 +104,16 @@ h1{
 }
 
 .quote{
-  text-align:center;
+  padding: 6em;
+  font-size: 1.5em;
+  text-align:left;
   font-family: Georgia;
   float: left;
-  line-height: 300%;
+  line-height: 350%;
 }
 
 @font-face {
-    font-family: 'font.ttf';
+    font-family: 'font';
     src: url('font.eot')/*Para navegadores Internet Explorer*/;
     font-weight: normal;
     font-style: normal;
