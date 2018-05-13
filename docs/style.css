@@ -117,8 +117,9 @@ opacity:1;
 }
 
 .quote{
-  padding: 6em;
-  font-size: 1.5em;
+  padding-top: 25em;
+  padding-left: 3em;
+  font-size: 1em;
   text-align:left;
   font-family: Georgia;
   float: left;
