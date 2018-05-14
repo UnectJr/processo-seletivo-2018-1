@@ -1,90 +1,77 @@
 body{
-    margin-top:20px;
-    padding:20px;
-    background:#66B9Bf;
-    color:white;
-}
-.dia{
-    padding:20px;
-    border-top:dashed;
-    border-color:#E37222;
-}
-.toggler{
-    margin:10px;
-    border:none;
-    float:right;
+    margin:0;
     text-align:center;
+}
+h1{
+    text-align:center;
+    color:#015d82;
+}
+.email{
+    font-size:18px;
     color:#07889B;
-    background-color:#E37222;
-}
-.header {
-    font-family:Roboto;
-    font-weight:bolder;
-    padding-top:20px;
-    padding-bottom:20px;
-    font-size: 40px;
-    text-align: center;
-    background: #07889B;
-    width:75%;
-    color:white;
-}
-.container{
-    padding-top:20px;
-    padding-bottom:20px;
-    margin-top:20px;
-    display:block;
-    background:#07889B;
-    width:75%;
-    color:white;
-    font-family:roboto;
-    font-size:20px;
-    text-align:left;
-}
-h2{
-    padding:20px;
-    text-align:center;
-    font-size:40px;
-    font-family:roboto;
-}
-.topico{
-    margin-left:auto;
-    margin-right:auto;
-    width:50%;
-    padding:20px;
-    text-align:center;
-    font-size:40px;
-    background:#E37222;
-    font-family:roboto;
-    border-width:100px;
-    border-radius:500px;
-    border:solid;
-    border-color:#E37222;
-}
-
-h3{
-    font-style:roboto;
-    text-align:center;
-    font-weight:bold;
-
-}
-.sidebar{
-    color:white;
-    height:100%;
-    width:25%;
-    position:fixed;
-    top:0;
-    right:0;
     background:#E37222;
 }
-.perfil{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    width:75%;
+.github{
+    background:#f0802b;
+    
 }
-.print{
-    display:block;
-    margin:auto;
-    width:75%;
-    background:#07889B;
+.github a{
+    font-size:96px;
+    color:#0078a8;
+}
+.facebook a{
+    font-size:96px;
+    color:#3b5998;
+}
+.yt{
+    color:white;
+}
+.awesome{
+    color:white;
+}
+.unect{
+    color:white;
+    background:#015d82;
+
+}
+.flex{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    height:96%;
+    
+}
+.nested{
+    display:grid;   
+    grid-template-rows:2fr 2fr 1fr;
+}
+.usefull{
+    display:grid;
+    grid-template-rows:1fr 1fr;
+}
+a{
+    text-decoration:none;   
+}
+.nesteder{
+    display:grid;
+    grid-template-rows 1fr 1fr;
+    background:#0078a8;
+}
+.yt{
+    border-bottom:2px dashed white;
+}
+.desafio{
+    display:grid;
+    grid-template-columns:50% 50%;
+    vertical-align:middle;
+}
+.footer{
+    height:4%;
+    color:white;
+    background:#6689BF;
 }
