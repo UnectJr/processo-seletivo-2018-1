@@ -12,13 +12,11 @@ h1{
     font-size:4vh;
     color:#015d82;
 }
-.lorem{
-}
 .fixed{
     text-align:left;
     width:100%;
     top:0;
-    background: white;
+    background:white;
     position:sticky;
 }
 .email{
@@ -48,8 +46,13 @@ h1{
 
 }
 .yt{
+    background:#0078a8;
     color:white;
     border-bottom:2px dashed white;
+}
+.new{
+    border-top:2px solid #f0802b;
+
 }
 .awesome a:hover{
     -webkit-filter: brightness(100%);
@@ -61,6 +64,7 @@ h1{
 
 }
 .awesome{
+    background:#0078a8;
     color:white;
 }
 .unect{
@@ -78,6 +82,7 @@ h1{
     align-items:center;
     justify-content: center;
     flex-direction: column;
+    text-align:center;
 }
 .grid{
     
@@ -112,8 +117,8 @@ a:hover{
     vertical-align:middle;
 }
 .footer{
-    font-size: 4vh;
+    font-size: 3vh;
     bottom:0;
-    color:white;
-    background:#6689BF;
+    color:#015d82;
+    background:#EEAA7B;
 }
