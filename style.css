@@ -1,4 +1,5 @@
 body{
+    float:bottom;
     margin:0;
     text-align:center;
 }
@@ -7,10 +8,18 @@ h1{
     text-align:center;
     color:#015d82;
 }
+.logo{
+    font-size:4vh;
+    color:#015d82;
+}
+.lorem{
+}
 .fixed{
-    height:10%;
+    text-align:left;
+    width:100%;
+    top:0;
     background: white;
-    position:fixed;
+    position:sticky;
 }
 .email{
     font-size:6vh;
@@ -71,6 +80,7 @@ h1{
     flex-direction: column;
 }
 .grid{
+    
     display:grid;
     grid-template-columns: 3fr 1fr;
 }
