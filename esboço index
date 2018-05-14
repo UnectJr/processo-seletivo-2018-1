@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Bruno Daguano</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<div class="top"></div>
+
+	<div class="topbar">
+		<nav id="menu">
+	    <ul>
+	        <li><a href="#">Home</a></li>
+	        <li><a href="#">Sobre</a></li>
+	        <li><a href="#">Curriculo</a></li>
+	        <li><a href="#">Contato</a></li>
+	    </ul>
+		</nav>
+	</div>
+
+	<div class="imagem">
+		<img class="foto" src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-empres-rio-avatar-silhueta-by-vexels.png">
+	</div>
+	
+	<div class="conteudo">
+		<h2>Bruno Augusto Daguano</h2>
+		<p class="descrição">Sou de Matão-Sp, mas moro na cidade de Cornélio Procópio-Pr. Atualmente curso o 6° periodo do curso de Engenharia de Software da Universidade Tecnológia Federal do Paraná, no campus localizado na cidade de Cornélio Procópio. </p>
+	</div>
+	<hr>
+
+	<div class="curriculo">
+
+		<h2>Curriculo</h2>
+		<h3>Objetivo</h3>
+		<p>Ingressar na Unect-Jr vinculado à diretoria de projetos</p>
+		<hr>
+		
+		<h3>Formação Acadêmica</h3>
+		<p>Graduação em Engenharia de Software - Conclusão 06/2019</p>
+		<hr>
+		
+		<h3>Experiência Profissional</h3>
+		<h4>2012-2013 Fundap</h4>
+		<p>Cargo: Estagiário.</p>
+		<p>Principais Ativiades: Responsável pelo gerenciamento da sala de informática da Escola Estadual Dorival de Carvalho, Matão, São Paulo</p>
+		<hr>
+		
+		<h2>Qualificações e Atividades Complementares</h2>
+
+		<p>Inglês - Básico</p>
+		<p>Espanhol - Intermediário</p>
+		<p>Gestão Financeira (Carga Horária: 42h) Universidade Tecnológia Fedaral do Paraná, Campus</p>
+		<hr>
+
+	</div>
+
+
+	<div class="contato">
+		<h2>Contato</h2>
+	</div>
+
+</body>
+</html>
+
+
