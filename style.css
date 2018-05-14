@@ -3,36 +3,66 @@ body{
     text-align:center;
 }
 h1{
+    font-size:15vh;
     text-align:center;
     color:#015d82;
 }
+.fixed{
+    height:10%;
+    background: white;
+    position:fixed;
+}
 .email{
-    font-size:18px;
-    color:#07889B;
+    font-size:6vh;
+    color:white;
     background:#E37222;
 }
 .github{
     background:#f0802b;
-    
+
 }
 .github a{
-    font-size:96px;
+    font-size:20vh;
     color:#0078a8;
 }
 .facebook a{
-    font-size:96px;
+    font-size:20vh;
     color:#3b5998;
+}
+.yt a:hover{
+    -webkit-filter: brightness(100%);
+    color:#f0802b;
+}
+.yt a{
+    font-size:4vh;
+    color:white;
+
 }
 .yt{
     color:white;
+    border-bottom:2px dashed white;
+}
+.awesome a:hover{
+    -webkit-filter: brightness(100%);
+    color:#f0802b;
+}
+.awesome a{
+    font-size:4vh;
+    color:white;
+
 }
 .awesome{
     color:white;
 }
 .unect{
+    font-size:10vh;
     color:white;
     background:#015d82;
 
+}
+.unect a:hover{
+    color:#f0802b;
+    -webkit-filter: brightness(100%);
 }
 .flex{
     display: flex;
@@ -43,11 +73,9 @@ h1{
 .grid{
     display:grid;
     grid-template-columns: 3fr 1fr;
-    height:96%;
-    
 }
 .nested{
-    display:grid;   
+    display:grid;
     grid-template-rows:2fr 2fr 1fr;
 }
 .usefull{
@@ -55,23 +83,27 @@ h1{
     grid-template-rows:1fr 1fr;
 }
 a{
-    text-decoration:none;   
+    color:white;
+    text-decoration:none;
+}
+a:hover{
+    -webkit-filter: brightness(150%);
+
 }
 .nesteder{
     display:grid;
     grid-template-rows 1fr 1fr;
     background:#0078a8;
 }
-.yt{
-    border-bottom:2px dashed white;
-}
+
 .desafio{
     display:grid;
     grid-template-columns:50% 50%;
     vertical-align:middle;
 }
 .footer{
-    height:4%;
+    font-size: 4vh;
+    bottom:0;
     color:white;
     background:#6689BF;
 }
