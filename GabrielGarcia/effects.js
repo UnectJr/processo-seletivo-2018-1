@@ -1,7 +1,7 @@
 ///Gabriel Garcia
 
 
-    $("#imgIniciais").owlCarousel({	//Perceba que eu usei .thumbnails e não # pois não é ID. Usado para criar o slide de efeito
+    /*$("#imgIniciais").owlCarousel({	//Perceba que eu usei .thumbnails e não # pois não é ID. Usado para criar o slide de efeito
 
 		loop: true,	//mesmo clicando sempre no botão próximo nunca para, afinal está em um loop
         items:1,
@@ -26,3 +26,21 @@
 		}
 //link útil: https://stackoverflow.com/questions/10475058/slowly-change-fade-animate-an-image-changing-with-jquery
 	})
+*/
+/*
+$(document).ready(function () {
+    $("#imgIniciais .thumbnail").mouseenter(function (e) {
+        e.preventDefault();
+        $(".product-images-cover").fadeOut(250).attr("src", $(this).attr('src')).fadeIn(250);
+    });
+});*/
+
+$(document).ready(function() {
+	$("#imgIniciais").owlCarousel({
+	  loop: true,
+	  items: 1,
+	  singleItem: true,
+	  autoplay: true,
+      autoplayTimeout:2000
+	});
+  });
