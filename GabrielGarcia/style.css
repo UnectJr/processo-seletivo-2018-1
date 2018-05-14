@@ -9,3 +9,11 @@ header{ /*Definindo alguns padrões para o topo do meu site*/
 header .container{  /*Tudo de estiver no container em header seguirá os padrões definidos por mim*/
     position: relative;
 }
+
+#imgIniciais {
+    text-align: center;
+}
+
+.owl-theme{
+    display:block;
+}
