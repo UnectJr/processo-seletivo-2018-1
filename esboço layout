@@ -12,8 +12,9 @@ body {
 
 i{margin:0 5px 5px 0; line-height:normal;}
 h1{margin:0; padding:0; font-size:22px; margin-top:5px; font-variant:small-caps; color: #EAEAEA;}
-h2{text-align-last: center; color: #3C4348}
+h2, h3, h4{text-align-last: center; color: #3C4348}
 p{font-size: 17px; color: #000000;}
+hr{width: 100%; color: #000000;}
 #menu ul li { display: inline; }
 
 
@@ -36,13 +37,12 @@ p{font-size: 17px; color: #000000;}
     list-style:none;
 }
 
-#menu ul li a {
-	text-align-last: center;
-	font-style: italic;
-	font-size: 18px;
+#menu ul li a { 
+    text-align-last: center;
+    font-style: italic;
+    font-size: 18px;
     padding: 2px 50px;
     display: inline-block;
-
     background-color:gray;
     color: #333;
     text-decoration: none;
@@ -66,6 +66,20 @@ p{font-size: 17px; color: #000000;}
 	height: 150px;
 	width: 150px;
 	display: block;
+}
+
+.contato{
+	position: relative;
+	display: block;
+	float: left;
+	padding: 0px 100px 20px 650px;
+}
+
+.curriculo{
+	position: relative;
+	display: block;
+	float: left;
+	padding: 0px 150px 0px 250px;	
 }
 
 
