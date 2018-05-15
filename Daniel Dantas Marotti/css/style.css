@@ -1,11 +1,31 @@
-.navbar-default{
-    background: #fff !important;
-    border: 0 !important;
-
+html, body{
+    height: 100%;
+    width: 100%;
 }
 
+body{
+    margin-bottom: 70px;
+}
+
+.navbar-default{
+    background: rgba(255, 255, 255, 0.3) !important;
+    border: 0 !important;
+    font-size: 1.2em;
+    padding: 0 15px 5px;   
+}
 .navbar-brand{
     font-size: 20px;
     color: #000 !important;
     font-weight: bold;
+}
+
+
+
+#home {
+    background: url(../images/ponte.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover; 
 }
