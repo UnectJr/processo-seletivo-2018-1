@@ -1,0 +1,11 @@
+.navbar-default{
+    background: #fff !important;
+    border: 0 !important;
+
+}
+
+.navbar-brand{
+    font-size: 20px;
+    color: #000 !important;
+    font-weight: bold;
+}
