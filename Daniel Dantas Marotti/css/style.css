@@ -8,7 +8,7 @@ body{
 }
 
 .navbar-default{
-    background: rgba(255, 255, 255, 0.3) !important;
+    background: transparent !important;
     border: 0 !important;
     font-size: 1.2em;
     padding: 0 15px 5px;   
@@ -21,11 +21,24 @@ body{
 
 
 
-#home {
-    background: url(../images/ponte.jpg) no-repeat center center fixed;
+#showcase {
+    background: url(../images/fundo-home.jpg) no-repeat center center fixed;
     display: table;
     height: 100%;
     position: relative;
     width: 100%;
     background-size: cover; 
+}
+
+.landing-text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+h1{
+    font-family: Poppins;
+}
+h3,h4,h5,h6{
+    font-family: Roboto;
 }
