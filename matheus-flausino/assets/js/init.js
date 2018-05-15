@@ -12,6 +12,7 @@ firebase.initializeApp(config);
 window.onload = function () {
     var email = document.getElementById('email');
     var message = document.getElementById('message');
+    var alert = document.getElementById("snackbar");
 
     document.getElementsByTagName('form')[0].addEventListener('submit', function (e) {
     e.preventDefault();
@@ -22,7 +23,13 @@ window.onload = function () {
         firebase.database().ref().child('website').push({
         "message": message.value,
         "email": email.value
-        });
+        })
+        .then(function(e){
+                alert.className = "show";
+                setTimeout(function(){ alert.className = alert.className.replace("show", ""); }, 3000);
+            }, 
+            function(e){console.log(e)}
+        );
     }
     });
 
