@@ -1,18 +1,36 @@
 /*Gabriel Garcia*/
 
-header{ /*Definindo alguns padrões para o topo do meu site*/
+/*Configurando o header (topo)*/
+header{ 
     width: 100%;
     height: 250px;
-    background: linear-gradient(to bottom, black, #121212, black);  /*Penso em mudar essa cor*/  
+    background: radial-gradient(circle at 119px 300px , #0EBFE9 0%, rgba(0, 0, 250, 0) 47%, #0EBFE9 107%);  /*Penso em mudar essa cor*/  
+    /*border: #000 2px solid;   (Descartável por enquanto)
+    border-bottom: none;*/
 }
 
-header .container{  /*Tudo de estiver no container em header seguirá os padrões definidos por mim*/
+.container{  /*Tudo de estiver no container seguirá os padrões definidos por mim*/
     position: relative;
 }
 
-#imgIniciais {
+#imgIniciais {  /*Alguns ajustes quanto à posição das imagens. Sugestão: aumentar o tamanho das imagens !*/
+    position: relative;
     width: 25%;
-    height: 25px;
     text-align: center;
+    top: 5px;
 }
 
+#botoes{
+    text-align: center;
+    top: 10px;
+    font-family: 'Varela Round';
+    font-weight: black;
+   
+}
+
+#botoes button{
+    margin: 0 15px;
+    background: linear-gradient(white,#D0D0D0);
+    border-bottom: 3px groove;
+    border-color: black;
+}

@@ -35,12 +35,39 @@ $(document).ready(function () {
     });
 });*/
 
+
+  //link topper: http://jonraasch.com/blog/a-simple-jquery-slideshow
+  //outro link: https://drupal.stackexchange.com/questions/207801/how-to-change-transition-to-fade-on-boostrap-carousel-module
+/*
+  function slideSwitch() {
+    var $active = $('#imgIniciais IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#imgIniciais IMG:last');
+
+    var $next =  $active.next().length ? $active.next()
+        : $('#imgIniciais IMG:first');
+
+    $active.addClass('last-active');
+        
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 5000 );
+});*/
+
+
+//O exemplo de cima é o mais ideal para o que quero ^
 $(document).ready(function() {
 	$("#imgIniciais").owlCarousel({
 	  loop: true,
 	  items: 1,
 	  singleItem: true,
 	  autoplay: true,
-      autoplayTimeout:2000
+	  autoplayTimeout:2000
 	});
-  });
+  });//para remover os botões basta dar um inspecionar elemento nos pontos
