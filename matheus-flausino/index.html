@@ -5,73 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/custom.css">
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.12/js/all.js" integrity="sha384-Voup2lBiiyZYkRto2XWqbzxHXwzcm4A5RfdfG6466bu5LqjwwrjXCMBQBLMWh7qR" crossorigin="anonymous"></script>
-        
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script src="./assets/js/init.js"></script>
     <title>Matheus Flausino | FullStack Developer</title>
 </head>
 <body>
     <section id="home">
-        <header>
-            <h1 class="name">Matheus Flausino</h1>
-            <h3 class="">FullStack Developer & IoT <i class="fas fa-heart text-red"></i></h3>
-        </header>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/matheus-ferreira-flausino-5862b6102/"><a href=""><i class="fab fa-linkedin"></i></a>
-            <a href="https://instagram.com/matheusflausino"><i class="fab fa-instagram"></i></a>
-            <a href="https://github.com/matheusflausino"><i class="fab fa-github"></i></a>
-            <a href="https://m.me/matheusflausinodev"><i class="fab fa-facebook-messenger"></i></a>
-            <a href="mailto:matheusflausino@ymail.com"><i class="fas fa-paper-plane"></i></a>
+        <div class="container">
+            <header>
+                <h1 class="name">Matheus Flausino</h1>
+                <p class="description">FullStack Developer & IoT <i class="fas fa-heart text-red"></i></p>
+            </header>
+            <div class="social-media">
+                <a target="_blank" href="https://www.linkedin.com/in/matheus-ferreira-flausino-5862b6102/"><i class="fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://instagram.com/matheusflausino"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://github.com/matheusflausino"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://m.me/matheusflausinodev"><i class="fab fa-facebook-messenger"></i></a>
+                <a target="_blank" href="mailto:matheusflausino@ymail.com"><i class="fas fa-paper-plane"></i></a>
+            </div>
         </div>
+        <a href="#about" class="down"><i class="fas fa-angle-down"></i></a>
     </section>
     
     <section id="about">
-        <h2 class="title">Sobre mim</h2>
-        <p class="description">Cursando engenharia de computação na Universidade Tecnologica Federal do Paraná</p>
-        <p class="description">Languagem e Tecnologicias</p>
-        <ul class="langagens">
-            <li>C</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>MySQL</li>
-            <li>PostgreSQL</li>
-            <li>mongoDB</li>
-            <li>Node</li>
-            <li>Angular</li>
-            <li>Vue.js</li>
-        </ul>
+        <div class="container">
+            <h2 class="title">Sobre mim</h2>
+            <p class="description">Cursando engenharia de computação na Universidade Tecnologica Federal do Paraná</p>
+            <p class="description">Linguagens e Tecnologicias</p>
+            <ul class="langagens">
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>MySQL</li>
+                <li>PostgreSQL</li>
+                <li>mongoDB</li>
+                <li>Node</li>
+                <li>Angular</li>
+                <li>Vue.js</li>
+            </ul>
+        </div>
+        <a href="#contact" class="down"><i class="fas fa-angle-down"></i></a>
     </section>
 
     <section id="contact">
-        <h2 class="title">Contato</h2>
-        <p>Aberto a oportunidades como freelancer e oportunidades de estágio</p>
-        <p>Posso estar contribuindo com nas areas de WebDev (Front-End e Back-End) e areas como automação industrial (Codificação CLP) e  embarcados</p>
-        <a class="mailto" href="mailto:matheusflausino@ymail.com">contato<i class="fas fa-paper-plane"></i></a>
+        <div class="container">
+            <div class="col">
+                <h2 class="title">Contato</h2>
+                <p class="description">Aberto a oportunidades como freelancer e oportunidades de estágio</p>
+                <p class="description">Posso estar contribuindo com nas areas de WebDev (Front-End e Back-End) e areas como automação industrial (Codificação CLP) e  embarcados</p>
+                <!-- <a class="mailto" href="mailto:matheusflausino@ymail.com">contato<i class="fas fa-paper-plane"></i></a> -->
+            </div>
+            <div class="col">
+                <form id="form-contact">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required>
+                    
+                    <label for="message">Mensagem</label>
+                    <textarea name="message" id="message" required></textarea>
+                    
+                    <button type="submit">Enviar <i class="fas fa-paper-plane"></i></i></button>
+                </form>
+            </div>
+        </div>
+        <a href="#footer" class="down"><i class="fas fa-angle-down"></i></a>
     </section>
 
-    <footer class="footer-bar">
-        <div class="">
+    <footer id="footer" class="footer-bar">
+        <div class="info">
             <ul class="nav">
-                <li>Home</li>
-                <li>Sobre</li>
-                <li>Contato</li>
+                <a href="#home"><li>Home</li></a>
+                <a href="#about"><li>Sobre</li></a>
+                <a href="#contact"><li>Contato</li></a>
             </ul>
             <div class="social-media footer">
-                <a href="https://www.linkedin.com/in/matheus-ferreira-flausino-5862b6102/"><a href=""><i class="fab fa-linkedin"></i></a>
-                <a href="https://instagram.com/matheusflausino"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/matheusflausino"><i class="fab fa-github"></i></a>
-                <a href="https://m.me/matheusflausinodev"><i class="fab fa-facebook-messenger"></i></a>
-                <a href="mailto:matheusflausino@ymail.com"></a><i class="fas fa-paper-plane"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/matheus-ferreira-flausino-5862b6102/"><i class="fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://instagram.com/matheusflausino"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://github.com/matheusflausino"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://m.me/matheusflausinodev"><i class="fab fa-facebook-messenger"></i></a>
+                <a target="_blank" href="mailto:matheusflausino@ymail.com"><i class="fas fa-paper-plane"></i></a>
             </div>
         </div>
         <div class="copyright">
             <p class="text-gray">&copy; 2018 Matheus Flausino | All Rights Reserved | <i class="fas fa-heart text-red"></i></p>
-            <i class="far fa-heart"></i>
         </div>
     </footer>
+    <div id="snackbar">Mensagem enviada.</div>
 </body>
 </html>
