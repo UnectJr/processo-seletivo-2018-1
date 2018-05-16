@@ -1,12 +1,13 @@
 /*Gabriel Garcia*/
 
-/*Configurando o header (topo)*/
+/*Inicio das configurações do header*/
 header{ 
     width: 100%;
     height: 250px;
     background: radial-gradient(circle at 119px 300px , #0EBFE9 0%, rgba(0, 0, 250, 0) 47%, #0EBFE9 107%);  /*Penso em mudar essa cor*/  
-    /*border: #000 2px solid;   (Descartável por enquanto)
-    border-bottom: none;*/
+    /*border: ;   (Descartável por enquanto)
+    border-bottom: #000 2px solid;*/
+    border-bottom: #ADEAEA 1px dashed;  /*Dashed: tracejado*/
 }
 
 .container{  /*Tudo de estiver no container seguirá os padrões definidos por mim*/
@@ -19,18 +20,51 @@ header{
     text-align: center;
     top: 5px;
 }
+/*Fim das configurações do header/
 
-#botoes{
+/*Inicio das configurações do section*/
+section{
+    /*background: linear-gradient(to bottom, white, rgb(208, 246, 255); Uma alternativa*/
+    background-color: rgb(219, 247, 253);
+}
+
+#botoes{    /*Configurando aparência das letras e posicionamento dos botões*/
     text-align: center;
     top: 10px;
     font-family: 'Varela Round';
-    font-weight: black;
-   
+    font-weight: bolder;
 }
 
-#botoes button{
+#botoes button{ /*Configurando a aparência dos botões principal, fotos e extra* */
     margin: 0 15px;
-    background: linear-gradient(white,#D0D0D0);
-    border-bottom: 3px groove;
-    border-color: black;
+    background: linear-gradient(white,#E8E8E8);
+    border: none;   /*Desabilito todas as bordas para depois fazer a borda inferior*/
+    border-bottom: #ADEAEA 3px groove;  /*groove deixa a borda mais suavizada*/
 }
+
+.info{  /*Configurações gerais da classe info*/
+    text-align: center;
+    margin-top: 60px;
+}
+
+.info h1, h2, h3, h4, h5, h6, h7, h8{   /*Configurando o texto das perguntas*/
+    margin-top: 55px;
+    font-size: 2rem;
+    font-family: 'Varela Round';
+    font-weight: bolder;
+    color: black;
+}
+
+.info hr{ /*Estilizando a barra*/
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background-color: rgb(82, 204, 235);
+    width: 35%;
+    height: 3px;
+    border: white 1px groove;
+    border-radius: 5px;
+}
+
+
+/*Fim das configurações do section*/
+
