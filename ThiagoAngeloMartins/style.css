@@ -4,4 +4,34 @@ body {
     background-repeat: repeat;
     background-size: contain;
     font-family: : verdana, sans-serif;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.banner {
+
+    width: 100%;
+    height: 20%;
+    border: 2px solid black;
+}
+
+.menu {
+
+    width: 100%;
+    height: 10%;
+    border: 2px solid black;
+}
+
+.content {
+
+    width: 100%;
+    height: 60%;
+    border: 2px solid black;
+}
+
+.footer {
+    width: 100%;
+    height: 10%;
+    border: 2px solid black;
 }
