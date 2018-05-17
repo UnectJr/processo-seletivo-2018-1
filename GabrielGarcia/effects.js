@@ -71,3 +71,13 @@ $(document).ready(function() {
 	  autoplayTimeout:2000
 	});
   });//para remover os botões basta dar um inspecionar elemento nos pontos
+
+//Criando um carousel para minha lista de games
+$(document).ready(function() {
+	$("#imgGames").owlCarousel({
+	  loop: true,
+	  items: 3,
+	  autoplay: true,
+	  autoplayTimeout:2500
+	});
+  });
