@@ -1,12 +1,23 @@
-$(function() {
+$botao = $('#back-to-top');
 
-	$('#back-to-top').hide().scrollTop(0);
+$(document).ready(function() {
 
-	$(window).scroll(function(){
-		if($(this).scrollTop > 100){
-			$('#back-to-top').fadeIn();
-		}else{
-			$('#back-to-top').fadeOut();
-		}
-	});
+    $botao.hide();
 });
+
+$(window).scroll(function() {
+
+    console.log($(window).scrollTop());
+    if ($(window).scrollTop() > 100) {
+        $($botao).fadeIn();
+    } else {
+        $($botao).fadeOut();
+    }
+});
+
+$botao.on("click", function(){	
+	$('html,body').animate({
+		scrollTop:0
+	}, 800);
+});
+
