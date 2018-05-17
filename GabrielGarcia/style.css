@@ -37,7 +37,7 @@ section{
 
 #botoes button{ /*Configurando a aparência dos botões principal, fotos e extra* */
     margin: 0 15px;
-    background: linear-gradient(white,#E8E8E8);
+    background: linear-gradient(white,#E8E8E8); /*Quando não coloco parâmetro algum na direção começa em top e vai para bottom*/
     border: none;   /*Desabilito todas as bordas para depois fazer a borda inferior*/
     border-bottom: #ADEAEA 3px groove;  /*groove deixa a borda mais suavizada*/
 }
@@ -47,7 +47,7 @@ section{
     margin-top: 60px;
 }
 
-.info h1, h2, h3, h4, h5, h6, h7, h8{   /*Configurando o texto das perguntas*/
+.info h1, h2, h3{   /*Configurando o texto das perguntas*/
     margin-top: 55px;
     font-size: 2rem;
     font-family: 'Varela Round';
@@ -65,6 +65,15 @@ section{
     border-radius: 5px;
 }
 
+.info p{
+    font-family: 'Varela Round';
+}
+
+#playlistImg{   /*Configurando posição e estilo da imagem da playlist*/
+    margin-top: 5px;    
+    border-radius: 100%;    /*Usando o máximo possível sem precisar testar no develeper tool qual o limite*/
+    box-shadow: 0px 0px 50px black; /*O primeiro parâmetro trata-se do deslocamento horizontal, o segundo do vertical e o terceiro é o quão concentrada está a cor escolhida*/
+}
 
 /*Fim das configurações do section*/
 
