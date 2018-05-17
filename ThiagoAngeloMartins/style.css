@@ -1,8 +1,10 @@
 body {
-
+    /*
     background-image: url("img/background1.jpg");
     background-repeat: repeat;
     background-size: contain;
+    */
+    background-color: lightgray;
     font-family: : verdana, sans-serif;
     width: 80%;
     height: 98%;
@@ -12,7 +14,7 @@ body {
 .main {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(254, 255, 232, 1) 0%, rgba(214, 219, 191, 1) 100%);
+    background: linear-gradient(to bottom, rgba(252, 255, 244, 1) 0%, rgba(223, 229, 215, 1) 40%, rgba(179, 190, 173, 1) 100%);
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
     -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
@@ -41,24 +43,29 @@ body {
     border-radius: 30px;
     float: left;
     border: 2px solid white;
+    margin-top: 1%;
+    margin-left: 2%;
 }
 
 .bannerInfo {
 
-    width: 84%;
+    width: 80%;
     height: 100%;
     float: left;
+    margin-left: 2%;
 }
 
 .infoMainName {
 
     width: 100%;
     height: 50%;
+    padding-top: 10px;
+    overflow: hidden;
 }
 
 .mainName {
 
-    margin-left: 20px;
+    margin-left: 10px;
     font-family: verdana, sans-serif;
     font-weight: bold;
     letter-spacing: 3px;
@@ -67,7 +74,8 @@ body {
 }
 
 .nickName {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: -5px;
     font-family: verdana, sans-serif;
     font-weight: bold;
     letter-spacing: 3px;
@@ -79,6 +87,8 @@ body {
 
     width: 100%;
     height: 50%;
+
+    overflow: hidden;
 }
 
 .menu {
@@ -267,6 +277,29 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Safari 4.0 - 8.0 */
 
 @-webkit-keyframes example {
@@ -277,6 +310,29 @@ body {
         background-color: yellow;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
