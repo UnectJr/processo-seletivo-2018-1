@@ -11,10 +11,16 @@ body {
     margin: 10px auto 10px auto;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+* {
+    transition: all 0.5 ease;
 }
+
+a {
+
+    color: black;
+    text-decoration: none;
+}
+
 
 .main {
     width: 100%;
@@ -67,6 +73,7 @@ a {
     height: 50%;
     padding-top: 10px;
     overflow: hidden;
+    display: block;
 }
 
 .mainName {
@@ -77,6 +84,25 @@ a {
     letter-spacing: 3px;
     color: #000000;
     font-size: 200%;
+}
+
+.lgray {
+
+    color: gray;
+}
+
+.infoNameMobile {
+
+    width: 100%;
+    height: 100%;
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: black;
+    font-size: 130%;
+    display: none;
+    text-align: center;
+    margin-top: -2%;
 }
 
 .nickName {
@@ -95,6 +121,7 @@ a {
     height: 50%;
 
     overflow: hidden;
+    display: block;
 }
 
 .menu {
@@ -105,7 +132,7 @@ a {
 
 .menuNavbar {
 
-    width: 99%;
+    width: 100%;
     height: 80%;
     margin: 10px auto 10px auto;
     overflow: hidden;
@@ -140,18 +167,6 @@ a {
 	*/
     transition: background-color 0.4s ease;
     transition: box-shadow 0.4s ease;
-}
-
-.navbarItem:first-child {
-
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-#navFilmes {
-
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 
@@ -232,181 +247,237 @@ a {
 
         width: 40%;
     }
-}
 
+    .bannerInfo {
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Safari 4.0 - 8.0 */
-
-@-webkit-keyframes example {
-    from {
-        background-color: red;
+        float: none;
+        width: 100%;
+        height: 20%;
     }
-    to {
-        background-color: yellow;
+
+    .bannerPersonalImg {
+        width: 40%;
+        height: 80%;
+        float: none;
+        margin: 10px auto 10px auto;
+    }
+    .infoMainName {
+
+        display: none;
+    }
+    .infoNickName {
+        display: none;
+    }
+    .infoNameMobile {
+
+        display: block;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
