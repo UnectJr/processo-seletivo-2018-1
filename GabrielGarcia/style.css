@@ -89,3 +89,24 @@ section{
 
 /*Fim das configurações do section*/
 
+
+/*Início das configurações do footer*/
+footer{ /*Configurações semelhantes ao header para manter uma boa estética*/
+    margin-top: 50px;
+    width: 100%;
+    height: 250px;
+    background: radial-gradient(circle at 119px 300px , #0EBFE9 0%, rgba(0, 0, 250, 0) 47%, #0EBFE9 107%);  /*Penso em mudar essa cor*/  
+    border-top: #ADEAEA 1px dashed;    
+}
+
+footer .extraInfo p, small{     /*Configurações gerais para as palavras*/
+    font-family: 'Varela Round';
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    margin-top: 74px;
+}
+
+footer .extraInfo small{    /*Configurando posição da palavra "contato"*/
+    margin-left: 10px;
+}
