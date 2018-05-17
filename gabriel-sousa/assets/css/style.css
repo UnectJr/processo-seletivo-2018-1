@@ -1,1 +1,51 @@
 @charset "UTF-8";
+
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/* remover linha abaixo depois da estrutura*/
+	border: 1px solid rgba(0,0,0,0.7);
+}
+
+html {
+	font-size: 16px;
+}
+
+/* ajustar tamanho da fonte para outras telas */
+@media (min-width: 768px) {
+	h1 {
+		font-size: 3.375rem;
+		line-height: 4.725rem;
+	}
+
+	h2 {
+		font-size: 2.25rem;
+		line-height: 3.15rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+		line-height: 2.1rem;
+	}
+
+	p {
+		font-size: 1rem;
+		line-height: 1.4rem;
+	}
+}
