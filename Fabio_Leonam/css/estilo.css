@@ -59,14 +59,15 @@ body{
 #sobremim{
 	font-size: 40px;
 	font-family: Sans Serif;
+	text-align: center; 
 
 }
 #text_eu{
 	font-size: 14px;
 	font-family:sans-serif;
-	margin-right: 40%;
-	height: 150px;
-	text-align: justify; 
+	margin-right: 2%;
+	height: 100px;
+	text-align: center;
 }
 
 #origem{
@@ -77,23 +78,22 @@ body{
 	margin-left: 2%;
 	margin-right: 2%;
 }
+
 #slideshow_origem{
-	border: 1px solid black;
-	margin-top:50px;
-	margin-right: 60%;
-	margin-left: 5%;
+	border: 5px solid black;
+	width: 45%;
 	height: 200px;
+	display: block;
+	float: left;
 }
 #texto_origem{
-		border: 1px solid black;
-		margin-left: 60%;
-		margin-right: 5%;
-		margin-top: -210px;
-		height: 200px;
-		font-family: Monteserrat, Sans Serif;
-		font-size: 10px;
-		text-align: justify;
-
+	padding-top: 15px;
+	margin-right: 2%;
+	width: 40%;
+	height: 150px;
+	display: block;
+	float: right;
+	text-align: justify;
 }
 #hobbies{
 	height:400px;
@@ -105,18 +105,20 @@ body{
 }
 #img_hobbies{
 	border: 5px solid black;
-	margin-top:50px;
-	margin-right: 60%;
-	margin-left: 5%;
+	width: 40%;
+	margin-right: 2%;
 	height: 200px;
+	display: block;
+	float: right;
 }
 #texto_hobbies{
-		border: 5px solid black;
-		margin-left: 60%;
-		margin-right: 5%;
-		margin-top: -210px;
-		height: 200px;
-		font-size: 1px;
+	border: 5px solid black;
+	width: 40%;
+	height: 200px;
+	display: block;
+	float: left;
+	margin-left: 2%;		
+
 }
 #computação{
 	height: 300px;
@@ -130,14 +132,27 @@ body{
 #Comp{
 	font-size: 40px;
 	font-family: Sans Serif;
+
 }
 #text_comp{
-	border: 5px solid black;
-	margin-right: 40%;
-	font-size: 15px;
+	padding-top: 15px;
+	margin-right: 2%;
+	width: 55%;
 	height: 200px;
+	display: block;
+	float: left;
+	text-align: justify;
 }
-
+#img_linguagens{
+	margin-right: 2%;
+	height: 200px;
+	width: 350px;
+	float: right;
+}
+#img_linguagens img{
+	width: 100px;
+	height: 100px;
+}
 #contatos{
 	height: 200px;
 	background-color: #708090;	
@@ -157,8 +172,7 @@ body{
 	text-align: center;
 	color:white;
 	font-family:Sans Serif;
-	line-height: 0px;
-	
+	line-height: 0px;	
 }
 
 #back-to-top{
