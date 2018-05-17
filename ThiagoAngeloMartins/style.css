@@ -11,6 +11,11 @@ body {
     margin: 10px auto 10px auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .main {
     width: 100%;
     height: 100%;
@@ -183,12 +188,79 @@ body {
     background: linear-gradient(to bottom, rgba(206, 220, 231, 1) 0%, rgba(89, 106, 114, 1) 100%);
 }
 
+.credits {
+
+    height: 100%;
+    width: 20%;
+    float: left;
+
+    text-align: center;
+    text-shadow: 2px 2px 7px black;
+    color: lightgray;
+    font-family: verdana, sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-top: 1%;
+}
+
+.socialMedia {
+
+    height: 100%;
+    width: 20%;
+    float: right;
+}
+
+.socialIcon {
+
+    cursor: pointer;
+    font-size: 280%;
+    margin-top: 8%;
+    margin-left: 8%;
+}
+
 @keyframes navItemTransition {
 
     100% {
         background-color: black;
     }
 }
+
+@media only screen and (max-width: 1013px) {
+
+    .socialMedia {
+
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -335,6 +407,35 @@ body {
         background-color: yellow;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
