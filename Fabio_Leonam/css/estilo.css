@@ -13,7 +13,7 @@ body{
 }
 
 #menu ul{
-	padding:15px;
+	padding:16px;
 	margin:;
 	background-color:#000000; 
 	text-align:center;
@@ -37,14 +37,14 @@ body{
 
 #menu ul li a:hover {
     background-color:#00000;
-    border: 1px solid white;
-    border-radius: 4px;
+    border-bottom:1px solid white;
+    border-radius: 1px;
     cursor: pointer;
 }
 
 #eu{
 	
-	height: 300px;
+	height: 200px;
 	padding: 0 auto;
 	margin-bottom: 30px;
 	margin-left: 2%;
@@ -69,7 +69,10 @@ body{
 	height: 100px;
 	text-align: center;
 }
-
+#Bahia{
+	font-size: 40px;
+	font-family: serif;
+}
 #origem{
 	border-bottom:2px solid #C0C0C0;
 	height: 400px;
@@ -95,6 +98,10 @@ body{
 	float: right;
 	text-align: justify;
 }
+#Hb{
+	font-size: 40px;
+	font-family: serif;
+}
 #hobbies{
 	height:400px;
 	margin-right:2%;
@@ -104,7 +111,6 @@ body{
 	
 }
 #img_hobbies{
-	border: 5px solid black;
 	width: 40%;
 	margin-right: 2%;
 	height: 200px;
@@ -112,13 +118,12 @@ body{
 	float: right;
 }
 #texto_hobbies{
-	border: 5px solid black;
 	width: 40%;
 	height: 200px;
 	display: block;
 	float: left;
 	margin-left: 2%;		
-
+	text-align: justify;
 }
 #computação{
 	height: 300px;
@@ -187,6 +192,7 @@ body{
 #back-to-top:hover{
 	cursor: pointer;
 	background-position: 0 -60px;
+
 
 }
 
