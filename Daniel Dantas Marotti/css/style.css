@@ -6,9 +6,9 @@ html, body{
 body{
     margin-bottom: 70px;
 }
-
+/* --------------------------------NAVBAR---------------------------------------- */
 .navbar-default{
-    background: transparent !important;
+    background: rgba(202, 196, 196, 0.3) !important;
     border: 0 !important;
     font-size: 1.2em;
     padding: 0 15px 5px;   
@@ -19,10 +19,8 @@ body{
     font-weight: bold;
 }
 
-
-
 #showcase {
-    background: url(../images/fundo-home.jpg) no-repeat center center fixed;
+    /*background: url(../images/mouse2.jpg) no-repeat center center fixed;*/
     display: table;
     height: 100%;
     position: relative;
@@ -39,6 +37,48 @@ body{
 h1{
     font-family: Poppins;
 }
-h3,h4,h5,h6{
+h2,h3,h4,h5,h6{
     font-family: Roboto;
 }
+
+.padding{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.container{
+    /*background-image: url(/images/fundo-home.jpg);*/
+    margin-top: 40px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 23px;
+    font-family: 'Josefin Sans';
+    padding: 50px 0 30px 0;
+
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+ul{
+    list-style: none;
+}
+.lista h2{
+   font-weight: bold; 
+}
+.lista{
+   /* background: url(../images/ceu-azul.jpg) no-repeat center center fixed;*/
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
