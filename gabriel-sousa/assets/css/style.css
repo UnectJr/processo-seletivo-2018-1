@@ -28,6 +28,32 @@ html {
 	font-size: 16px;
 }
 
+/* MENU PRINCIPAL TOPO */
+nav#menu-principal {
+	width: 80%;
+	height: 3.5rem;
+	margin: 0 auto;
+}
+
+nav#menu-principal div#logo {
+	width: 10%;
+	display: block;
+	float: left;
+	margin-top: 0.9rem;
+}
+
+nav#menu-principal ul#ul-menu-principal {
+	display: block;
+	float: right;
+	text-align: right;
+	margin-top: 0.9rem;
+}
+
+	nav#menu-principal ul#ul-menu-principal li {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
 /* ajustar tamanho da fonte para outras telas */
 @media (min-width: 768px) {
 	h1 {
