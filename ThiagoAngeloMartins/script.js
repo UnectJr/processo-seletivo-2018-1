@@ -8,14 +8,42 @@ $contentSub = $('#contentSub');
 $content = $('#content');
 $pageDelete = $('#content');
 
-navItens = [$navInfo, $navBio, $navHobbies, $navAnimes, $navJogos, $navFilmes];
+$pageInfo = $('#pageInfo');
+$pageBio = $('#pageBio');
+$pageHobbies = $('#pageHobbies');
+$pageAnimes = $('#pageAnimes');
+$pageJogos = $('#pageJogos');
+$pageFilmes = $('#pageFilmes');
 
+navItens = [$navInfo, $navBio, $navHobbies, $navAnimes, $navJogos, $navFilmes];
+pageItens = [$pageInfo, $pageBio, $pageHobbies, $pageAnimes, $pageJogos, $pageFilmes];
+
+
+// no comeco 
 var pageAtual = 0;
 
 pageWidth = $contentSub.width() / 3;
 
 $content.scrollLeft(pageWidth);
 
+for (var i = 0; i < 3; i++) {
+
+    $('.subPage').each(function(indice) {
+
+        if (indice == i) {
+
+            $(this).html(pageItens[i].html());
+
+        }
+
+
+
+    });
+
+}
+
+
+//
 function MudarAtivo(elemento) {
 
 
@@ -50,6 +78,16 @@ function Navigate(elemento) {
 
         pageAtual = ind;
 
+        $('.subPage').each(function(indice) {
+
+            if (indice == 2) {
+
+                $(this).html(pageItens[ind].html());
+
+            }
+
+
+        });
 
         $content.animate({ scrollLeft: final }, 230, function() {
 
@@ -76,6 +114,17 @@ function Navigate(elemento) {
 
 
         pageAtual = ind;
+
+        $('.subPage').each(function(indice) {
+
+            if (indice == 0) {
+
+                $(this).html(pageItens[ind].html());
+
+            }
+
+
+        });
 
         $content.animate({ scrollLeft: comeco }, 230, function() {
 
