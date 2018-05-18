@@ -1,0 +1,42 @@
+* {
+  border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  max-width: 1920px;
+  min-width: 400px;
+}
+
+.header { 
+  background-color: black;
+  display: block;
+  max-width: 1920px;
+  min-width: 400px;
+}
+
+.header a {
+  display: inline;
+  align: "right";
+}
+
+.right {
+  display: inline;
+  position: relative;
+  left: 73.5%;
+}
+
+.logo {
+  top: 2%;
+  display: inline;
+  position: relative;
+  top: -60px;
+}
+
+.logo h1 {
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  font-size: 500%;
+}
