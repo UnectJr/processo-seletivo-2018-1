@@ -189,3 +189,22 @@ $content.on("scroll", function() {
     console.log($content.scrollLeft());
 
 });
+
+$(window).on("load", function() {
+
+    $loader = $('#loader');
+    $main = $('#main');
+
+
+    $loader.animate({ opacity: 0 }, 500, function() {
+
+        $loader.css("display", "none");
+
+        $main.css("display", "block");
+
+        $main.addClass('getup');
+
+    });
+
+
+});

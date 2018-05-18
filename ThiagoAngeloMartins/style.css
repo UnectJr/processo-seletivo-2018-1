@@ -30,8 +30,10 @@ a {
     border-radius: 10px;
     -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
     -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
-    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
     overflow: hidden;
+    display: none;
+    position: relative;
 }
 
 .clear {
@@ -254,6 +256,45 @@ a {
 
 
     display: none;
+    opacity: 1;
+}
+
+.loader {
+    border: 16px solid #f2f2f2;
+    border-top: 16px solid #737373;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 10px auto 10px auto;
+    margin-top: 25%;
+}
+
+.getup {
+
+    position: relative;
+    animation: subir 1s ease;
+}
+
+
+@keyframes subir {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @media only screen and (max-width: 1013px) {
@@ -289,6 +330,41 @@ a {
         display: block;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
