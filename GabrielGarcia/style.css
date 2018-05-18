@@ -100,7 +100,7 @@ footer{ /*Configurações semelhantes ao header para manter uma boa estética*/
     border-top: #ADEAEA 1px dashed;    
 }
 
-footer .extraInfo p, small{     /*Configurações gerais para as palavras*/
+.extraInfo p, small{     /*Configurações gerais para as palavras*/
     font-family: 'Varela Round';
     font-weight: bold;
     color: black;
@@ -108,6 +108,59 @@ footer .extraInfo p, small{     /*Configurações gerais para as palavras*/
     margin-top: 68px;
 }
 
-footer .extraInfo small{    /*Configurando posição da palavra "contato"*/
-    margin-left: 10px;
+.extraInfo p{
+    margin-left: 37px;
+}
+
+.extraInfo small{    /*Configurando posição da palavra " redes sociais"*/
+    margin-top: 10px;
+}
+
+footer hr{  /*Estilizando barra hr*/
+    position: relative;
+    background: radial-gradient(circle at 119px 300px , black 0%, rgba(0, 0, 250, 0) 47%, black 107%);;
+    margin: -64px 300px;
+    top: 3px;
+    width: 13%;
+    height: 1px;
+    border: grey 1px solid;
+    border-radius: 20%;
+    transform: rotate(90deg);   /*Rotacionando a barra hr*/
+}
+
+#icons ul{  /*Configurando ícones, removendo o marcador de ul*/
+    list-style-type: none;
+    text-align: center;
+    color:inherit;
+}
+
+#icons ul li{   /*Estilizando lista*/
+    position: relative; /*Precisei colocar já que não é da classe container*/
+    display: inline-block;  /*inline-block: deixa tudo em um bloco de uma linha*/
+    text-align: center;
+    margin: 30px 70px;
+    left: 175px;
+    width: 80px;
+    height: 80px; 
+    border: black 2px solid;
+    border-radius: 100%;
+}
+
+#icons i{   /*Configurações gerais para todos os ícones da div de id icons*/
+    position: absolute; /*Não respeita o limite da div pai*/
+    margin: -6px -39px;
+}
+
+#icons i.fa-github, #icons i.fa-spotify, #icons i.fa-google{    /*Estilizando todos os ícones exceto para o facebook*/
+    font-size: 90px;                                            /*Note que usei i.(class) pois a classe está na tag i e não é filha dela*/
+}
+
+#icons i.fa-spotify, #icons i.fa-google{    /*Corrigindo a posição do ícone spotify e google*/
+    margin: -6px -38px;
+}
+
+#icons i.fa-facebook{ /*Ajustando o ícone do facebook*/
+    font-size: 79px;
+    left: 53px;
+    top: 10px;
 }
