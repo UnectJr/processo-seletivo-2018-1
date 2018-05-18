@@ -30,7 +30,7 @@ html {
 
 /* MENU PRINCIPAL TOPO */
 nav#menu-principal {
-	width: 80%;
+	width: 75%;
 	height: 3.5rem;
 	margin: 0 auto;
 }
@@ -53,6 +53,42 @@ nav#menu-principal ul#ul-menu-principal {
 		display: inline-block;
 		text-transform: uppercase;
 	}
+
+/* INTERFACE GERAL */
+div#interface-geral {
+	width: 75%;
+	margin: 0 auto;
+	background-color: red;
+}
+	/* resolve conteudo transborda por causa do float */
+	div#interface-geral::after {
+		content: "";
+		clear: both;
+		display: table;
+  }
+
+/* ASIDE ESQUERDA FIXO */
+aside#info-fixo {
+	width: 25%;
+	background-color: brown;
+	display: block;
+	float: left;
+}
+
+/* INTERFACE GERAL CONTEUDO */
+div#interface-geral-conteudo {
+	width: 72%;
+	background-color: yellow;
+	display: block;
+	float: right;
+}
+
+/* FOOTER */
+footer {
+	width: 75%;
+	margin: 0 auto;
+	background-color: blue;
+}
 
 /* ajustar tamanho da fonte para outras telas */
 @media (min-width: 768px) {
