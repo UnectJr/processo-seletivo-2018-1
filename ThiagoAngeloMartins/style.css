@@ -36,6 +36,17 @@ a {
     position: relative;
 }
 
+
+/*
+.cover {
+
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.66);
+    z-index: 2;
+}
+*/
+
 .clear {
 
     clear: both;
@@ -192,6 +203,31 @@ a {
     background-color: #e6e6e6;
 }
 
+.navMobile {
+
+    display: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    font-size: 230%;
+    background-color: #b3b3b3;
+}
+
+.navMobile:hover {
+
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.navMobile:active {
+    background-color: #e6e6e6;
+}
+
+.mobIcon {
+
+    margin-top: 5%;
+}
 
 .content {
 
@@ -303,6 +339,10 @@ a {
 
         width: 40%;
     }
+    .powered {
+
+        width: 40%;
+    }
 
     .bannerInfo {
 
@@ -329,7 +369,38 @@ a {
 
         display: block;
     }
+    .navbarItem {
+
+        display: none;
+    }
+    .navMobile {
+
+        display: block;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
