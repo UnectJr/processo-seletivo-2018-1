@@ -26,6 +26,44 @@ time, mark, audio, video {
 
 html {
 	font-size: 16px;
+	line-height: 1.5;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/* FORMATACAO UNIVERSAL DE FONTES */
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
 }
 
 /* HEADER PRINCIPAL */
@@ -42,7 +80,7 @@ nav#menu-principal {
 }
 
 nav#menu-principal div#logo {
-	width: 10%;
+	/* width: 10%; */
 	display: block;
 	float: left;
 	margin-top: 0.9rem;
@@ -99,26 +137,4 @@ footer div#subfooter-centro {
 	width: 75%;
 	margin: 0 auto;
 	background-color: blue;
-}
-
-/* ajustar tamanho da fonte para outras telas */
-@media (min-width: 768px) {
-	h1 {
-		font-size: 3.375rem;
-		line-height: 4.725rem;
-	}
-
-	h2 {
-		font-size: 2.25rem;
-		line-height: 3.15rem;
-	}
-	h3 {
-		font-size: 1.5rem;
-		line-height: 2.1rem;
-	}
-
-	p {
-		font-size: 1rem;
-		line-height: 1.4rem;
-	}
 }
