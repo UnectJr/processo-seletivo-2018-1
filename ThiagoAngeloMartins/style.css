@@ -380,13 +380,13 @@ a {
 
 .animateAppearLeft {
 
-    animation: apearL 0.5s ease;
+    animation: apearL 0.3s ease;
     display: block;
 }
 
 .animateDisappearLeft {
 
-    animation: disapearL 0.5s ease;
+    animation: disapearL 0.3s ease;
     animation-fill-mode: forwards;
 }
 
@@ -480,6 +480,7 @@ a {
         display: block;
     }
 }
+
 
 
 

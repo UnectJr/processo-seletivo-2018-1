@@ -172,7 +172,7 @@ function Navigate(elemento) {
 
 }
 
-function HideMenuMobile(elemento) {
+function HideMobileMenu(elemento) {
 
     if ($mobileMenu.hasClass("animateDisappearLeft")) {
 
@@ -180,7 +180,7 @@ function HideMenuMobile(elemento) {
     }
     $mobileMenu.addClass("animateDisappearLeft");
 
-    $cover.animate({ opacity: 0 }, 200, function() {
+    $cover.animate({ opacity: 0 }, 100, function() {
 
         $cover.css("display", "none");
 
@@ -226,6 +226,31 @@ $mobileNavInfo.on("click", function() {
 
 
 });
+$mobileNavBio.on("click", function() {
+
+    HideMobileMenu($navBio);
+
+});
+$mobileNavHobbies.on("click", function() {
+
+    HideMobileMenu($navHobbies);
+
+});
+$mobileNavAnimes.on("click", function() {
+
+    HideMobileMenu($navAnimes);
+
+});
+$mobileNavJogos.on("click", function() {
+
+    HideMobileMenu($navJogos);
+
+});
+$mobileNavFilmes.on("click", function() {
+
+    HideMobileMenu($navFilmes);
+
+});
 
 
 $content.on("scroll", function() {
@@ -246,7 +271,7 @@ $navMobile.on("click", function() {
         $mobileMenu.removeClass("animateDisappearLeft");
     }
     $cover.css("display", "block");
-    $cover.animate({ opacity: 1 }, 200, function() {
+    $cover.animate({ opacity: 1 }, 100, function() {
 
         $mobileMenu.addClass("animateAppearLeft");
 
