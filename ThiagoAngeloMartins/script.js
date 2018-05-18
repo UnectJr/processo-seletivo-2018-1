@@ -4,6 +4,17 @@ $navHobbies = $('#navHobbies');
 $navAnimes = $('#navAnimes');
 $navJogos = $('#navJogos');
 $navFilmes = $('#navFilmes');
+
+$mobileNavInfo = $('#mobileNavInfo');
+$mobileNavBio = $('#mobileNavBio');
+$mobileNavHobbies = $('#mobileNavHobbies');
+$mobileNavAnimes = $('#mobileNavAnimes');
+$mobileNavJogos = $('#mobileNavJogos');
+$mobileNavFilmes = $('#mobileNavFilmes');
+
+
+
+
 $contentSub = $('#contentSub');
 $content = $('#content');
 $pageDelete = $('#content');
@@ -14,6 +25,10 @@ $pageHobbies = $('#pageHobbies');
 $pageAnimes = $('#pageAnimes');
 $pageJogos = $('#pageJogos');
 $pageFilmes = $('#pageFilmes');
+
+$navMobile = $('#navMobile');
+$mobileMenu = $('#mobileMenu');
+$cover = $('#cover');
 
 navItens = [$navInfo, $navBio, $navHobbies, $navAnimes, $navJogos, $navFilmes];
 pageItens = [$pageInfo, $pageBio, $pageHobbies, $pageAnimes, $pageJogos, $pageFilmes];
@@ -157,6 +172,26 @@ function Navigate(elemento) {
 
 }
 
+function HideMenuMobile(elemento) {
+
+    if ($mobileMenu.hasClass("animateDisappearLeft")) {
+
+        $mobileMenu.removeClass("animateDisappearLeft");
+    }
+    $mobileMenu.addClass("animateDisappearLeft");
+
+    $cover.animate({ opacity: 0 }, 200, function() {
+
+        $cover.css("display", "none");
+
+        $(elemento).click();
+
+
+    });
+
+
+}
+
 $navInfo.on("click", function() {
     MudarAtivo($navInfo);
     Navigate($navInfo, pageAtual);
@@ -184,13 +219,45 @@ $navFilmes.on("click", function() {
     Navigate($navFilmes, pageAtual);
 });
 
+$mobileNavInfo.on("click", function() {
+
+    HideMobileMenu($navInfo);
+
+
+
+});
+
+
 $content.on("scroll", function() {
 
     console.log($content.scrollLeft());
 
 });
 
+$navMobile.on("click", function() {
+
+
+    if ($mobileMenu.hasClass("animateAppearLeft")) {
+
+        $mobileMenu.removeClass("animateAppearLeft");
+    }
+    if ($mobileMenu.hasClass("animateDisappearLeft")) {
+
+        $mobileMenu.removeClass("animateDisappearLeft");
+    }
+    $cover.css("display", "block");
+    $cover.animate({ opacity: 1 }, 200, function() {
+
+        $mobileMenu.addClass("animateAppearLeft");
+
+    });
+
+
+});
+
+
 $(window).on("load", function() {
+
 
     $loader = $('#loader');
     $main = $('#main');
@@ -205,6 +272,6 @@ $(window).on("load", function() {
         $main.addClass('getup');
 
     });
-
+    $main.removeClass('getup');
 
 });

@@ -6,10 +6,11 @@ body {
     */
     background-color: lightgray;
     font-family: : verdana, sans-serif;
-    width: 80%;
+    width: 95%;
     height: 98%;
     margin: 10px auto 10px auto;
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 * {
@@ -24,10 +25,15 @@ a {
 
 
 .main {
+
     width: 100%;
     height: 100%;
+    /*
     background: linear-gradient(to bottom, rgba(252, 255, 244, 1) 0%, rgba(223, 229, 215, 1) 40%, rgba(179, 190, 173, 1) 100%);
-    border-radius: 10px;
+	*/
+    background: linear-gradient(to bottom, lightgray, white, lightgray);
+    background-color: white;
+    border-radius: 1px;
     -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
     -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
     box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
@@ -37,15 +43,64 @@ a {
 }
 
 
-/*
+
+
+
 .cover {
 
     width: 100%;
     height: 100%;
     background-color: hsla(0, 0%, 0%, 0.66);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    display: none;
     z-index: 2;
 }
-*/
+
+.mobileMenu {
+
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    display: none;
+    z-index: 3;
+}
+
+
+.mobileItem {
+
+    width: 100%;
+    height: 10%;
+    color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    font-family: verdana;
+    padding-top: 20px;
+}
+
+.mobileItem:first:child {
+
+    margin-top: 20px;
+}
+
+.mobileItem:hover {
+
+
+    background-color: #8c8c8c;
+    cursor: pointer;
+}
+
+.mobileItem:active {
+
+    background-color: #b3b3b3;
+}
 
 .clear {
 
@@ -250,11 +305,20 @@ a {
     float: left;
 }
 
+.subTitle {
+
+    margin-left: 50px;
+    font-size: 230%;
+    font-family: verdana, sans-serif;
+}
+
+
+
 .footer {
     width: 100%;
     height: 10%;
     background-color: lightgray;
-    background: linear-gradient(to bottom, rgba(206, 220, 231, 1) 0%, rgba(89, 106, 114, 1) 100%);
+    background: linear-gradient(to bottom, white 0%, rgba(89, 106, 114, 1) 100%);
 }
 
 .powered {
@@ -312,6 +376,44 @@ a {
     animation: subir 1s ease;
 }
 
+
+
+.animateAppearLeft {
+
+    animation: apearL 0.5s ease;
+    display: block;
+}
+
+.animateDisappearLeft {
+
+    animation: disapearL 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes apearL {
+
+
+    from {
+
+        left: -20%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes disapearL {
+
+    from {
+        left: 0;
+    }
+    to {
+
+        left: -40%;
+        display: none;
+    }
+}
 
 @keyframes subir {
     from {
@@ -378,6 +480,91 @@ a {
         display: block;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
