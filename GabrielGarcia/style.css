@@ -157,12 +157,12 @@ footer hr{  /*Estilizando barra hr*/
 #icons i{   /*Configurações gerais para todos os ícones da div de id icons*/
     position: absolute; /*Não respeita o limite da div pai*/
     margin: -6px -39px;
-    -webkit-filter: brightness(90%);    /*Uma pré-definição para navegadores específicos*/
+    filter: brightness(90%);    
     transition: 2s; 
 }
 
 #icons i:hover{ /*Adicionando um efeito hover (semelhante ao mouseover no JS)*/
-    -webkit-filter: brightness(150%);   
+    filter: brightness(150%);   
     transition: 0.7s;
 }
 
@@ -197,4 +197,9 @@ footer hr{  /*Estilizando barra hr*/
 
 #icons i.fa-google{ /*Ajustando o ícone do google*/
     color: #d34836;
+}
+
+/*Configurando fotos do arquivo photos.html*/
+.photos img{
+    width: 50%;    
 }
