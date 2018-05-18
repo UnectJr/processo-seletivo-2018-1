@@ -74,6 +74,13 @@ section{
     margin-top: 5px;    
     border-radius: 100%;    /*Usando o máximo possível sem precisar testar no develeper tool qual o limite*/
     box-shadow: 0px 0px 50px black; /*O primeiro parâmetro trata-se do deslocamento horizontal, o segundo do vertical e o terceiro é o quão concentrada está a cor escolhida*/
+    opacity: 1;
+    transition: 1.5s;
+}
+
+#playlistImg:hover{
+    opacity: 0.9;
+    transition: 1s;
 }
 
 #imgGames img{  /*Estilizando imagens dos games. Poderia até dispensar esse bloco utilizando o de cima uma vez que é bem parecido*/
@@ -106,10 +113,11 @@ footer{ /*Configurações semelhantes ao header para manter uma boa estética*/
     color: black;
     font-size: 2rem;
     margin-top: 68px;
+    margin-left: -30px;
 }
 
 .extraInfo p{
-    margin-left: 37px;
+    margin-left: 8px;
 }
 
 .extraInfo small{    /*Configurando posição da palavra " redes sociais"*/
@@ -131,14 +139,14 @@ footer hr{  /*Estilizando barra hr*/
 #icons ul{  /*Configurando ícones, removendo o marcador de ul*/
     list-style-type: none;
     text-align: center;
-    color:inherit;
+    color: inherit;
 }
 
 #icons ul li{   /*Estilizando lista*/
     position: relative; /*Precisei colocar já que não é da classe container*/
     display: inline-block;  /*inline-block: deixa tudo em um bloco de uma linha*/
     text-align: center;
-    margin: 30px 70px;
+    margin: 27px 70px;
     left: 175px;
     width: 80px;
     height: 80px; 
@@ -149,6 +157,13 @@ footer hr{  /*Estilizando barra hr*/
 #icons i{   /*Configurações gerais para todos os ícones da div de id icons*/
     position: absolute; /*Não respeita o limite da div pai*/
     margin: -6px -39px;
+    -webkit-filter: brightness(90%);    /*Uma pré-definição para navegadores específicos*/
+    transition: 2s; 
+}
+
+#icons i:hover{ /*Adicionando um efeito hover (semelhante ao mouseover no JS)*/
+    -webkit-filter: brightness(150%);   
+    transition: 0.7s;
 }
 
 #icons i.fa-github, #icons i.fa-spotify, #icons i.fa-google{    /*Estilizando todos os ícones exceto para o facebook*/
@@ -160,7 +175,26 @@ footer hr{  /*Estilizando barra hr*/
 }
 
 #icons i.fa-facebook{ /*Ajustando o ícone do facebook*/
+    color: rgb(71, 104, 255);
     font-size: 79px;
     left: 53px;
     top: 10px;
+}
+
+#icons i.fa-spotify{ /*Ajustando o ícone do spotify*/
+    color: #1db954;
+    border-radius: 100%;    /*Criando alguns padrões para não deixar as barras curvadas do ícone transparentes e sim com a aparência original*/  
+    top: 0px;
+}
+
+#icons hr{  /*Criei essa barra apenas para não deixar o fundo do spotify transparente!*/
+    background-color: black;
+    height: 70px;
+    width: 70px;
+    margin: 0px;
+    border-radius: 100%;
+}
+
+#icons i.fa-google{ /*Ajustando o ícone do google*/
+    color: #d34836;
 }
