@@ -100,7 +100,7 @@ nav#menu-principal ul#ul-menu-principal {
 /* INTERFACE GERAL */
 div#interface-geral {
 	width: 75%;
-	margin: 0 auto;
+	margin: 1% auto 0 auto;
 	background-color: red;
 }
 	/* resolve conteudo transborda por causa do float */
@@ -117,6 +117,15 @@ aside#info-fixo {
 	display: block;
 	float: left;
 }
+	div#sub-info-fixo {
+		margin: 2%;
+		background-color: purple;
+	}
+
+	div#sub-info-fixo h5 {
+		font-size: 0.95rem;
+		margin: 1.5rem 0;
+	}
 
 /* INTERFACE GERAL CONTEUDO */
 div#interface-geral-conteudo {
@@ -125,6 +134,14 @@ div#interface-geral-conteudo {
 	display: block;
 	float: right;
 }
+
+	/* SECTIONS DA INTERFACE GERAL */
+	section.sections-conteudo {
+		/* REMOVER AS DUAS LINHAS DEPOIS */
+		margin: 0 1% 1% 1%;
+		padding: 0.3rem;
+		background-color: chartreuse;
+	}
 
 /* FOOTER */
 footer#footer-principal {
