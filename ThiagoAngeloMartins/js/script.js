@@ -1,74 +1,51 @@
+//VARIÁVEIS
+
+// Guardando algumas referências do DOM 
 $navInfo = $('#navInfo');
 $navBio = $('#navBio');
 $navHobbies = $('#navHobbies');
 $navAnimes = $('#navAnimes');
 $navJogos = $('#navJogos');
 $navFilmes = $('#navFilmes');
-
 $mobileNavInfo = $('#mobileNavInfo');
 $mobileNavBio = $('#mobileNavBio');
 $mobileNavHobbies = $('#mobileNavHobbies');
 $mobileNavAnimes = $('#mobileNavAnimes');
 $mobileNavJogos = $('#mobileNavJogos');
 $mobileNavFilmes = $('#mobileNavFilmes');
-
-
-
-
 $contentSub = $('#contentSub');
 $content = $('#content');
 $pageDelete = $('#content');
-
 $pageInfo = $('#pageInfo');
 $pageBio = $('#pageBio');
 $pageHobbies = $('#pageHobbies');
 $pageAnimes = $('#pageAnimes');
 $pageJogos = $('#pageJogos');
 $pageFilmes = $('#pageFilmes');
-
 $navMobile = $('#navMobile');
 $mobileMenu = $('#mobileMenu');
 $cover = $('#cover');
-
 $animeSlideshow = $('#animeSlideshow');
-currentSlide = 1;
-
 $gameSlideShow = $('#gameSlideShow');
-currentSlide2 = 1;
-
 $filmeSlideShow = $('#filmeSlideShow');
-currentSlide3 = 1;
-
+//Referencia do css
+var cssVars = document.documentElement.style;
+// Definindo dois arrays de referencias para melhor manipulação
 navItens = [$navInfo, $navBio, $navHobbies, $navAnimes, $navJogos, $navFilmes];
 pageItens = [$pageInfo, $pageBio, $pageHobbies, $pageAnimes, $pageJogos, $pageFilmes];
 
-
-var cssVars = document.documentElement.style;
-
-// no comeco 
+//Definindo algumas variáveis que serão utilizadas 
 var pageAtual = 0;
+currentSlide = 1;
+currentSlide2 = 1;
+currentSlide3 = 1;
+pageWidth = 0;
 var Acabou;
 
-pageWidth = $contentSub.width() / 3;
 
-$content.scrollLeft(pageWidth);
+//FUNÇÕES
 
-for (var i = 0; i < 3; i++) {
-
-    $('.subPage').each(function(indice) {
-
-        if (indice == i) {
-
-            $(this).html(pageItens[i].html());
-
-        }
-
-
-
-    });
-
-}
-
+//Função para fazer a transição das imagens
 function slideTransition(elemento, id, slide) {
 
 
@@ -101,7 +78,7 @@ function slideTransition(elemento, id, slide) {
     }
 
 }
-
+//Função que controla a transição de imagens da página de animes
 function slideshow1() {
 
 
@@ -124,7 +101,7 @@ function slideshow1() {
     }
 
 }
-
+//Função que controla a transição de imagens da página de games
 function slideshow2() {
 
 
@@ -145,7 +122,7 @@ function slideshow2() {
     }
 
 }
-
+//Função que controla a transição de imagens da página de filmes
 function slideshow3() {
 
 
@@ -166,10 +143,7 @@ function slideshow3() {
 
 }
 
-setInterval(slideshow1, 5000);
-setInterval(slideshow2, 5000);
-setInterval(slideshow3, 5000);
-
+//Função que muda o menu o menu que o usuário está
 function MudarAtivo(elemento) {
 
 
@@ -177,14 +151,14 @@ function MudarAtivo(elemento) {
     elemento.addClass('navActive');
 
 }
-
+//Função para fazer a transição das telas do menu
 function Navigate(elemento) {
 
     pageWidth = $contentSub.width() / 3;
     meio = pageWidth;
     final = pageWidth * 2;
     comeco = 0;
-    console.log('tamanho: ' + pageWidth * 3);
+
     var ind = -1;
 
     for (var i = 0; i < navItens.length; i++) {
@@ -285,10 +259,9 @@ function Navigate(elemento) {
 
 
     }
-
-
 }
 
+//Função para esconder o menu mobile
 function HideMobileMenu(elemento) {
 
     if ($mobileMenu.hasClass("animateDisappearLeft")) {
@@ -308,7 +281,7 @@ function HideMobileMenu(elemento) {
 
 
 }
-
+//Função para mover para algum menu quando o tamanho da tela for modificado
 function MoveWindow() {
 
 
@@ -321,6 +294,14 @@ function MoveWindow() {
     }
 }
 
+//Definindo o intervalo de tempo que as funções irão ser disparadas novamente
+setInterval(slideshow1, 5000);
+setInterval(slideshow2, 5000);
+setInterval(slideshow3, 5000);
+
+// EVENTOS
+
+//Eventos que disparam ao click do usario no determinado elemento
 $navInfo.on("click", function() {
     MudarAtivo($navInfo);
     Navigate($navInfo, pageAtual);
@@ -347,12 +328,9 @@ $navFilmes.on("click", function() {
     MudarAtivo($navFilmes);
     Navigate($navFilmes, pageAtual);
 });
-
 $mobileNavInfo.on("click", function() {
 
     HideMobileMenu($navInfo);
-
-
 
 });
 $mobileNavBio.on("click", function() {
@@ -380,14 +358,6 @@ $mobileNavFilmes.on("click", function() {
     HideMobileMenu($navFilmes);
 
 });
-
-
-$content.on("scroll", function() {
-
-    console.log($content.scrollLeft());
-
-});
-
 $navMobile.on("click", function() {
 
 
@@ -406,10 +376,9 @@ $navMobile.on("click", function() {
 
     });
 
-
 });
 
-
+//Evento para exibir o conteúdo da página somente quando ela estier totalmente carregada
 $(window).on("load", function() {
 
 
@@ -428,9 +397,29 @@ $(window).on("load", function() {
     });
     $main.removeClass('getup');
 
+    pageWidth = $contentSub.width() / 3;
+
+    $content.scrollLeft(pageWidth);
+
+    for (var i = 0; i < 3; i++) {
+
+        $('.subPage').each(function(indice) {
+
+            if (indice == i) {
+
+                $(this).html(pageItens[i].html());
+
+            }
+
+
+
+        });
+
+    }
 
 });
 
+//Evento para mudar ajustar o conteúdo da tela sempre que o usuário terminar de redimensioná-la
 $(window).resize(function() {
 
 

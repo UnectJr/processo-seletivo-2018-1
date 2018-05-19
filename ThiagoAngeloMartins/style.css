@@ -1,15 +1,15 @@
+/* Variáveis Globais */
+
 :root {
 
     --imagem: url("img/slideshow1/1.jpg");
 }
 
 
+/* Estilos para elementos genéricos */
+
 body {
-    /*
-    background-image: url("img/background1.jpg");
-    background-repeat: repeat;
-    background-size: contain;
-    */
+
     background-color: lightgray;
     font-family: : verdana, sans-serif;
     width: 95%;
@@ -30,13 +30,15 @@ a {
 }
 
 
+
+
+
+/* Estilos para as demais classes */
+
 .main {
 
     width: 100%;
     height: 100%;
-    /*
-    background: linear-gradient(to bottom, rgba(252, 255, 244, 1) 0%, rgba(223, 229, 215, 1) 40%, rgba(179, 190, 173, 1) 100%);
-    */
     background: linear-gradient(to bottom, lightgray, white, lightgray);
     background-color: white;
     border-radius: 1px;
@@ -47,10 +49,6 @@ a {
     display: none;
     position: relative;
 }
-
-
-
-
 
 .cover {
 
@@ -219,9 +217,6 @@ a {
     color: white;
 }
 
-
-
-
 .navbarItem {
 
     width: 16.66%;
@@ -233,13 +228,8 @@ a {
     color: black;
     font-family: Impact, Charcoal, sans-serif;
     font-size: 150%;
-
     font-weight: bold;
     letter-spacing: 3px;
-    /*
-    outline: 1px solid white;
-    outline-offset: -1px;
-    */
     transition: background-color 0.4s ease;
     transition: box-shadow 0.4s ease;
 }
@@ -508,6 +498,11 @@ a {
 }
 
 
+
+
+
+/* Classes Definidas Somente para Animações */
+
 .animateAppearLeft {
 
     animation: apearL 0.3s ease;
@@ -557,6 +552,13 @@ a {
 }
 
 
+
+
+
+/* Keyframes para animações */
+
+
+/* Suporte para chrome, mozilla e safari */
 
 @-webkit-keyframes slideShow {
 
@@ -816,6 +818,11 @@ a {
     }
 }
 
+
+
+
+/* Propriedades de estilos a serem mudados se a tela tiver menos de 1013 pixels de largura */
+
 @media only screen and (max-width: 1013px) {
 
     .socialMedia {
@@ -890,6 +897,10 @@ a {
         height: 40%;
     }
 }
+
+
+
+
 
 
 
