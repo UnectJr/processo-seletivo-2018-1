@@ -65,6 +65,8 @@ p {
 /* HEADER PRINCIPAL */
 header#header-principal {
 	width: 100%;
+	position: fixed;
+	top: 0;
 	background-color: aqua;
 }
 
@@ -93,14 +95,23 @@ nav#menu-principal ul#ul-menu-principal {
 		display: inline-block;
 		text-transform: uppercase;
 		font-size: 0.8rem;
-		vertical-align: middle;
 		margin-left: 0.7rem;
+	}
+
+	nav#menu-principal ul#ul-menu-principal li a {
+		text-align: center;
+		vertical-align: middle;
+		text-decoration: none;
+	}
+
+	nav#menu-principal ul#ul-menu-principal li a:hover {
+		background-color: darkgoldenrod;
 	}
 
 /* INTERFACE GERAL */
 div#interface-geral {
 	width: 75%;
-	margin: 1% auto 0 auto;
+	margin: 4.5rem auto 0 auto;
 	background-color: red;
 }
 	/* resolve conteudo transborda por causa do float */
