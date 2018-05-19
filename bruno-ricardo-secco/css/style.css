@@ -6,37 +6,50 @@ body {
   background-color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
-  max-width: 1920px;
-  min-width: 400px;
 }
 
 .header { 
   background-color: black;
-  display: block;
-  max-width: 1920px;
-  min-width: 400px;
+  width: 100%;
+  position: fixed;
 }
 
 .header a {
-  display: inline;
-  align: "right";
+  display: inline-block;
+
 }
 
 .right {
   display: inline;
-  position: relative;
-  left: 73.5%;
+  float: right;  
 }
 
 .logo {
-  top: 2%;
-  display: inline;
-  position: relative;
-  top: -60px;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .logo h1 {
   font-family: 'Bangers', cursive;
   text-align: center;
   font-size: 500%;
+
+}
+
+.papper {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.box {
+  width: 25%;
+  margin: 10px;
+  float: left;
+  margin-left: 5.5%;
+}
+
+.clear {
+  clear: both;
 }
