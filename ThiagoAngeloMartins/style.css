@@ -811,6 +811,10 @@ a {
 
         width: 40%;
     }
+    .animes {
+
+        font-size: 1.7vh;
+    }
 
 
     .bannerInfo {
@@ -871,6 +875,9 @@ a {
         height: 40%;
     }
 }
+
+
+
 
 
 
