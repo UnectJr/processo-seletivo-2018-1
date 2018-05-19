@@ -75,20 +75,21 @@ body{
 }
 #origem{
 	border-bottom:2px solid #C0C0C0;
-	height: 400px;
+	height: 450px;
 	padding: 0 auto;
 	margin-bottom: 30px;
 	margin-left: 2%;
 	margin-right: 2%;
 }
 
-#slideshow_origem{
-	border: 5px solid black;
-	width: 45%;
-	height: 200px;
+#mapa{
+	width: 450px;
+	height: 250px;
+	margin-right: 2%;
+	margin-left: 2%;
 	display: block;
 	float: left;
-}
+}				
 #texto_origem{
 	padding-top: 15px;
 	margin-right: 2%;
@@ -110,12 +111,13 @@ body{
 	border-bottom:2px solid #C0C0C0;
 	
 }
-#img_hobbies{
+#indicações{
 	width: 40%;
-	margin-right: 2%;
-	height: 200px;
-	display: block;
+	margin-right: 8%;
+	height: 250px;
 	float: right;
+	font-size: 15px;
+	font-family:sans-serif;
 }
 #texto_hobbies{
 	width: 40%;
@@ -124,6 +126,7 @@ body{
 	float: left;
 	margin-left: 2%;		
 	text-align: justify;
+	font-family:sans-serif;
 }
 #computação{
 	height: 300px;
@@ -131,12 +134,12 @@ body{
 	margin-right:2%;
 	margin-left:2%;
 	height: 400px;
-	font-family: Sans Serif;
+	font-family:sans-serif;
 
 }
 #Comp{
 	font-size: 40px;
-	font-family: Sans Serif;
+	font-family:sans-serif;
 
 }
 #text_comp{
@@ -170,6 +173,7 @@ body{
 #redes{
 	margin-left: 3%;
 }
+
 #rodape{
 	background-color: #708090 ;
 	padding:1px;
