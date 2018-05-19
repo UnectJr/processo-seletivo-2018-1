@@ -416,7 +416,6 @@ $(window).on("load", function() {
         });
 
     }
-
 });
 
 //Evento para mudar ajustar o conteúdo da tela sempre que o usuário terminar de redimensioná-la
@@ -426,6 +425,4 @@ $(window).resize(function() {
     clearTimeout(Acabou);
 
     Acabou = setTimeout(MoveWindow, 250);
-
-
 });

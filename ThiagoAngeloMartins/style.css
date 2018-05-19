@@ -6,7 +6,17 @@
 }
 
 
+
+
+
+
 /* Estilos para elementos genéricos */
+
+html {
+
+    width: 100%;
+    height: 100%;
+}
 
 body {
 
@@ -28,6 +38,8 @@ a {
     color: black;
     text-decoration: none;
 }
+
+
 
 
 
@@ -489,6 +501,7 @@ a {
 .big {
 
     font-size: 250%;
+    /* Por algum motivo isso não funciona */
     text-decoration: none!important;
 }
 
@@ -496,6 +509,7 @@ a {
 
     background-image: url("img/maestria.gif");
 }
+
 
 
 
@@ -821,6 +835,16 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* Propriedades de estilos a serem mudados se a tela tiver menos de 1013 pixels de largura */
 
 @media only screen and (max-width: 1013px) {
@@ -897,6 +921,16 @@ a {
         height: 40%;
     }
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
