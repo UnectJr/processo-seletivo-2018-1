@@ -43,8 +43,11 @@ navItens = [$navInfo, $navBio, $navHobbies, $navAnimes, $navJogos, $navFilmes];
 pageItens = [$pageInfo, $pageBio, $pageHobbies, $pageAnimes, $pageJogos, $pageFilmes];
 
 
+var cssVars = document.documentElement.style;
+
 // no comeco 
 var pageAtual = 0;
+var Acabou;
 
 pageWidth = $contentSub.width() / 3;
 
@@ -66,6 +69,39 @@ for (var i = 0; i < 3; i++) {
 
 }
 
+function slideTransition(elemento, id, slide) {
+
+
+    if (elemento.hasClass('animateSlideShow' + id)) {
+
+
+        elemento.removeClass('animateSlideShow' + id);
+
+        setTimeout(function() {
+
+            cssVars.setProperty('--imagem', 'url("img/slideshow' + id + '/' + slide + '.jpg")');
+
+            elemento.addClass('animateSlideShow2');
+
+            elemento.css("background-image", 'url("img/slideshow' + id + '/' + slide + '.jpg")');
+
+        }, 1);
+
+
+    } else {
+
+        cssVars.setProperty('--imagem', 'url("img/slideshow' + id + '/' + slide + '.jpg")');
+
+        elemento.addClass('animateSlideShow' + id);
+
+        elemento.css("background-image", 'url("img/slideshow' + id + '/' + slide + '.jpg")');
+
+
+
+    }
+
+}
+
 function slideshow1() {
 
 
@@ -79,14 +115,10 @@ function slideshow1() {
 
             currentSlide = 1;
         }
-        console.log(currentSlide);
-        $animeSlideshow.animate({ opacity: 0 }, 200, function() {
 
-            $animeSlideshow.css("background-image", 'url("img/slideshow1/' + currentSlide + '.jpg")');
 
-            $animeSlideshow.animate({ opacity: 1 }, 200);
+        slideTransition($animeSlideshow, 1, currentSlide);
 
-        });
 
 
     }
@@ -107,20 +139,20 @@ function slideshow2() {
             currentSlide2 = 1;
         }
 
-        $gameSlideshow.show();
+        slideTransition($gameSlideshow, 2, currentSlide2);
 
+        /*
+                $gameSlideshow.animate({ opacity: 0 }, 200, function() {
 
-        $gameSlideshow.animate({ opacity: 0 }, 200, function() {
+                    console.log(currentSlide2);
 
-            console.log(currentSlide2);
+                    $gameSlideshow.css("background-image", 'url("img/slideshow2/' + currentSlide2 + '.jpg")');
 
-            $gameSlideshow.css("background-image", 'url("img/slideshow2/' + currentSlide2 + '.jpg")');
+                    $gameSlideshow.animate({ opacity: 1 }, 200);
 
-            $gameSlideshow.animate({ opacity: 1 }, 200);
+                });
 
-        });
-
-
+        */
     }
 
 }
@@ -128,7 +160,7 @@ function slideshow2() {
 function slideshow3() {
 
 
-    if (pageAtual == 4) {
+    if (pageAtual == 5) {
 
         $filmeSlideshow = $('#filmeSlideShow');
 
@@ -139,19 +171,7 @@ function slideshow3() {
             currentSlide3 = 1;
         }
 
-        $filmeSlideshow.show();
-
-
-        $filmeSlideshow.animate({ opacity: 0 }, 200, function() {
-
-            console.log(currentSlide3);
-
-            $filmeSlideshow.css("background-image", 'url("img/slideshow2/' + currentSlide3 + '.jpg")');
-
-            $filmeSlideshow.animate({ opacity: 1 }, 200);
-
-        });
-
+        slideTransition($filmeSlideshow, 3, currentSlide3);
 
     }
 
@@ -159,6 +179,7 @@ function slideshow3() {
 
 setInterval(slideshow1, 5000);
 setInterval(slideshow2, 5000);
+setInterval(slideshow3, 5000);
 
 function MudarAtivo(elemento) {
 
@@ -299,6 +320,18 @@ function HideMobileMenu(elemento) {
 
 }
 
+function MoveWindow() {
+
+
+    if (pageAtual == 0) {
+
+        $navBio.click();
+    } else {
+
+        $navInfo.click();
+    }
+}
+
 $navInfo.on("click", function() {
     MudarAtivo($navInfo);
     Navigate($navInfo, pageAtual);
@@ -405,6 +438,16 @@ $(window).on("load", function() {
 
     });
     $main.removeClass('getup');
+
+
+});
+
+$(window).resize(function() {
+
+
+    clearTimeout(Acabou);
+
+    Acabou = setTimeout(MoveWindow, 250);
 
 
 });
