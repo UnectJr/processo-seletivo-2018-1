@@ -7,6 +7,7 @@
 }*/
 
 header{ 
+    position: relative;
     width: 100%;
     height: 250px;
     background: radial-gradient(circle at 119px 300px , #0EBFE9 0%, rgba(0, 0, 250, 0) 47%, #0EBFE9 107%);  /*Penso em mudar essa cor*/  
@@ -19,11 +20,19 @@ header{
     position: relative;
 }
 
+#galaxy-header img{ /*Colocando uma imagem de fundo no header para não ficar muito neutro*/
+    margin: 0 -120px;
+    width: 1350px;
+    height: 250px;
+    box-shadow: 0 12px 15px black;
+    opacity: 0.2;
+}
+
 #imgIniciais {  /*Alguns ajustes quanto à posição das imagens. Sugestão: aumentar o tamanho das imagens !*/
     position: relative;
     width: 25%;
     text-align: center;
-    top: 5px;
+    top: -230px;
 }
 /*Fim das configurações do header/
 
@@ -41,11 +50,17 @@ section{
     font-weight: bolder;
 }
 
-#botoes button{ /*Configurando a aparência dos botões principal, fotos e extra* */
+#botoes button{ /*Configurando a aparência dos botões principal e  fotos*/
     margin: 0 15px;
     background: linear-gradient(white,#E8E8E8); /*Quando não coloco parâmetro algum na direção começa em top e vai para bottom*/
     border: none;   /*Desabilito todas as bordas para depois fazer a borda inferior*/
     border-bottom: #ADEAEA 3px groove;  /*groove deixa a borda mais suavizada*/
+    transition: 0.5s;
+}
+
+#botoes button:hover{
+    background: rgba(14, 191, 233, 0.5);
+    transition: 0.5s;
 }
 
 .info{  /*Configurações gerais da classe info*/
@@ -110,6 +125,7 @@ footer{ /*Configurações semelhantes ao header para manter uma boa estética*/
     height: 250px;
     background: radial-gradient(circle at 119px 300px , #0EBFE9 0%, rgba(0, 0, 250, 0) 47%, #0EBFE9 107%);  /*Penso em mudar essa cor*/  
     border-top: #ADEAEA 1px dashed;    
+    box-shadow: 0 0px 40px black;
 }
 
 .extraInfo p, small{     /*Configurações gerais para as palavras*/
@@ -203,7 +219,7 @@ footer hr{  /*Estilizando barra hr*/
 }
 
 #icons i.fa-spotify:hover{
-    color: #1db954;
+    color: #36df71;
     transition: 0.3s;
 }
 
