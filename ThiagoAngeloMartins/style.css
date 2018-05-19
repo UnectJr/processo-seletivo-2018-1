@@ -297,6 +297,36 @@ a {
     height: 100%;
 }
 
+
+.infoContain {
+
+    width: 100%;
+    height: 80%;
+}
+
+.infoImg {
+
+    width: 30%;
+    height: 90%;
+    float: right;
+    border-radius: 2px;
+    margin-right: 3%;
+    border: 1px solid white;
+    background-image: url("img/love.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+}
+
+.infoText {
+
+    width: 58%;
+    height: 100%;
+    float: left;
+    margin-left: 4%;
+}
+
 .subPage {
 
     width: 33.33%;
@@ -305,11 +335,35 @@ a {
     float: left;
 }
 
+.red {
+
+    color: red;
+    font-size: 24px;
+}
+
+.pageText {
+
+    text-indent: 10%;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 130%;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 250%;
+    margin-top: 2%;
+}
+
+.astronomia {
+
+    background-image: url("img/astronomia.jpg");
+}
+
 .subTitle {
 
     margin-left: 50px;
-    font-size: 230%;
-    font-family: verdana, sans-serif;
+    font-size: 180%;
+    font-family: 'Lucida Console', Monaco, monospace;
 }
 
 
@@ -479,7 +533,110 @@ a {
 
         display: block;
     }
+    .infoText {
+
+        float: none;
+        width: 100%;
+        height: 80%;
+        margin-left: 0%;
+    }
+    .pageText {
+
+        line-height: 130%;
+        font-size: 1.9vh;
+    }
+    .subTitle {
+
+        text-align: center;
+    }
+    .infoImg {
+
+        float: none;
+        margin-right: 0%;
+        margin: 1% auto 10px auto;
+        width: 80%;
+        height: 40%;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
