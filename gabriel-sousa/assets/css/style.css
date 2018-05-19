@@ -143,6 +143,14 @@ div#interface-geral-conteudo {
 		background-color: chartreuse;
 	}
 
+	section.sections-conteudo ul {
+		margin-bottom: 2%;
+	}
+
+		section.sections-conteudo ul li {
+			list-style: none;
+		}
+
 /* FOOTER */
 footer#footer-principal {
 	width: 100%;
