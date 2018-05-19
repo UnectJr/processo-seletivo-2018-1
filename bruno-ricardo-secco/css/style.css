@@ -8,10 +8,13 @@ body {
   padding: 0;
 }
 
+p {
+  height: 80%;
+}
+
 .header { 
   background-color: black;
   width: 100%;
-  position: fixed;
 }
 
 .header a {
@@ -41,6 +44,7 @@ body {
 .papper {
   margin-left: 15%;
   margin-right: 15%;
+  height: 1500px;
 }
 
 .box {
@@ -48,8 +52,23 @@ body {
   margin: 10px;
   float: left;
   margin-left: 5.5%;
+  height: 40%;
 }
 
 .clear {
   clear: both;
+}
+
+.center a{
+  display: inline-block;
+  position: relative;
+  left: 45%;
+}
+
+#bottom_bar {
+  position: relative;
+  bottom: 0px;
+  height: 5%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
 }
