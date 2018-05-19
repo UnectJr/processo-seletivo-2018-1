@@ -3,9 +3,24 @@ html, body{
     width: 100%;
 }
 
+section{
+    position: relative;
+    width: 100%;
+    display: table;
+    height: 100vh;
+}
+
 body{
     margin-bottom: 70px;
 }
+
+h1{
+    font-family: Poppins;
+}
+h2,h3,h4,h5,h6{
+    font-family: Roboto;
+}
+
 /* --------------------------------NAVBAR---------------------------------------- */
 .navbar-default{
     background: rgba(202, 196, 196, 0.0) !important;
@@ -14,6 +29,7 @@ body{
     padding: 0 15px 5px;  
     
 }
+
 .navbar-default li a{
     color: #e67e22;
     border-bottom: 2px solid #e67e22; 
@@ -24,15 +40,10 @@ body{
     color: #000 !important;
     font-weight: bold;
 }
-
+/*------------------------------------------------------------------------------*/
 #showcase {
-    /*background: url(../images/mouse2.jpg) no-repeat center center fixed;*/
-    display: table;
-    height: 100%;
-    position: relative;
-    width: 100%;
-    background-size: cover; 
-    
+    /*background: url(../images/mouse2.jpg) no-repeat center center fixed;*/ 
+    background-size: cover;   
 }
 
 .landing-text{
@@ -41,103 +52,53 @@ body{
     vertical-align: middle;
 }
 
-h1{
-    font-family: Poppins;
-}
-h2,h3,h4,h5,h6{
-    font-family: Roboto;
-}
-
-.padding{
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-
+/*-------------------------------------------------------------------------------*/
 .container{
     /*background-image: url(/images/fundo-home.jpg);*/
     margin-top: 40px;
-    display: table-cell;
     text-align: center;
     vertical-align: middle;
     font-size: 23px;
     font-family: 'Josefin Sans';
     padding: 50px 0 30px 0;
-   
-
-    height: 100%;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-}
-.lista ul{
-    list-style: none;
-    
-}
-.copy{
-    width: 70%;
-    margin-left: 15%;
-}
-.lista h2{
-   font-weight: bold; 
-}
-.lista{
-   /* background: url(../images/ceu-azul.jpg) no-repeat center center fixed;*/
-    display: table-cell;
-    height: 100%;
-    position: relative;
-    width: 100%;
     background-size: cover;
 }
 
+/*-------------------------------------------------------------------------------*/
 
-.linguagens-showcase{
-    list-style: none;
-    width: 100%;
-    margin-left: 450px;
-}
-.linguagens-showcase li{
-    display: block;
-    width: 25%;
-    float: left;
-}
-
-.logos{
-    width: 100;
-    margin:0;
-    overflow: hidden;
-}
-
-.logos img{
-    width:100%;
-    height: 100%;
-    margin-top: 20px;
-    transform: scale(1.15);
-    transition: all 0.5s;
-    border-radius: 30%;
-}
-.logos img:hover{
-    transform: scale(1.05);
-}
-
-.linguagens{
-    display: table-cell;
-    height: 100%;
-    position: relative;
-    width: 100%;
-    background-size: cover;
-    margin-top: 60px;
-}
 
 .title-ferramentas{
-    margin-left: 50px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 35px;
-    font-family: Roboto;
+    font-family: Poppins;
     
 }
+#progresso{
+    margin-top: 80px;
+    margin-left: 60px;
+}
+.progress{
+    height: 40px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    
+}
+
+.progress-text{
+    font-family: Poppins;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+}
+
+.showcase .ferramentas{ 
+    
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
 
