@@ -430,6 +430,24 @@ a {
     animation: subir 1s ease;
 }
 
+.animes {
+
+    font-weight: 500;
+    line-height: 100%;
+    text-decoration: underline;
+}
+
+.animeImg {
+
+    background-image: url("img/slideshow1/1.jpg");
+    opacity: 1;
+}
+
+.gameImg {
+
+    background-image: url("img/slideshow2/1.jpg");
+    opacity: 1;
+}
 
 
 .animateAppearLeft {
@@ -444,6 +462,7 @@ a {
     animation-fill-mode: forwards;
 }
 
+@keyframes slideShow {}
 
 @keyframes apearL {
 
@@ -553,11 +572,25 @@ a {
 
         float: none;
         margin-right: 0%;
-        margin: 1% auto 10px auto;
+        margin: 20px auto 10px auto;
         width: 80%;
         height: 40%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

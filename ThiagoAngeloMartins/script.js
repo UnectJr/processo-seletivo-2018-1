@@ -30,6 +30,12 @@ $navMobile = $('#navMobile');
 $mobileMenu = $('#mobileMenu');
 $cover = $('#cover');
 
+$animeSlideshow = $('#animeSlideshow');
+currentSlide = 1;
+
+$gameSlideShow = $('#gameSlideShow');
+currentSlide2 = 1;
+
 navItens = [$navInfo, $navBio, $navHobbies, $navAnimes, $navJogos, $navFilmes];
 pageItens = [$pageInfo, $pageBio, $pageHobbies, $pageAnimes, $pageJogos, $pageFilmes];
 
@@ -57,8 +63,65 @@ for (var i = 0; i < 3; i++) {
 
 }
 
+function slideshow1() {
 
-//
+
+    if (pageAtual == 3) {
+
+        $animeSlideshow = $('#animeSlideshow');
+
+        currentSlide++;
+
+        if (currentSlide > 10) {
+
+            currentSlide = 1;
+        }
+        console.log(currentSlide);
+        $animeSlideshow.animate({ opacity: 0 }, 200, function() {
+
+            $animeSlideshow.css("background-image", 'url("img/slideshow1/' + currentSlide + '.jpg")');
+
+            $animeSlideshow.animate({ opacity: 1 }, 200);
+
+        });
+
+
+    }
+
+}
+
+function slideshow2() {
+
+
+    if (pageAtual == 4) {
+
+        $gameSlideshow = $('#gameSlideShow');
+
+        currentSlide2++;
+
+        if (currentSlide2 > 10) {
+
+            currentSlide2 = 1;
+        }
+
+
+        console.log(currentSlide);
+        $gameSlideshow.animate({ opacity: 0 }, 200, function() {
+
+            $gameSlideshow.css("background-image", 'url("img/slideshow2/' + currentSlide2 + '.jpg")');
+
+            $gameSlideshow.animate({ opacity: 1 }, 200);
+
+        });
+
+
+    }
+
+}
+
+setInterval(slideshow1, 5000);
+setInterval(slideshow2, 5000);
+
 function MudarAtivo(elemento) {
 
 
@@ -298,5 +361,6 @@ $(window).on("load", function() {
 
     });
     $main.removeClass('getup');
+
 
 });
