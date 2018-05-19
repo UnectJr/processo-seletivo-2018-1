@@ -311,7 +311,7 @@ a {
     float: right;
     border-radius: 2px;
     margin-right: 3%;
-    border: 1px solid white;
+
     background-image: url("img/love.png");
     background-repeat: no-repeat;
     background-position: center, center;
@@ -449,6 +449,23 @@ a {
     opacity: 1;
 }
 
+.filmeImg {
+
+    background-image: url("img/slideshow3/1.jpg");
+    opacity: 1;
+}
+
+.big {
+
+    font-size: 250%;
+    text-decoration: none!important;
+}
+
+.maestriaImg {
+
+    background-image: url("img/maestria.gif");
+}
+
 
 .animateAppearLeft {
 
@@ -577,6 +594,15 @@ a {
         height: 40%;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 

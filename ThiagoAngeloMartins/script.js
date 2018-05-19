@@ -36,6 +36,9 @@ currentSlide = 1;
 $gameSlideShow = $('#gameSlideShow');
 currentSlide2 = 1;
 
+$filmeSlideShow = $('#filmeSlideShow');
+currentSlide3 = 1;
+
 navItens = [$navInfo, $navBio, $navHobbies, $navAnimes, $navJogos, $navFilmes];
 pageItens = [$pageInfo, $pageBio, $pageHobbies, $pageAnimes, $pageJogos, $pageFilmes];
 
@@ -104,13 +107,48 @@ function slideshow2() {
             currentSlide2 = 1;
         }
 
+        $gameSlideshow.show();
 
-        console.log(currentSlide);
+
         $gameSlideshow.animate({ opacity: 0 }, 200, function() {
+
+            console.log(currentSlide2);
 
             $gameSlideshow.css("background-image", 'url("img/slideshow2/' + currentSlide2 + '.jpg")');
 
             $gameSlideshow.animate({ opacity: 1 }, 200);
+
+        });
+
+
+    }
+
+}
+
+function slideshow3() {
+
+
+    if (pageAtual == 4) {
+
+        $filmeSlideshow = $('#filmeSlideShow');
+
+        currentSlide3++;
+
+        if (currentSlide3 > 10) {
+
+            currentSlide3 = 1;
+        }
+
+        $filmeSlideshow.show();
+
+
+        $filmeSlideshow.animate({ opacity: 0 }, 200, function() {
+
+            console.log(currentSlide3);
+
+            $filmeSlideshow.css("background-image", 'url("img/slideshow2/' + currentSlide3 + '.jpg")');
+
+            $filmeSlideshow.animate({ opacity: 1 }, 200);
 
         });
 
@@ -173,6 +211,7 @@ function Navigate(elemento) {
             $('.subPage').each(function(indice) {
 
                 if (indice == 1) {
+
                     $pageDelete = $(this);
                 }
 
@@ -181,6 +220,8 @@ function Navigate(elemento) {
             var $tempPage = $pageDelete.detach();
 
             $contentSub.append($tempPage);
+
+            $tempPage.html('');
 
 
         });
@@ -213,6 +254,7 @@ function Navigate(elemento) {
             $('.subPage').each(function(indice) {
 
                 if (indice == 1) {
+
                     $pageDelete = $(this);
                 }
 
@@ -221,6 +263,8 @@ function Navigate(elemento) {
             var $tempPage = $pageDelete.detach();
 
             $contentSub.prepend($tempPage);
+
+            $tempPage.html('');
 
 
 
