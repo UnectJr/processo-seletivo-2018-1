@@ -141,18 +141,7 @@ function slideshow2() {
 
         slideTransition($gameSlideshow, 2, currentSlide2);
 
-        /*
-                $gameSlideshow.animate({ opacity: 0 }, 200, function() {
 
-                    console.log(currentSlide2);
-
-                    $gameSlideshow.css("background-image", 'url("img/slideshow2/' + currentSlide2 + '.jpg")');
-
-                    $gameSlideshow.animate({ opacity: 1 }, 200);
-
-                });
-
-        */
     }
 
 }
