@@ -1,0 +1,363 @@
+@charset"utf-8";
+
+body {
+   	padding: 0;
+	margin: 0;
+	font-family: 'Lato';
+	height: 500px;
+	width: 1350px;
+	display: block;
+	overflow-x: hidden;
+}
+
+i{margin:0 5px 5px 0; line-height:normal;}
+h1{margin:0; padding:0; font-size:22px; margin-top:5px; font-variant:small-caps; color: #EAEAEA;}
+h2, h3, h4{text-align-last: center; color: #3C4348}
+p{font-size: 17px; color: #000000; }
+hr{width: 75%; color: #000000;}
+
+footer{ 
+	width: 100%;
+	height: 35%;
+	background-color: gray;
+	float: left;
+	position: relative;
+	display: block;
+	
+	}
+
+
+
+
+#menu ul li { display: inline; }
+
+
+
+.banner_nome{
+	font-size: 20px;
+	font-family: 'Roboto';
+	color: white;
+	float: left;
+	position: relative;
+	display: block;
+	top: -35px;
+	left: 5%;
+	color: #3C4348;
+}
+
+.banner_curso{
+	top: 2%;
+	font-size: 15px;
+	font-family: 'Roboto';
+	color: white;
+	float: left;
+	position: relative;
+	display: block;
+	top: -5%;
+	left: -10%;
+	color: #3C4348;
+}
+
+.topbar{
+	padding: 30px;
+	text-align-last: center;
+	background-color: gray;
+}
+
+.menu ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+
+#menu ul li a {
+	text-align-last: center;
+	font-style: italic;
+	font-size: 18px;
+    padding: 2px 50px;
+    display: inline-block;
+    background-color:gray;
+    color: #333;
+    text-decoration: none;
+
+}
+
+
+.conteudo{
+	background-color: #F5F5DC;
+	text-align-last: center;
+	position: relative;
+	display: block;
+	width: calc(100% - 300px - 180px);
+	height: calc(100% - 80px);
+	float: right;
+	padding: 80px 15px 20px 90px;
+}
+
+.imagem{
+	float: left;
+	position: relative;
+	display: block;
+	width: 27.77%;
+	height: 104%;
+	background-color: #F5F5DC;
+}
+
+.foto{
+	margin: 20%;
+	left: 30%;
+	float: left;
+	background-repeat: no-repeat;
+	position: relative;
+	height: 200px;
+	width: 200px;
+	display: block;
+}
+
+.contato{
+	position: relative;
+	display: block;
+	float: left;
+	padding: 0 100px 20px 650px;
+}
+
+.curriculo{
+	position: relative;
+	display: block;
+	float: left;
+	background-color: #F5F5DC;
+	padding: 100px 600px 50px 600px;
+	width: calc(100% - 300px - 180px);
+	height: calc(100% - 80px);	
+}
+
+.div_esquerda{
+	position: relative;
+	display: block;
+	float: left;
+	width: 80%;
+	height: 140%;
+	top: -100px;
+	left: -69%;
+	background-color: #F5F5DC;
+}
+
+.div_direita{
+	position: relative;
+	display: block;
+	float: left;
+	width: 90%;
+	height: 136%;
+	top: -688px;
+	left: 11%;
+	background-color: #F5F5DC;
+}
+
+
+.telefone{
+	position: relative;
+	display: block;
+	float: left;
+	height: 15%;
+	width: 15%;
+	background-repeat: no-repeat;
+	left: 20%;
+	margin: 3%;
+}
+
+
+.email{
+	position: relative;
+	display: block;
+	float: left;
+	height: 17%;
+	width: 17%;
+	background-repeat: no-repeat;
+	left: 15%;
+	margin: 3%;
+}
+
+.phone{
+	font-family: "Lato";
+	position: relative;
+	display: block;
+	float: left;
+	left: 15%;
+	margin: 6%;
+}
+
+
+.mail{
+	font-family: "Lato";
+	position: relative;
+	display: block;
+	float: left;
+	left: 40%;
+	top: -40px;
+}
+
+.face{
+	background-repeat: no-repeat;
+	position: relative;
+	display: block;
+	width: 2%;
+	height: 2%;
+	float: left;
+	left: 20%;
+	top: 50px;
+}
+
+.git{
+	background-repeat: no-repeat;
+	position: relative;
+	display: block;
+	width: 2%;
+	height: 2%;
+	float: left;
+	left: 22%;
+	top: 50px;
+}
+
+.linkedin{
+	background-repeat: no-repeat;
+	position: relative;
+	display: block;
+	width: 2%;
+	height: 2%;
+	float: left;
+	left: 24%;
+	top: 50px;
+}
+
+.formacao_academica{
+	position: relative;
+	display: block;
+	float: left;
+	left: 43%;
+	top: 20px;	
+}
+
+.p_formacao{
+	position: relative;
+	display: block;
+	float: left;
+	left: -10%;
+	top: 60px;
+}
+
+.experiencia_profissional{
+	position: relative;
+	display: block;
+	float: left;
+	left: 17%;
+	top: 80px;
+}
+
+.fundap{
+	position: relative;
+	display: block;
+	float: left;
+	left: -5%;
+	top: 120px;
+}
+
+.cargo{
+	position: relative;
+	display: block;
+	float: left;
+	left: -55%;
+	top: 30%;
+}
+
+.atividades{
+	position: relative;
+	display: block;
+	float: left;
+	left: 16%;
+	top: 140px;
+	overflow: inherit;
+	text-align-last: center;
+
+}
+
+.qualificacoes{
+	position: relative;
+	display: block;
+	float: left;
+	left: 15%;
+	top: 20px;
+}
+
+.p_ingles{
+	position: relative;
+	display: block;
+	float: left;
+	left: -40%;
+	top: 12%;
+}
+
+.p_espanhol{
+	position: relative;
+	display: block;
+	float: left;
+	left: -53%;
+	top: 18%;
+}
+
+.p_gestao{
+	position: relative;
+	display: block;
+	float: left;
+	left: 4.5%;
+	top: 80px;
+	text-align-last: center;
+}
+
+.p_instrumental{
+	position: relative;
+	display: block;
+	float: left;
+	left: 5%;
+	top: 75px;
+	text-align-last: center;
+}
+
+.linguagens{
+	position: relative;
+	display: block;
+	float: left;
+	left: -43%;
+	top: 140px;
+}
+
+.html_css{
+	position: relative;
+	display: block;
+	float: left;
+	left: -81%;
+	top: 180px;
+	font-size: 16px;
+}
+
+.java{
+
+	position: relative;
+	display: block;
+	float: left;
+	left: -81%;
+	top: 160px;
+	font-size: 16px;
+}
+
+.sql{
+
+	position: relative;
+	display: block;
+	float: left;
+	left: -85.5%;
+	top: 190px;
+	font-size: 16px;
+}
+
+
