@@ -61,7 +61,7 @@ h2,h3,h4,h5,h6{
     text-align: center;
     vertical-align: middle;
     font-size: 23px;
-    font-family: 'Josefin Sans';
+    font-family: 'Roboto Mono', monospace;
     padding: 50px 0 30px 0;
     background-size: cover;
 }
@@ -75,12 +75,13 @@ h2,h3,h4,h5,h6{
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 35px;
-    font-family: Rubik;
+    font-family: 'Roboto Mono', monospace;
     
 }
-#progresso{
+.progresso{
     margin-top: 80px;
     margin-left: 60px;
+    
 }
 .progress{
     height: 20px;
@@ -95,8 +96,8 @@ h2,h3,h4,h5,h6{
     text-align: center;
     height: auto;
     margin-top: 9px;
-    font-size: 10px;
-    font-family: 'Josefin Sans';
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .showcase .ferramentas{ 
@@ -104,7 +105,59 @@ h2,h3,h4,h5,h6{
     display: table-cell;
     vertical-align: middle;
 }
+/*------------------------------------------------------------------------------------------------*/
+.form-container{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
 
+.wrapper > *{
+    padding: 1em; 
+}
+
+.contact{
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1em;
+}
+.contact label{
+    font-family:'Roboto Mono', monospace;
+}
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.form-container button,.form-container input, .form-container textarea{
+    width: 100%;
+    border:1px solid;
+}
+
+.form-container button{
+    width: 100%;
+    border: 0;
+    margin-top: 6px;
+    
+}
+
+.form-container button:hover, .form-container button:focus{
+    outline: 0;
+    transition: background-color 1s ease-out;
+}
+.alert{
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    background: #79c879;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
 /*------------------------------------------------------------------------------------------------*/
 
 .social-icon a{
