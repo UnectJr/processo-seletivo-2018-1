@@ -62,7 +62,7 @@ p {
 	margin-bottom: 1rem;
 }
 
-/* HEADER PRINCIPAL */
+/* DIVISAO GERAL PARA O CABECALHO PRINCIPAL */
 header#header-principal {
 	width: 100%;
 	position: fixed;
@@ -108,14 +108,14 @@ nav#menu-principal ul#ul-menu-principal {
 		background-color: darkgoldenrod;
 	}
 
-/* INTERFACE GERAL */
-div#interface-geral {
+/* DIVISAO GERAL PARA O CURRICULO */
+div#divisao-curriculo {
 	width: 75%;
 	margin: 4.5rem auto 0 auto;
 	background-color: red;
 }
 	/* resolve conteudo transborda por causa do float */
-	div#interface-geral::after {
+	div#divisao-curriculo::after {
 		content: "";
 		clear: both;
 		display: table;
@@ -162,7 +162,23 @@ div#interface-geral-conteudo {
 			list-style: none;
 		}
 
-/* FOOTER */
+/* DIVISAO GERAL PARA O BLOG */
+div#divisao-blog {
+	width: 75%;
+	height: 200px;
+	margin: 0.5rem auto 0 auto;
+	background-color: lightcoral;
+}
+
+/* DIVISAO GERAL PARA O CONTATO */
+div#divisao-contato {
+	width: 75%;
+	height: 200px;
+	margin: 0.5rem auto 0 auto;
+	background-color: crimson;
+}
+
+/* DIVISAO GERAL PARA O RODAPE */
 footer#footer-principal {
 	width: 100%;
 	background-color: blueviolet;
