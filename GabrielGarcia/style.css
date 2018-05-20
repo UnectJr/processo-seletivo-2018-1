@@ -1,10 +1,10 @@
 /*Gabriel Garcia*/
 
-/*Inicio das configurações do header*/
-
 /**{    Uma estratégia usada para saber como está sendo dividida minha pagina
     border: 1px solid rgba(0,0,0, 0.7);
 }*/
+
+/*Inicio das configurações do header*/
 
 header{ 
     position: relative;
@@ -26,14 +26,30 @@ header{
     height: 250px;
     box-shadow: 0 12px 15px black;
     opacity: 0.2;
+    filter: brightness(100%);
+    transition: 0.5s;
 }
 
-#imgIniciais {  /*Alguns ajustes quanto à posição das imagens. Sugestão: aumentar o tamanho das imagens !*/
+#galaxy-header img:hover{ 
+    opacity: 0.4;
+    filter: brightness(150%);
+    filter: blur(1px);
+    transition: 0.5s;
+}
+
+#imgIniciais{  /*Alguns ajustes quanto à posição das imagens. Sugestão: aumentar o tamanho das imagens !*/
     position: relative;
     width: 25%;
     text-align: center;
     top: -230px;
+    transition: 0.5s;
 }
+
+#imgIniciais:hover{  /*Alguns ajustes quanto à posição das imagens. Sugestão: aumentar o tamanho das imagens !*/
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 /*Fim das configurações do header/
 
 /*Inicio das configurações do section*/
@@ -94,12 +110,11 @@ section{
     margin-top: 5px;    
     border-radius: 100%;    /*Usando o máximo possível sem precisar testar no develeper tool qual o limite*/
     box-shadow: 0px 0px 50px black; /*O primeiro parâmetro trata-se do deslocamento horizontal, o segundo do vertical e o terceiro é o quão concentrada está a cor escolhida*/
-    opacity: 1;
     transition: 1.5s;
 }
 
 #playlistImg:hover{
-    opacity: 0.9;
+    opacity: 0.8;
     transition: 1s;
 }
 
@@ -233,7 +248,6 @@ footer hr{  /*Estilizando barra hr*/
     transition: 0.3s;
 }
 
-
 #icons hr{  /*Criei essa barra apenas para não deixar o fundo do spotify transparente!*/
     background-color: black;
     height: 70px;
@@ -241,8 +255,7 @@ footer hr{  /*Estilizando barra hr*/
     margin: 0px;
     border-radius: 100%;
 }
-
-
+/*Fim das configurações do footer*/
 
 /*Configurando fotos do arquivo photos.html*/
 
