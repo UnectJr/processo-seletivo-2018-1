@@ -3,39 +3,34 @@
 body {
    	padding: 0;
 	margin: 0;
-	font-family: 'Lato';
-	height: 500px;
-	width: 1350px;
-	display: block;
-	overflow-x: hidden;
 }
 
-i{margin:0 5px 5px 0; line-height:normal;}
 h1{margin:0; padding:0; font-size:22px; margin-top:5px; font-variant:small-caps; color: #EAEAEA;}
 h2, h3, h4{text-align-last: center; color: #3C4348}
-p{font-size: 17px; color: #000000; }
-hr{width: 75%; color: #000000;}
+p{font-size: 17px; color: #000000; font-family: 'Monaco'; }
+
 
 footer{ 
+
 	width: 100%;
-	height: 35%;
+	height: 0%;
 	background-color: gray;
 	float: left;
 	position: relative;
 	display: block;
-	
-	}
+}
 
 
-
-
-#menu ul li { display: inline; }
-
-
+#menu ul li { 
+	display: inline; 
+	font-family: 'Georgia';
+	margin: 0;
+	padding: 0;
+}
 
 .banner_nome{
 	font-size: 20px;
-	font-family: 'Roboto';
+	font-family: 'Georgia';
 	color: white;
 	float: left;
 	position: relative;
@@ -48,7 +43,7 @@ footer{
 .banner_curso{
 	top: 2%;
 	font-size: 15px;
-	font-family: 'Roboto';
+	font-family: 'Georgia';
 	color: white;
 	float: left;
 	position: relative;
@@ -62,6 +57,7 @@ footer{
 	padding: 30px;
 	text-align-last: center;
 	background-color: gray;
+	position: relative;
 }
 
 .menu ul {
@@ -84,26 +80,6 @@ footer{
 }
 
 
-.conteudo{
-	background-color: #F5F5DC;
-	text-align-last: center;
-	position: relative;
-	display: block;
-	width: calc(100% - 300px - 180px);
-	height: calc(100% - 80px);
-	float: right;
-	padding: 80px 15px 20px 90px;
-}
-
-.imagem{
-	float: left;
-	position: relative;
-	display: block;
-	width: 27.77%;
-	height: 104%;
-	background-color: #F5F5DC;
-}
-
 .foto{
 	margin: 20%;
 	left: 30%;
@@ -114,6 +90,48 @@ footer{
 	width: 200px;
 	display: block;
 }
+
+
+.descricao{
+	position: relative;
+	display: block;
+	float: left;
+	top: -480px;
+	left:  25%;
+	width: 150%;
+
+}
+
+.fundo{
+	position: relative;
+	display: block;
+	float: left;
+	width: 1350px;
+	height: 550px;
+	background-repeat: no-repeat;
+}
+
+.fundo_curriculo{
+	position: relative;
+	display: block;
+	float: left;
+	width: 1350px;
+	height: 550px;
+	background-repeat: no-repeat;
+
+}
+
+
+.fundo_contato{
+	position: relative;
+	display: block;
+	float: left;
+	width: 1350px;
+	height: 550px;
+	background-repeat: no-repeat;
+
+}
+
 
 .contato{
 	position: relative;
@@ -126,32 +144,9 @@ footer{
 	position: relative;
 	display: block;
 	float: left;
-	background-color: #F5F5DC;
-	padding: 100px 600px 50px 600px;
-	width: calc(100% - 300px - 180px);
-	height: calc(100% - 80px);	
-}
-
-.div_esquerda{
-	position: relative;
-	display: block;
-	float: left;
-	width: 80%;
-	height: 140%;
-	top: -100px;
-	left: -69%;
-	background-color: #F5F5DC;
-}
-
-.div_direita{
-	position: relative;
-	display: block;
-	float: left;
-	width: 90%;
-	height: 136%;
-	top: -688px;
-	left: 11%;
-	background-color: #F5F5DC;
+	background-color: #F8F8FF;
+	width: 1300px;
+	height: 600px;	
 }
 
 
@@ -231,133 +226,210 @@ footer{
 }
 
 .formacao_academica{
+	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
-	left: 43%;
-	top: 20px;	
+	left: 35%;
+	top: -530px;	
 }
 
 .p_formacao{
 	position: relative;
 	display: block;
 	float: left;
-	left: -10%;
-	top: 60px;
+	left: 10%;
+	top: -530px;
 }
 
 .experiencia_profissional{
+	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
-	left: 17%;
-	top: 80px;
+	left: 35%;
+	top: -530px;
 }
 
 .fundap{
+
+	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
-	left: -5%;
-	top: 120px;
+	left: 4%;
+	top: -490px;
 }
 
 .cargo{
 	position: relative;
 	display: block;
 	float: left;
-	left: -55%;
-	top: 30%;
+	left: -53%;
+	top: -82%;
 }
 
 .atividades{
 	position: relative;
 	display: block;
 	float: left;
-	left: 16%;
-	top: 140px;
+	left: 10.5%;
+	top: -460px;
 	overflow: inherit;
-	text-align-last: center;
+	
 
 }
 
 .qualificacoes{
+	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
-	left: 15%;
-	top: 20px;
+	left: 140%;
+	top: -780px;
 }
 
 .p_ingles{
 	position: relative;
 	display: block;
 	float: left;
-	left: -40%;
-	top: 12%;
+	left: 60%;
+	top: -131%;
 }
 
 .p_espanhol{
 	position: relative;
 	display: block;
 	float: left;
-	left: -53%;
-	top: 18%;
+	left: 129.5%;
+	top: -135%;
 }
 
 .p_gestao{
 	position: relative;
 	display: block;
 	float: left;
-	left: 4.5%;
-	top: 80px;
-	text-align-last: center;
+	left: 129.5%;
+	top: -760px;
 }
 
 .p_instrumental{
 	position: relative;
 	display: block;
 	float: left;
-	left: 5%;
-	top: 75px;
-	text-align-last: center;
+	left: 129.5%;
+	top: -770px;
 }
 
 .linguagens{
+	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
-	left: -43%;
-	top: 140px;
+	left: 170%;
+	top: -780px;
 }
 
 .html_css{
 	position: relative;
 	display: block;
 	float: left;
-	left: -81%;
-	top: 180px;
+	left: 112.5%;
+	top: -740px;
 	font-size: 16px;
 }
 
 .java{
-
 	position: relative;
 	display: block;
 	float: left;
-	left: -81%;
-	top: 160px;
+	left: 98%;
+	top: -715px;
 	font-size: 16px;
 }
 
 .sql{
-
 	position: relative;
 	display: block;
 	float: left;
-	left: -85.5%;
-	top: 190px;
+	left: 91.2%;
+	top: -690px;
 	font-size: 16px;
 }
 
+.c{
+	position: relative;
+	display: block;
+	float: left;
+	left: 85.5%;
+	top: -665px;
+	font-size: 16px;
+}
 
+.nome{
+	position: relative;
+	display: block;
+	float: right;
+	left:  40%;
+	top: -440px;
+	width: 50%;
+}
+
+.Email{
+	position: relative;
+	display: block;
+	float: right;
+	left:  40%;
+	top: -420px;
+	width: 50%;
+}
+
+.assunto{
+	position: relative;
+	display: block;
+	float: right;
+	left: 40%;
+	top: -400px;
+	width: 50%;
+}
+
+.mensagem{
+	position: relative;
+	display: block;
+	float: right;
+	left:   18%;
+	top: -370px;
+	width: 50%;
+	height: 100px;	
+}
+
+.enviar{
+	position: relative;
+	display: block;
+	float: right;
+	left:   68%;
+	top: -250px;
+}
+
+
+.curriculo{
+	height: 550px;
+	width: 550px;
+}
+
+
+.h_nome{
+	position: relative;
+	display: block;
+	float: left;
+	top: -500px;
+	left: 80%; 
+}
+
+.p_contato{
+	position: relative;
+	display: block;
+	float: right;
+	top: -500px;
+	right: 0%;
+}
