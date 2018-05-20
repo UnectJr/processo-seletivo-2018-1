@@ -47,7 +47,7 @@
             <h3>Olá, meu nome é</h3>
             <h1>DANIEL DANTAS MAROTTI</h1>
             <br>
-            <button type="button" href="#sobre" class="btn btn-outline-dark showcase-btn">SOBRE MIM</button>
+            <a class="btn btn-outline-dark showcase-btn" href="#sobre" role="button">SOBRE MIM</a>
         </div>
 
     </section>
@@ -58,9 +58,8 @@
             <p class="copy"> Nascido na cidade de Santos-SP,</p>
             <p class="copy">
                 atualmente sou estudante de Engenharia de Computação na Universidade Tecnológica Federal do Paraná. Tive meu primeiro contato
-                com codificação com 12 anos, mais especificamente com HTML/JavaScript, quando criei meu próprio
-                blog. A partir daí surgiu minha preferência por Front-end, onde posso juntar duas paixões minhas, o Design
-                e a Codificação.
+                com codificação com 12 anos, mais especificamente com HTML/JavaScript, quando criei meu próprio blog. A partir
+                daí surgiu minha preferência por Front-end, onde posso juntar duas paixões minhas, o Design e a Codificação.
             </p>
         </div>
     </section>
@@ -111,7 +110,7 @@
     </section>
 
     <div class="container form-container">
-        <div class="contact">
+        <div class="contact" id="contato">
             <div class="wrapper shadow p-3 mb-5 bg-white rounded">
                 <h3>Entre em contato</h3>
                 <div class="alert alert-success" role="alert">Mensagem enviada!</div>
@@ -120,7 +119,7 @@
                     <input id="email" class="form-control" name="email" type="email" required>
 
                     <label for="message">Mensagem:</label>
-                    <textarea name="message" class="form-control" id="mensagem" ></textarea>
+                    <textarea name="message" class="form-control" id="mensagem"></textarea>
                     <br>
 
                     <button type="submit button" class="btn btn-outline-dark showcase-btn">Enviar
@@ -166,6 +165,46 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <!--ANIMACAO NO SCROLL-->
+
+    <script>
+
+        window.sr = ScrollReveal();
+        sr.reveal('.navbar', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal('.landing-text', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+        sr.reveal('#sobre div', {
+            duration: 2000,
+            origin: 'bottom'
+        });     
+    </script>
+
+    <!--JQUERY SMOOTH SCROLL-->
+    <script>
+        $(function () {
+            // Smooth Scrolling
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>
