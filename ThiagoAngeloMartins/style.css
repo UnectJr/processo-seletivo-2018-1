@@ -10,7 +10,8 @@
 
 
 
-/* Estilos para elementos genéricos */
+
+/* Propriedades para elementos genéricos */
 
 html {
 
@@ -38,6 +39,7 @@ a {
     color: black;
     text-decoration: none;
 }
+
 
 
 
@@ -515,6 +517,7 @@ a {
 
 
 
+
 /* Classes Definidas Somente para Animações */
 
 .animateAppearLeft {
@@ -564,6 +567,7 @@ a {
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
+
 
 
 
@@ -845,6 +849,7 @@ a {
 
 
 
+
 /* Propriedades de estilos a serem mudados se a tela tiver menos de 1013 pixels de largura */
 
 @media only screen and (max-width: 1013px) {
@@ -921,6 +926,7 @@ a {
         height: 40%;
     }
 }
+
 
 
 
