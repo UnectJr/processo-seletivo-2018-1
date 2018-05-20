@@ -169,10 +169,47 @@ div#interface-geral-conteudo {
 /* DIVISAO GERAL PARA O BLOG */
 div#divisao-blog {
 	width: 75%;
-	height: 200px;
 	margin: 0.5rem auto 0 auto;
 	background-color: lightcoral;
 }
+	/* sub divisao de blog para centralizar o header + section */
+	div div#sub-divisao-blog {
+		width: 75%;
+		margin: 0 auto;
+		background-color: fuchsia;
+	}
+	/* resolve conteudo transborda por causa do float */
+	div div#sub-divisao-blog::after {
+		content: "";
+		clear: both;
+		display: table;
+  	}
+		/* cabecalho = h2 + nav */
+		header#cabecalho-blog {
+			width: 35%;
+			display: block;
+			float: left;
+			background-color: gold;
+		}
+			header nav#navbar-blog {
+				width: 100%;
+				background-color: orangered;
+			}
+
+		/* section = iframe, noticias */
+		section#noticias-blog {
+			width: 55%;
+			height: 30rem;
+			display: block;
+			float: right;
+			background-color: peru;
+		}
+			/* FORMATACAO GERAL DO IFRAME */
+			iframe#noticias-blog-iframe {
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
 
 /* DIVISAO GERAL PARA O CONTATO */
 div#divisao-contato {
