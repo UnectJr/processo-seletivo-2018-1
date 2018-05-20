@@ -199,11 +199,32 @@ div#divisao-contato {
 /* DIVISAO GERAL PARA O RODAPE */
 footer#footer-principal {
 	width: 100%;
+	margin-top: 0.5rem;
 	background-color: blueviolet;
 }
+	/* divisao que centraliza tudo o que vai no footer */
+	footer div#subfooter-centro {
+		position: relative;
+		width: 75%;
+		height: 10rem;
+		margin: 0 auto;
+		background-color: blue;
+	}
 
-footer div#subfooter-centro {
-	width: 75%;
-	margin: 0 auto;
-	background-color: blue;
-}
+	div#subfooter-centro div#direitos {
+		position: absolute;
+		width: 100%;
+		box-sizing: border-box;
+		bottom: 0;
+		margin-bottom: 1rem;
+	}
+		/* alinhar o primeiro span à esquerda */
+		div#direitos span:first-child {
+			display: block;
+			float: left;
+		}
+		/* alinhar o segundo span à direita */
+		div#direitos span:last-child {
+			display: block;
+			float: right;
+		}
