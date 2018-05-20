@@ -8,6 +8,22 @@ h1{
 	text-align:center;
 	color:#015d82;
 }
+a{
+	color:white;
+	text-decoration:none;
+}
+a:hover{
+	-webkit-filter: brightness(150%);
+}
+.print{
+	width:480px;
+	height:270px;
+}
+.fa-bars{
+	position:absolute;
+	right:5;
+	top:4;
+}
 .logo{
 	font-size:4vh;
 	color:#015d82;
@@ -18,11 +34,6 @@ h1{
 	top:0;
 	background:white;
 	position:sticky;
-}
-.tangerine{
-	font-size:6vh;
-	color:white;
-	background:#E37222;
 }
 .github{
 	background:#f0802b;
@@ -37,6 +48,20 @@ h1{
 	font-size:20vh;
 	color:#3b5998;
 }
+.fa-github{
+	color:black;
+}
+.fa-youtube{
+	color:#ff0000;
+}
+
+
+
+.tangerine{
+	font-size:6vh;
+	color:white;
+	background:#E37222;
+}
 .tan a:hover{
 	-webkit-filter: brightness(150%);
 }
@@ -47,12 +72,6 @@ h1{
 .tan{
 	background:#EEAA7B;
 	color:#66B9BF;
-}
-.fa-github{
-	color:black;
-}
-.fa-youtube{
-	color:#ff0000;
 }
 .teal a:hover{
 	-webkit-filter: brightness(100%);
@@ -66,9 +85,6 @@ h1{
 	background:#0078a8;
 	color:white;
 }
-.botborder{
-	border-bottom: 2px dashed white;
-}
 .powder a:hover{
 	-webkit-filter: brightness(150%);
 	color:#E37222;
@@ -81,6 +97,12 @@ h1{
 .powder{
 	background:#66B9BF;
 	color:white;
+}
+
+
+
+.botborder{
+	border-bottom: 2px dashed white;
 }
 .flex{
 	display: flex;
@@ -109,12 +131,8 @@ h1{
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 }
-a{
-	color:white;
-	text-decoration:none;
-}
-a:hover{
-	-webkit-filter: brightness(150%);
+.container{
+	height:100%;
 }
 .footer{
 	font-size: 3vh;
@@ -122,3 +140,13 @@ a:hover{
 	color:#015d82;
 	background:#EEAA7B;
 }
+.slide{
+	display:none;
+}
+.initial{
+	display:block;
+}
+
+
+
+
