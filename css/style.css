@@ -4,7 +4,16 @@
 }
 .center {
   text-align:center;
+  align-items: center;
 }
 .right {
   text-align:right:;
+  align-items: right;
+}
+.img {
+  width: 40%;
+}
+.left {
+  align-items: left;
+  text-align: left;
 }
