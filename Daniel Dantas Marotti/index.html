@@ -6,18 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daniel Dantas Marotti</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/web-fonts-with-css/css/fontawesome-all.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500"
-        rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik|Bad+Script" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!--NAVBAR-->
     <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#inicio">Daniel Dantas</a>
+        <a class="navbar-brand" href="#inicio">Daniel Dantas</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,18 +40,18 @@
 
     <!--CONTEUDO HOMEPAGE-->
 
-    <section id="showcase">
+    <section id="inicio">
         <div class="landing-text">
             <h3>Olá, meu nome é</h3>
             <h1>DANIEL DANTAS MAROTTI</h1>
             <br>
-            <button type="button" class="btn btn-outline-dark showcase-btn">SOBRE MIM</button>
+            <button type="button" href="#sobre" class="btn btn-outline-dark showcase-btn">SOBRE MIM</button>
         </div>
 
     </section>
     <!--CONTEUDO ABOUT-ME -->
 
-    <section class="showcase">
+    <section id="sobre">
         <div class="container">
             <p class="copy"> Nascido na cidade de Santos-SP,</p>
             <p class="copy">
@@ -110,8 +109,24 @@
     </section>
 
 
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/daniel.dantasmarotti" target="_blank"><i class="fab fa-facebook-square" style="color: black"></i></a>
+                        <a href="https://github.com/dandantas/" target="_blank"><i class="fab fa-github-square" style="color: black"></i></a>
+                        <a href="https://br.pinterest.com/dantasmaarotti/" target="_blank"><i class="fab fa-pinterest-square" style="color: black"></i></a>
+                    </div>
+                    <div id="copyright">
+                        <p>
+                            Created and Designed by 
+                        </p>
+                        <p>&copy; Daniel Marotti</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 

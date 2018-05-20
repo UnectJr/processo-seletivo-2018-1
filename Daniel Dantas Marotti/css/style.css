@@ -15,14 +15,15 @@ body{
 }
 
 h1{
-    font-family: Poppins;
+    font-family: 'Rubik', sans-serif;
 }
 h2,h3,h4,h5,h6{
-    font-family: Roboto;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* --------------------------------NAVBAR---------------------------------------- */
 .navbar-default{
+    margin-top: 15px;
     background: rgba(202, 196, 196, 0.0) !important;
     border: 0 !important;
     font-size: 1.2em;
@@ -30,20 +31,21 @@ h2,h3,h4,h5,h6{
     
 }
 
-.navbar-default li a{
-    color: #e67e22;
-    border-bottom: 2px solid #e67e22; 
-    transition: all 0.5s ease-in;
-}
 .navbar-brand{
-    font-size: 20px;
-    color: #000 !important;
+    font-family: 'Rubik', sans-serif;
     font-weight: bold;
 }
+
 /*------------------------------------------------------------------------------*/
-#showcase {
-    /*background: url(../images/mouse2.jpg) no-repeat center center fixed;*/ 
+#inicio {
+    background-image: url(../images/);
+    background-attachment: fixed;
     background-size: cover;   
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;   
+    
 }
 
 .landing-text{
@@ -64,6 +66,7 @@ h2,h3,h4,h5,h6{
     background-size: cover;
 }
 
+
 /*-------------------------------------------------------------------------------*/
 
 
@@ -72,7 +75,7 @@ h2,h3,h4,h5,h6{
     margin-top: 40px;
     margin-bottom: 40px;
     font-size: 35px;
-    font-family: Poppins;
+    font-family: Rubik;
     
 }
 #progresso{
@@ -80,16 +83,19 @@ h2,h3,h4,h5,h6{
     margin-left: 60px;
 }
 .progress{
-    height: 40px;
+    height: 20px;
     margin-bottom: 10px;
     max-width: 400px;
     
 }
 
+
 .progress-text{
     font-family: Poppins;
     text-align: center;
-    font-size: 18px;
+    height: auto;
+    margin-top: 9px;
+    font-size: 10px;
     font-family: 'Josefin Sans';
 }
 
@@ -99,6 +105,18 @@ h2,h3,h4,h5,h6{
     vertical-align: middle;
 }
 
+/*------------------------------------------------------------------------------------------------*/
 
+.social-icon a{
+    margin: 0 16px 20px 16px;
+    display: inline-block;
+}
 
+.social-icon .fab{
+    font-size: 30px; 
+    background-color: aliceblue;
+}
 
+#copyright{
+    font-size: 15px;
+}
