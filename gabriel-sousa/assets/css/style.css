@@ -95,8 +95,16 @@ nav#menu-principal ul#ul-menu-principal {
 		display: inline-block;
 		text-transform: uppercase;
 		font-size: 0.8rem;
-		margin-left: 0.7rem;
+		margin-left: 0.6rem;
 	}
+		/* destacar link do blog dos demais */
+		ul#ul-menu-principal li:nth-child(5) {
+			margin-right: 0.9rem;
+		}
+		/* destacar link do contato dos demais */
+		ul#ul-menu-principal li:nth-child(6) {
+			margin-right: 0.9rem;
+		}
 
 	nav#menu-principal ul#ul-menu-principal li a {
 		text-align: center;
