@@ -5,14 +5,19 @@
 
 <head>
   <title>
-    Bruno Ricardo Secco
+    Experiencia Profissional | Bruno Ricardo Secco
   </title>
 </head>
-  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href="css/stylepages.css" type="text/css" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 <body>
   <div class="header">
+    <div class="left">
+      <a href="index.html">
+        <img src="img/flecha.png" alt="flecha">
+      </a>
+    </div>
     <div class="right">
       <a href="https://www.facebook.com/brunodvice" target="_blank">
        <img src="img/facebook.png" alt="FaceBook">
@@ -36,33 +41,10 @@
     <div class="logo">
       <h1>Bruno Ricardo Secco</h1>
     </div>
-    <div class="container">
-      <div id="box1" onclick="location.href='quemsou.html';" class="box">
-        <h2>Quem sou eu</h2>
-        <p>Olá, meu nome é Bruno Ricardo Secco. Este é o meu site aonde eu apresentarei um pouco da minha vida, como por exemplo experiencias já vividas, hobbies e planos...Ver mais</p>
-      </div>
-      <div id="box2" onclick="location.href='historia.html';" class="box">
-        <h2>Minha história</h2>
-        <p>A história que irei compartilhar aqui começa em 2014, é o ponto que realmente interessa.
-          Em 2014 eu estava no 3º ano do Ensino Médio...Ver mais</p>
-      </div>
-      <div id="box3" onclick="location.href='experiencia.html';" class="box right">
-        <h2>Exp. Prof.</h2>
-        <p>Minhas experiências profissionais começam em meados de 2014, quando eu voluntáriamente resolvi entrar para a Guarda Mirim da minha cidade... Ver mais</p>
-      </div>
-      <div id="box4" onclick="location.href='hobbies.html';" class="box">
-        <h2>Hobbies</h2>
-        <p>Assim como todo ser humano eu também tenho hobbies, afinal a vida não é feita somente de trabalho, trabalho e trabalho. Meus principais hobbies... Ver mais</p>
-      </div>
-      <div id="box5" onclick="location.href='futuro.html';" class="box">
-        <h2>Meu futuro</h2>
-        <p>Como a vida de todo universitário meu futuro é incerto, porém tenho objetivos, alguns a curto e outros a longo prazo... Ver mais</p>
-      </div>
-      <div id="box6" onclick="location.href='galeria.html';" class="box right">
-        <h2>Galeria</h2>
-        <p>Uma mini galeria sobre as coisas vividas em minha vida... <a href="#">Ver mais</a></p>
-      </div>
-      <div class="clear"></div>
+
+    <div class="box">
+      <h2>Galeria</h2>
+      <img id="imagem" src="img/1.jpeg" alt="foto" onload="Temporizador(this)">
     </div>
   </div>
   <div id="bottom_bar">
@@ -86,9 +68,22 @@
       <div class="clear"></div>
   </div>
   <script>
-    
+    var x = 0;
+    var fotos = ["img/1.jpeg", "img/2.jpeg", "img/3.jpeg"];
+
+    function Temporizador(imagem) {
+      var timer = setTimeout(function () { TrocaFoto(imagem) }, 3000);
+    }
+    function TrocaFoto(imagem) {
+      if (x == 2) {
+        x = 0;
+      }
+      else {
+        x = x + 1;
+      }
+      imagem.src = fotos[x];
+    }
   </script>
-     
 
 </body>
 

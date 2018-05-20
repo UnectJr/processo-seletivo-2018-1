@@ -83,5 +83,11 @@ p {
   background-color: rgba(0, 0, 0, 1);
 }
 
+#imagem {
+  width: 23%;
+  position: relative;
+  left: 35%;
+}
+
 
 
