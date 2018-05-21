@@ -1,0 +1,176 @@
+/*Gabriel Garcia*/
+
+/*Tamanho padrão para TABLETS. Utilizei iPad como referência no developer tools*/
+@media only screen and (max-width: 768px){
+    /*#galaxy-header img{
+        width: 850px;
+    }
+
+    #imgIniciais img{
+        transform: scale(1.1)
+    }
+    
+    Por alguma razão está afetando também para mobile (descobrir o porquê)*/
+}
+
+/*Tamanho padrão para SMARTPHONES. Utilizei iPhone6/7/8 como referência no developer tools*/
+@media only screen and (max-width: 480px){
+    
+    .mobile-hide{   /*Criado por... não aparece para mobile-users*/
+        display: none !important; 
+    }
+    
+    #galaxy-header img {
+        position: relative;
+        width: 480px;
+    }
+
+    #imgIniciais{   /*Utilizando z-index para que os botões fiquem por cima e possam ser clicados*/
+        position: relative;
+        transform: scale(4.5);
+        margin-top: 145px;
+        z-index: 1;
+    }
+    
+    #imgIniciais:hover{
+        transform: scale(4.5);
+        margin-top: 145px;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {    /*Configurando tamanho/posição dos pontos do carousel*/
+        position: relative;
+        width: 3px;
+        height: 3px;
+        margin: 0px 1px;
+        top: -21px;
+    }
+
+    .owl-carousel .owl-item img{
+        display: block;
+        width: 99%;
+    }
+
+    #botoes{    /*Deixando os botões na camada mais externa*/
+        position: relative;
+        z-index: 2;
+    }
+
+    section {
+        height: 3240px;
+    }
+
+    .info h1, h2, h3 {
+        margin-top: 40px;
+    }
+
+    #imgGames{
+        width: 159%;
+        margin: 30px -100px;
+    }
+
+    #imgGames img {
+        margin-top: 5px;
+        width: 140px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 50px black;
+    }
+
+    footer{
+        height: 240px;
+    }
+
+    footer .extraInfo p, small{
+        font-size: 20px;
+        margin-top: 78px;
+    }
+
+    .extraInfo p{
+        margin-left: 23px;        
+    }
+
+    .extraInfo small{
+        margin-left: -4px;
+    }
+
+    footer hr {
+        position: relative;
+        margin: -43px 100px;
+        top: 3px;
+        width: 25%;
+    }
+
+    #icons ul{
+        position: relative;
+        top: -20px;
+    }
+
+    #icons ul li {
+        position: relative;
+        /* display: inline-block; */
+        margin: 0px 17px;
+        width: 75px;
+        height: 75px;
+        left: 54px;
+        bottom: 13px;
+        border: black 3px solid;
+        border-radius: 70%;
+    }
+
+    #icons i.fa-github, #icons i.fa-spotify, #icons i.fa-google{
+        font-size: 83px;
+        left: 38px;
+    }
+
+    #icons i.fa-spotify, #icons i.fa-google{    /*Corrigindo a posição do ícone spotify e google*/
+        margin: -6px -38px;
+        font-size: 82px;
+    }
+
+    #icons i.fa-facebook{
+        font-size: 71px;
+        right: 55px;
+    }
+
+    #icons i.fa-spotify{
+        left: 37px;
+    }
+
+    #icons hr {
+        background-color: black;
+        height: 72px;
+        width: 73px;
+        margin: -5px -3px;
+        border-radius: 100%;
+    }
+
+    #createdBy p, #createdBy small {
+        position: relative;
+        margin: -38px 96px;
+        padding: 3px;
+        top: -18px;
+        left: -30px;
+        font-size: 1rem;
+        font-family: 'Varela Round';
+    }
+
+    #createdBy p{
+        left: -17px;
+    }
+
+    /*Para a página photos.html*/
+    #forPhoto {
+        height: 2540px;
+    }
+
+    .photos{
+        margin-top: 10px;
+    }
+
+    .photos img {
+        width: 41%;
+        margin: 32px 13px;
+    }
+
+}
+
+

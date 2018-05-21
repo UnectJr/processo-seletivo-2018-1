@@ -1,0 +1,294 @@
+/*Gabriel Garcia*/
+
+/**{    Uma estratégia usada para saber como está sendo dividida minha pagina
+    border: 1px solid rgba(0,0,0, 0.7);
+}*/
+
+/*Inicio das configurações do header*/
+
+header{ 
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background: radial-gradient(circle at 119px 300px , #0EBFE9 0%, rgba(0, 0, 250, 0) 47%, #0EBFE9 107%);  /*Penso em mudar essa cor*/  
+    /*border: ;   (Descartável por enquanto)
+    border-bottom: #000 2px solid;*/
+    border-bottom: #ADEAEA 1px dashed;  /*Dashed: tracejado*/
+}
+
+.container{  /*Tudo de estiver no container seguirá os padrões definidos por mim*/
+    position: relative;
+}
+
+#galaxy-header img{ /*Colocando uma imagem de fundo no header para não ficar muito neutro*/
+    margin: 0 -120px;
+    width: 1350px;
+    height: 250px;
+    box-shadow: 0 12px 15px black;
+    opacity: 0.2;
+    filter: brightness(100%);
+    transition: 0.5s;
+}
+
+#galaxy-header img:hover{ 
+    opacity: 0.4;
+    filter: brightness(150%);
+    filter: blur(1px);
+    transition: 0.5s;
+}
+
+#imgIniciais{  /*Alguns ajustes quanto à posição das imagens. Sugestão: aumentar o tamanho das imagens !*/
+    position: relative;
+    width: 25%;
+    text-align: center;
+    top: -230px;
+    transition: 0.5s;
+}
+
+#imgIniciais:hover{  /*Alguns ajustes quanto à posição das imagens. Sugestão: aumentar o tamanho das imagens !*/
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/*Fim das configurações do header/
+
+/*Inicio das configurações do section*/
+section{
+    /*background: linear-gradient(to bottom, white, rgb(208, 246, 255); Uma alternativa*/
+    height: 1870px; /*Definindo uma altura para o section para não afetar o estilo com o footer*/
+    background-color: rgb(219, 247, 253);
+}
+
+#botoes{    /*Configurando aparência das letras e posicionamento dos botões*/
+    text-align: center;
+    top: 10px;
+    font-family: 'Varela Round';
+    font-weight: bolder;
+}
+
+#botoes button{ /*Configurando a aparência dos botões principal e  fotos*/
+    margin: 0 15px;
+    background: linear-gradient(white,#E8E8E8); /*Quando não coloco parâmetro algum na direção começa em top e vai para bottom*/
+    border: none;   /*Desabilito todas as bordas para depois fazer a borda inferior*/
+    border-bottom: #ADEAEA 3px groove;  /*groove deixa a borda mais suavizada*/
+    transition: 0.5s;
+}
+
+#botoes button:hover{
+    background: rgba(14, 191, 233, 0.5);
+    transition: 0.5s;
+}
+
+.info{  /*Configurações gerais da classe info*/
+    text-align: center;
+    margin-top: 60px;
+}
+
+.info h1, h2, h3{   /*Configurando o texto das perguntas*/
+    margin-top: 55px;
+    font-size: 2rem;
+    font-family: 'Varela Round';
+    font-weight: bolder;
+    color: black;
+}
+
+.info hr{ /*Estilizando a barra*/
+    margin-top: 5px;
+    margin-bottom: 10px;
+    background: radial-gradient(circle at 160px 300px , #0EBFE9 75%, rgba(0, 0, 250, 0) 47%, #0EBFE9 107%);
+    width: 30%;
+    height: 3px;
+    border: white 1px groove;
+    border-radius: 5px;
+}
+
+.info p{
+    font-family: 'Varela Round';
+}
+
+#playlistImg{   /*Configurando posição e estilo da imagem da playlist*/
+    margin-top: 5px;    
+    border-radius: 100%;    /*Usando o máximo possível sem precisar testar no develeper tool qual o limite*/
+    box-shadow: 0px 0px 50px black; /*O primeiro parâmetro trata-se do deslocamento horizontal, o segundo do vertical e o terceiro é o quão concentrada está a cor escolhida*/
+    transition: 1.5s;
+}
+
+#playlistImg:hover{
+    opacity: 0.8;
+    transition: 1s;
+}
+
+#imgGames img{  /*Estilizando imagens dos games. Poderia até dispensar esse bloco utilizando o de cima uma vez que é bem parecido*/
+    margin-top: 5px;
+    width: 163px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 50px black;
+}
+
+#imgGames .owl-stage-outer {    /*Configurações quanto ao posicionamento do carousel. Sem o uso do id estaria mudando tudo o que envolve carousel no meu site, por isso coloquei para envolver só essa parte*/
+    margin: -30px 72px; /*O primeiro parâmetro é a margem do top e do bottom, o segundo trata-se do margin-right e margin-left*/
+    padding: 29px;  /*Margem interna*/
+}
+
+/*Fim das configurações do section*/
+
+
+/*Início das configurações do footer*/
+footer{ /*Configurações semelhantes ao header para manter uma boa estética*/
+    padding-top: 5px;
+    width: 100%;
+    height: 250px;
+    background: radial-gradient(circle at 119px 300px , #0EBFE9 0%, rgba(0, 0, 250, 0) 47%, #0EBFE9 107%);  /*Penso em mudar essa cor*/  
+    border-top: #ADEAEA 1px dashed;    
+    box-shadow: 0 0px 40px black;
+}
+
+.extraInfo p, small{     /*Configurações gerais para as palavras*/
+    font-family: 'Varela Round';
+    font-weight: bold;
+    color: black;
+    font-size: 2rem;
+    margin-top: 68px;
+    margin-left: -30px;
+}
+
+.extraInfo p{
+    margin-left: 8px;
+}
+
+.extraInfo small{    /*Configurando posição da palavra " redes sociais"*/
+    margin-top: 10px;
+}
+
+footer hr{  /*Estilizando barra hr*/
+    position: relative;
+    background: radial-gradient(circle at 119px 300px , black 0%, rgba(0, 0, 250, 0) 47%, black 107%);;
+    margin: -64px 300px;
+    top: 3px;
+    width: 13%;
+    height: 1px;
+    border: grey 1px solid;
+    border-radius: 20%;
+    transform: rotate(90deg);   /*Rotacionando a barra hr*/
+}
+
+#icons ul{  /*Configurando ícones, removendo o marcador de ul*/
+    list-style-type: none;
+    text-align: center;
+    color: inherit;
+}
+
+#icons ul li{   /*Estilizando lista*/
+    position: relative; /*Precisei colocar já que não é da classe container*/
+    display: inline-block;  /*inline-block: deixa tudo em um bloco de uma linha*/
+    text-align: center;
+    margin: 27px 70px;
+    left: 175px;
+    width: 80px;
+    height: 80px; 
+    border: black 2px solid;
+    border-radius: 100%;
+}
+
+#icons i{   /*Configurações gerais para todos os ícones da div de id icons*/
+    position: absolute; /*Não respeita o limite da div pai*/
+    margin: -6px -39px;
+}
+
+#icons i.fa-github, #icons i.fa-spotify, #icons i.fa-google{    /*Estilizando todos os ícones exceto para o facebook*/
+    font-size: 90px;                                            /*Note que usei i.(class) pois a classe está na tag i e não é filha dela*/
+}
+
+#icons i.fa-spotify, #icons i.fa-google{    /*Corrigindo a posição do ícone spotify e google*/
+    margin: -6px -38px;
+}
+
+#icons i.fa-facebook{ /*Ajustando o ícone do facebook*/
+    color: grey;
+    font-size: 79px;
+    left: 53px;
+    top: 10px;
+    transition: 1s;
+}
+
+#icons i.fa-facebook:hover{
+    color: rgb(71, 104, 255);
+    transition: 0.3s;
+}
+
+#icons i.fa-github{
+    color: grey;
+    transition: 1s;
+}
+
+#icons i.fa-github:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+#icons i.fa-spotify{ /*Ajustando o ícone do spotify*/
+    color: grey;
+    border-radius: 100%;    /*Criando alguns padrões para não deixar as barras curvadas do ícone transparentes e sim com a aparência original*/  
+    top: 0px;
+    transition: 1s;
+}
+
+#icons i.fa-spotify:hover{
+    color: #36df71;
+    transition: 0.3s;
+}
+
+#icons i.fa-google{ /*Ajustando o ícone do google*/
+    color: grey;
+    transition: 1s;
+}
+
+#icons i.fa-google:hover{ /*Ajustando o ícone do google*/
+    color: #d34836;
+    transition: 0.3s;
+}
+
+#icons hr{  /*Criei essa barra apenas para não deixar o fundo do spotify transparente!*/
+    background-color: black;
+    height: 70px;
+    width: 70px;
+    margin: 0px;
+    border-radius: 100%;
+}
+
+#createdBy p, #createdBy small{
+    margin: -23px 17px;
+    font-family: 'Varela Round';
+    color: black;
+    font-size: 1rem;
+}
+
+#createdBy p{
+    margin-left: 29px;
+}
+
+/*Fim das configurações do footer*/
+
+/*Configurando fotos do arquivo photos.html*/
+
+.photos{    /*Dando um espaçamento com os botões Principal e fotos*/
+    margin-top: -3px;
+}
+
+#forPhoto{  /*Definindo uma altura para meu section especifico para photos.html (por isso usei o id)*/
+    height: 5630px;
+}
+
+.photos img{
+    width: 67%;
+    margin: 50px 91px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 100px black;
+    transition: 0.2s;
+}
+
+.photos img:hover{
+    transform: scale(1.1); 
+    transition: 200ms;
+}
+
