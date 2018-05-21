@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>marilia | hobbies</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
+  </head>
+
+  <body>
+    <div class="wrapper2">
+
+        <div class="side">
+          <img src="images/perfil.jpg" class="perfil_img" height="300px" width="300px" />
+
+          <div class="submenu">
+            <a href="index.html"><h3>home</h3></a>
+            <hr />
+            <a href="about.html"><h3>about me</h3></a>
+            <hr />
+            <a href="hobbies.html"><h1>hobbies</h1></a>
+            <hr />
+            <a href="social.html"><h3>social</h3></a>
+            <hr />
+            </div>
+        </div>
+
+        <div class="descricao">
+            <h2>Hobbies {</h2>
+            <p><br />
+              <p>
+                <em><b>(Cinema)</b></em> É apaixonada por filmes, já assistiu uma lista generosa.
+                Gosta de trocar recomendações e discutir sobre filmes.
+              </p>
+
+              <div class="container">
+                <img id="imgID" src="images/1.jpg" />
+                <button class="btn" onclick="nextImg()">>></button>
+                <div class="lista">
+                  <em>watch(again)list:</em>
+                  <br />
+                    <ul>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt0470752/" target="_blank">Ex Machina</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt1798709/?ref_=fn_al_tt_1" target="_blank">Her</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt0211915/" target="_blank">Amelie Poulain</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt2267998/?ref_=nv_sr_1" target="_blank">Gone Girl</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt4972582/?ref_=nv_sr_1" target="_blank">Split</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt3416742/" target="_blank">What We Do In The Shadows</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt0485947/" target="_blank">Mr. Nobody</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+
+              <em><b>(Música)</b></em>
+              <p>
+                Toca piano desde os dez anos de idade, em maioria música clássica e temas de filmes. Também arranha um violão de vez em quando. Gosta de ouvir rock
+                (clássico, hard rock, progressivo, alternativo), mpb, música instrumental (piano e violão clássico), e música clássica.
+              </p>
+              <em>playlist:</em>
+                  <ul>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=jhgVu2lsi_k" target="_blank">Figure It Out (Royal Blood)</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=-IBoisJ6h3Q" target="_blank">Spanish Caravan (The Doors)</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=K8R7zjJMIfU" target="_blank">Since I've Been Lovin' You (Led Zeppelin)</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=U2LAdyE8lEU" target="_blank">Bang Bang (Nancy Sinatra)</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=y_goHl-GuNk" target="_blank">Capricho Árabe (Francisco Tárrega)</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=_hstxID1kAs" target="_blank">Canto de Ossanha (Toquinho)</a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=fUjOfsoBhMY" target="_blank">Preciso me Encontrar (Cartola)</a>
+                    </li>
+                  </ul>
+
+                <br />
+
+              <em><b>(Tech)</b></em> Gosta de programação e eletrônica. Fez alguns projetos utilizando microcontroladores PIC e
+              adora montar coisas aleatórias com Arduino só para ver funcionar.
+
+              <br />
+              <br />
+
+              <em><b>(etc)</b></em> Se interessa por cultura, astronomia, fotografia e poesias bem identadas.
+              <br />
+              <br />
+              <h2>}</h2>
+
+              <footer>
+                &copy Marilia Machado Fernandez, 2018
+              </footer>
+
+        </div>
+        <div class="side_hobbies"></div>
+
+      </div>
+
+      <script>
+        var estado = 1;
+        var image = document.getElementById("imgID");
+        setInterval(nextImg,4000);
+        function nextImg(user) {
+          if(estado == 7)
+            estado = 1;
+          else
+            estado++;
+          image.src = `images/${estado}.jpg`;
+        }
+      </script>
+
+  </body>
+</html>
