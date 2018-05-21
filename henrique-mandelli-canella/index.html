@@ -6,8 +6,8 @@
     <head>
 
         <meta charset="utf-8">
-
-
+        <!-- IMPORT GOOGLE FONT -->
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!--Import materialize.css-->
@@ -32,13 +32,13 @@
         <!-- início do preloader -->
         <div id="preloader">
             <div class="inner">
-               <h1 class="white-text">HENRIQUE CANELLA</h1>
+               <center><h1 class="white-text loaderFont">HENRIQUE CANELLA</h1></center>
                <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
-               <div class="bolas">
+               <center><div class="bolas">
                   <div></div>
                   <div></div>
                   <div></div>                    
-               </div>
+               </center></div>
             </div>
         </div>
         <!-- fim do preloader -->
@@ -46,10 +46,10 @@
         <!-- NAVBAR   -->
         <nav class="blue-grey darken-4">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Henrique</a>
+                <a href="index.html" class="brand-logo">Henrique</a>
                 <a href="#" data-target="moobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#Home">Início</a></li>
+                    <li><a href="index.html">Início</a></li>
                     <li><a href="#About">Sobre</a></li>
                     <li><a href="#Blog">Blog</a></li>
                 </ul>
@@ -60,7 +60,7 @@
         <!-- SIDENAV -->
         <ul class="sidenav" id="moobile-demo">
             <h3 class="blue-grey lighten-5">Menu</h3>
-            <li><a href="#Home">Ínicio</a></li>
+            <li><a href="index.html">Ínicio</a></li>
             <li><a href="#About">Sobre</a></li>
             <li><a href="#Blog">Blog</a></li>  
         </ul>
@@ -96,7 +96,7 @@
         <!-- FINAL SLIDER -->
 
         <!-- ABOUT -->
-        <div class="container">
+        <div id="About" class="container section scrollspy">
             <div class="row">
                 <br>
                 <br>
@@ -141,7 +141,7 @@
         <!-- FINAL ABOUT -->
 
         <!-- BLOG -->
-        <div class="row blue-grey darken-4">
+        <div id="Blog" class="row blue-grey darken-4 section scrollspy">
             <div class="container">
                 <div class="col s12"><center><h1 class="white-text">BLOG</h1></center></div>
                 
@@ -152,8 +152,9 @@
                             <a  href="post1.html" class="white-text"><span class="card-title">De onde eu vim ?</span></a>
                         </div>
                         <div class="card-content">
-                            <a  href="post1.html" class="black-text"><p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p></a>
+                            <a  href="post1.html" class="black-text"><p class="truncate">Olá, sou Henrique Mandelli Canella tenho 17 anos e vou contar um pouco da cidade em que nasci.
+                             Bom eu nasci em uma cidade do interior de São Paulo chamada Tupã (cerca de 70.000 habitantes) e morei lá até o começo de 2018.
+                             A cidade em si não tem muito o que oferencer em questão de entretenimento e diversão (mas pra quem passa a maior parte do tempo na frente do computador isso não é um problema).</p></a>
                         </div>
                         <div class="card-action">
                             <a href="post1.html" class="blue-grey-text darken-4">Leia mais</a>
@@ -168,8 +169,10 @@
                             <a  href="post2.html" class="white-text"><span class="card-title">Mas por que computação ?</span></a>
                         </div>
                         <div class="card-content">
-                            <a  href="post2.html" class="black-text"><p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p></a>
+                            <a  href="post2.html" class="black-text"><p class="truncate">Desde criança sempre fui ligado a área de informática, 
+                            o que me levou a fazer em 2015 um curso técnico em informática na ETEC. 
+                            Como trabalho de conclusão de curso, elaboramos um sistema com base na otimização
+                            de treinos em academias.</p></a>
                         </div>
                         <div class="card-action">
                             <a href="post2.html" class="blue-grey-text darken-4">Leia mais</a>
@@ -184,8 +187,9 @@
                             <a  href="post3.html" class="white-text"><span class="card-title">Como está sendo a vida acadêmica ?</span></a>
                         </div>
                         <div class="card-content">
-                            <a  href="post3.html" class="black-text"><p>I am a very simple card. I am good at containing small bits of information.
-                            I am convenient because I require little markup to use effectively.</p></a>
+                            <a  href="post3.html" class="black-text"><p class="truncate">Bom antes de passar na UTFPR eu nunca havia mudado de casa, 
+                            o que levou a ocasião a ser um pouco assustadora.
+                            Confira agora um pouco de como foi meu processo de mudança e adaptação em Cornélio Procópio.</p></a>
                         </div>
                         <div class="card-action">
                             <a href="post3.html" class="blue-grey-text darken-4">Leia mais</a>
