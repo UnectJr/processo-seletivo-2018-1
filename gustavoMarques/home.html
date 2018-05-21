@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nossos Felinos</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="?????">
+        <meta name="keywords" content="Tigre, Felino, Salve os Tigres, ">
+        <meta name="author" content="Gustavo Marques">
+        <link rel="shortcut icon" href="./media/logo.png">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!--Style CSS-->
+        <link rel="stylesheet" href="style.css">
+        <!--Materialize CSS-->
+        <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <!--
+            Colors
+            #03a9f4 light-blue
+            #ffc107 amber
+        -->
+    </head>
+    <body>
+        <div class="mom">
+            <div class="inicio_p">
+                <header class="v-header container">
+                    <div class="video-fullscreen">
+                        <video src="./media/eye.mp4" autoplay="true" loop="true" muted="true"></video>
+                    </div>
+                    <div class="video-overlay">
+                        <div class="overlay-content">
+                            <nav>
+                                <div class="nav-wrapper z-depth-5">
+                                    <ul class="left hide-on-med-and-down">
+                                        <li><a href="#racas_p" class="waves-effect waves-orange">Raças</a></li>
+                                        <li><a href="#" class="waves-effect waves-orange">Salve Nossos Felinos</a></li>
+                                        <li><a href="#" class="waves-effect waves-orange">Curiosidades</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <h1>Salve Nossos Felinos</h1>
+                            <p>Há nove subespécies distintas de tigre, três das quais estão extintas.</p>
+                        </div>
+                    </div>
+                </header>
+            </div>               
+            <div class="racas_p" name="racas_p" id="racas_p">
+                    <div class="carousel-wrapper">
+                            <span id="item-1"></span>
+                            <span id="item-2"></span>
+                            <span id="item-3"></span>
+                            <div class="carousel-item item-1">
+                              <h1 style="color: lightblue; text-shadow: 2px 2px black;">Tigre Siberiano</h1>
+                              <p style="font-size: 50px; width: 40vw; color: lightblue; text-shadow: 2px 2px black;">É a maior das subespécies de tigre e o maior felino existente atualmente. 
+                                  O tamanho é variável com a subespécie, pesando, na maior parte das vezes, 
+                                  entre 180 e 306 quilogramas em machos e as fêmeas entre 100 e 167. O comprimento do corpo fica de 2,4 a 3,3 metros.</p>
+                              <a class="arrow arrow-prev" href="#item-3"></a>
+                              <a class="arrow arrow-next" href="#item-2"></a>
+                            </div>
+                            
+                            <div class="carousel-item item-2">
+                              <h1 style="color:lightblue; text-shadow: 2px 2px black;">Tigre do Sul da China</h1>
+                              <p style="font-size: 50px; width: 40vw; color:lightblue; text-shadow: 2px 2px black;">É a mais criticamente ameaçada das subespécies. Até o começo dos anos 1950, 
+                                  havia, aproximadamente, 4 000 tigres na República Popular da China. Mas em 1959, Mao Tse Tung declarou os tigres uma praga. 
+                                  Seguiu-se, então, uma brutal perseguição aos tigres, reduzindo-os a 72 exemplares em 2007</p>
+                              <a class="arrow arrow-prev" href="#item-1"></a>
+                              <a class="arrow arrow-next" href="#item-3"></a>
+                            </div>
+                            
+                            <div class="carousel-item item-3">
+                              <h1 style="color: lightblue; text-shadow: 2px 2px black;">Tigre de Bengala</h1>
+                              <p style="font-size: 50px; width: 40vw; color: lightblue; text-shadow: 2px 2px black;">É a segunda maior subespécie de tigre. Existem menos de 2500 indivíduos na 
+                                  natureza, a maioria vivendo na Índia e em Bangladesh. O peso é entre 180 e 266 quilogramas para machos, e 100 a 160 para fêmeas.</p>
+                              <a class="arrow arrow-prev" href="#item-2"></a>
+                              <a class="arrow arrow-next" href="#item-1"></a>
+                            </div>
+                          </div>
+            </div>
+            <div class="save_p">
+                <center><h1>Salve Nossos Felinos (textos)</h1></center>
+            </div>
+            <div class="curiosidades_p">
+                <center><h1>Curiosidades (Mesclagem *Paragrafos/Imagens*)</h1></center>
+            </div>
+            <div class=footer>
+
+            </div>
+        </div> 
+        <!--Jquery JS-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!--Materialize JS-->
+        <<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+        <script>
+                $("nav").find("a").click(function(e) {
+                    e.preventDefault();
+                    var section = $(this).attr("href");
+                    $("html, body").animate({
+                        scrollTop: $(section).offset().top
+                    });
+                });
+        </script>
+    </body>
+</html>
