@@ -1,0 +1,118 @@
+* {
+  border: 0px solid rgba(0, 0, 0, 0.7);
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  height: 80%;
+  font-family: 'Lucida Sans';
+  font-size: 20px;
+}
+
+.header { 
+  background-color: black;
+  width: 100%;
+}
+
+.header a {
+  display: inline-block;
+
+}
+
+.right {
+  display: inline;
+  float: right;  
+}
+
+.logo {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid black;
+}
+
+.logo h1 {
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  font-size: 500%;
+
+}
+
+.papper {
+  margin-left: 15%;
+  margin-right: 15%;
+  height: 1200px;
+}
+
+.box {
+  width: 25%;
+  margin: 10px;
+  float: left;
+  margin-left: 5.5%;
+  height: 40%;
+  cursor: pointer;
+  background-color: rgb(187, 187, 187)
+}
+
+.box h1 {
+  font-family: 'Lucida Sans';
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.center a{
+  display: inline-block;
+  position: relative;
+  left: 45%;
+}
+
+#bottom_bar {
+  position: relative;
+  bottom: 0px;
+  height: 5%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+#box1 {
+  background-image: url('../img/teste.jpg');
+  background-size: cover;
+
+}
+
+#box2 {
+  background-image: url('../img/historia.jpg');
+  background-size: cover;
+}
+#box3 {
+  background-image: url('../img/expprof.png');
+  background-size: cover;
+}
+#box4 {
+  background-image: url('../img/hobbies.jpg');
+  background-size: cover;
+}
+#box5 {
+  background-image: url('../img/futuro.jpeg');
+  background-size: cover;
+}
+#box6 {
+  background-image: url('../img/galeria.jpg');
+  background-size: cover;
+}
+
+.box:hover {
+  color: rgba(255, 255, 255, 1);
+}
