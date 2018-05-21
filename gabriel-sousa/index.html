@@ -4,28 +4,30 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gabriel Sousa</title>
+	<!-- Biblioteca de Icones -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<script src="assets/js/jquery-3.3.1.js"></script>
 	<script src="assets/js/script-geral.js"></script>
 </head>
 <body>
+	<!-- ancora para o inicio da pagina -->
+	<span id="inicio"></span>
 	<!-- DIVISAO GERAL PARA O CABECALHO PRINCIPAL -->
 	<header id="header-principal">
 		<!-- MENU PRINCIPAL TOPO -->
-		<nav id="menu-principal">
-			<!-- logo do menu menu principal -->
-			<div id="logo">Gabriel Sousa</div>
-			
-			<!-- menu principal -->
-			<ul id="ul-menu-principal">
-				<li><a href="#sobre">Sobre</a></li>
-				<li><a href="#experiencia">Experiência</a></li>
-				<li><a href="#formacao-academica">Formação</a></li>
-				<li><a href="#voluntario">Voluntário</a></li>
-				<li><a href="#competencias">Competências</a></li>
-				<li><a href="#divisao-blog">Blog</a></li>
-				<li><a href="#divisao-contato">Contato</a></li>
-			</ul>
+		<nav id="menu-principal" class="topnav">
+			<a href="#inicio">Início</a>
+			<a href="#sobre">Sobre</a>
+			<a href="#experiencia">Experiência</a>
+			<a href="#formacao-academica">Formação</a>
+			<a href="#voluntario">Voluntário</a>
+			<a href="#competencias">Competências</a>
+			<a href="#divisao-blog">Blog</a>
+			<a href="#divisao-contato">Contato</a>
+			<a href="javascript:void(0);" class="icone" onclick="menuResp()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</nav> <!-- ./menu-principal -->
 	</header><!-- ./header-principal -->
 

@@ -46,3 +46,14 @@ $(document).ready(function(){
         } // Termina If
     });
 });
+
+// MENU RESPONSIVO HAMBURGUER
+// Alternar entre add e remover a classe "menu-responsivo" do topnav quando o usuario clicar no icone
+function menuResp() {
+    var x = document.getElementById("menu-principal");
+    if (x.className === "topnav") {
+        x.className += " menu-responsivo";
+    } else {
+        x.className = "topnav";
+    }
+}
