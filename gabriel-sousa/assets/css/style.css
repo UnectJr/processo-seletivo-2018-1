@@ -78,7 +78,7 @@ nav#menu-principal {
 	height: inherit;
 	margin: 0 auto;
 }
-	/* Style the links inside the navigation bar */
+	/* estilizar os links dentro do nav */
 	.topnav a {
 		float: left;
 		display: block;
@@ -87,12 +87,12 @@ nav#menu-principal {
 		padding: 0.8rem;
 		text-decoration: none;
 	}
-	/* Change the color of links on hover */
+	/* mudar a cor dos links ao passar por cima */
 	.topnav a:hover {
 		background-color: black;
 		color: white;
 	}
-	/* Hide the link that should open and close the topnav on small screens */
+	/* esconder o link que deverá abrir e fechar o topnav em telas pequenas */
 	.topnav .icone {
 		display: none;
 	}
@@ -121,10 +121,15 @@ aside#info-fixo {
 		margin: 2%;
 		background-color: purple;
 	}
-
-	div#sub-info-fixo h5 {
-		font-size: 0.95rem;
-		margin: 1.5rem 0;
+	/* formatação da imagem perfil circular */
+	.foto-perfil {
+		width: 70%;
+	}
+	.foto-perfil img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		box-sizing: border-box;
 	}
 
 /* INTERFACE GERAL CONTEUDO */
