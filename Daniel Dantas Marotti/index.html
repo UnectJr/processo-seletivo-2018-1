@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daniel Dantas Marotti</title>
+
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+    <!--fontes google-->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik|Bad+Script" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
+    <link rel="stylesheet" href="css/style.css">
+    <!--scrollReveal.js-->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="./images//logo.png">
 </head>
 
@@ -21,9 +25,13 @@
 
     <!--NAVBAR-->
     <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-null" href="#inicio">
-            <img id="logo-navbar" src="images/logo.png">
-        </a>
+        <div id="navbar-logo">
+            <div class="navbar-header">
+                <a class="navbar-null" href="#inicio">
+                    <img id="logo-navbar" src="images/logo.png">
+                </a>
+            </div>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,6 +62,14 @@
         <div class="landing-text">
             <img id="logo-homepage" src="./images/logo-home.png">
             <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <a class="btn btn-outline-dark showcase-btn" href="#sobre" role="button">SOBRE MIM</a>
         </div>
 
@@ -62,19 +78,17 @@
 
     <section id="sobre">
         <div class="container">
-            <p class="copy"> Nascido na cidade de Santos-SP,</p>
-            <p class="copy">
-                atualmente sou estudante de Engenharia de Computação na Universidade Tecnológica Federal do Paraná. Tive meu primeiro contato
-                com codificação com 12 anos, mais especificamente com HTML/JavaScript, quando criei meu próprio blog. A partir
-                daí surgiu minha preferência por Front-end, onde posso juntar duas paixões minhas, o Design e a Codificação.
-            </p>
-
-            <br>
-            <br>
-            <!--Button Modal-->
-            <div id="button-modal">
-                <a class="btn btn-outline-dark showcase-btn" role="button" data-toggle="modal" data-target="#saiba-mais">Saiba mais...</a>
+            <div id="text-about">
+                <p class="copy"> Nascido na cidade de Santos-SP,</p>
+                <p class="copy">
+                    atualmente sou estudante de Engenharia de Computação na Universidade Tecnológica Federal do Paraná. Tive meu primeiro contato
+                    com codificação com 12 anos, mais especificamente com HTML/JavaScript, quando criei meu próprio blog.
+                    A partir daí surgiu minha preferência por Front-end, onde posso juntar duas paixões minhas, o Design
+                    e a Codificação.
+                </p>
             </div>
+            <br>
+            <br>
             <br>
             <br>
             <h4>
@@ -87,57 +101,9 @@
 
         </div>
 
-
-        <!--Modal-->
-        <div class="modal fade" id="saiba-mais" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">
-                            Mais da minha história...
-                        </h5>
-                        <button type="button" class="close" data-dismiss="modal">
-                            <span>&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <p>
-                            Como já disse antes, nasci em Santos-SP dia 27 de agosto de 1997, sou o irmão do meio, e cresci numa família predominantemente
-                            feminina. Isso acabou que por "seleção natural" me tornou uma pessoa muito calma e muito paciente.
-                        </p>
-                        <p>
-                            Quando tinha 7 anos meu pai acabou sendo transferido pela empresa onde ele trabalhava pra cidade de Belém-PA, onde eu passei
-                            os melhores 2 anos da minha infância.
-                        </p>
-                        <p>
-                            Depois desses anos em Belém ocorreu outra transição de cidades novamente devido ao trabalho do meu pai, e no final acabei
-                            indo pra Bauru-SP, onde passei o resto da minha adolescência e criei uma parte mais forte da
-                            minha personalidade.
-                        </p>
-                        <p>
-                            Foi lá que eu comecei a criar interesse pela tecnologia, criei com um amigo um blog onde o objetivo era ser um site de downloads
-                            de todo gênero. Criei meu canal do youtube onde eu ensinava maneiras de customizar o layout do
-                            seu site, em javascript predominantemente, apesar de na época não ter idéia do que era isso.
-                        </p>
-                        <p>
-                            A partir daí eu sabia que minha paixão era tecnologia. Apesar disso eu tinha outra paixão, a área de exatas.
-                        </p>
-                        <p>
-                            Quando chegou no momento de escolher qual área seguir, com aquele oceano de possibilidades, eu me deparei com a Engenharia
-                            de Computação, onde eu ia ter a chance de juntar esses dois mundos.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
     </section>
 
+    <!--SEÇÃO DE FERRAMENTAS-->
     <section class="showcase">
         <div class="container ferramentas" id="ref-ferramentas" <h2 class="title-ferramentas text-center">Ferramentas</h2>
             <div class="progresso dm-right">
@@ -179,8 +145,9 @@
             </div>
 
         </div>
-
     </section>
+
+    <!--FORMULÁRIO PARA CONTATO (FIREBASE)-->
 
     <div class="container form-container">
         <div class="contact" id="contato">
@@ -233,11 +200,11 @@
 
 
 
-    
 
-    <script src="js/bootstrap.min.js"></script>
-    
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
     <script src="./js/main.js"></script>
 

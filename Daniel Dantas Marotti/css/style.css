@@ -1,7 +1,7 @@
 html, body{
     height: 100%;
     width: 100%;
-    background-image: url(../images/fundo2.jpg);
+    background-image: url(../images//fundo-homepage.jpg);
     background-attachment: fixed;
     background-size: cover;   
     position: relative;
@@ -17,10 +17,6 @@ section{
     height: 100vh;
 }
 
-body{
-    margin-bottom: 70px;
-}
-
 h1{
     font-family: 'Rubik', sans-serif;
 }
@@ -31,17 +27,11 @@ h2,h3,h4,h5,h6{
 /* --------------------------------NAVBAR---------------------------------------- */
 .navbar-default{
     margin-top: 15px;
-    background: rgba(202, 196, 196, 0.0) !important;
+    background: rgba(202, 196, 196, 0) !important;
     border: 0 !important;
     font-size: 1.2em;
-    padding: 0 15px 5px;  
+    padding: 0 15px 0;  
     
-}
-
-.navbar-brand{
-    font-family: 'Rubik', sans-serif;
-    font-weight: bold;
-    display: inline-block;
 }
 
 /* navbar desaparece */
@@ -49,10 +39,8 @@ h2,h3,h4,h5,h6{
     display: none;
 }
 
-#logo-navbar{
-    width: 10%;
-    height: 10%;
-    margin-left: 10px;
+#navbar-logo img{
+    width: 4%; 
 }
 
 /*------------------------------------------------------------------------------*/
@@ -64,24 +52,21 @@ h2,h3,h4,h5,h6{
 }
 
 #logo-homepage{
-    width: 25%;
+    width: 23%;
     height: 30%;
 }
 
 /*-------------------------------------------------------------------------------*/
 .container{
-    /*background-image: url(/images/fundo-home.jpg);*/
     margin-top: 80px;
     text-align: center;
     vertical-align: middle;
     font-size: 23px;
     font-family: 'Roboto Mono', monospace;
     padding: 50px 0 30px 0;
-    background-size: cover;
 }
 
-#button-modal{
-    
+#button-modal{  
     text-align: center;
     vertical-align: middle;
     margin-top: 60px;
@@ -153,7 +138,7 @@ h2,h3,h4,h5,h6{
     line-height: 1.6;
     font-family: 'Roboto Mono', monospace;
     padding: 1em;
-    opacity: 0.3;
+    opacity: 0.6;
 
 }
 .contact label{
@@ -192,7 +177,9 @@ h2,h3,h4,h5,h6{
     display: none;
 }
 /*------------------------------------------------------------------------------------------------*/
-
+.social-icon{
+    margin-top: 20px;
+}
 .social-icon a{
     margin: 0 16px 20px 16px;
     display: inline-block;
