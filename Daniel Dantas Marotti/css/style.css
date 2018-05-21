@@ -33,6 +33,10 @@ h2,h3,h4,h5,h6{
     padding: 0 15px 0;  
     
 }
+.navbar ul a{
+    margin-left: 25px;
+    font-size: 20px;
+}
 
 /* navbar desaparece */
 .navbar-null {
