@@ -1,5 +1,24 @@
+/*Gabriel Garcia*/
+
+/*Tamanho padrão para TABLETS. Utilizei iPad como referência no developer tools*/
+@media only screen and (max-width: 768px){
+    /*#galaxy-header img{
+        width: 850px;
+    }
+
+    #imgIniciais img{
+        transform: scale(1.1)
+    }
+    
+    Por alguma razão está afetando também para mobile (descobrir o porquê)*/
+}
+
 /*Tamanho padrão para SMARTPHONES. Utilizei iPhone6/7/8 como referência no developer tools*/
 @media only screen and (max-width: 480px){
+    
+    .mobile-hide{   /*Criado por... não aparece para mobile-users*/
+        display: none !important; 
+    }
     
     #galaxy-header img {
         position: relative;
@@ -124,8 +143,21 @@
         border-radius: 100%;
     }
 
-    /*Para a página photos.html*/
+    #createdBy p, #createdBy small {
+        position: relative;
+        margin: -38px 96px;
+        padding: 3px;
+        top: -18px;
+        left: -30px;
+        font-size: 1rem;
+        font-family: 'Varela Round';
+    }
 
+    #createdBy p{
+        left: -17px;
+    }
+
+    /*Para a página photos.html*/
     #forPhoto {
         height: 2540px;
     }
@@ -141,9 +173,4 @@
 
 }
 
-/*Tamanho padrão para TABLETS*/
-@media only screen and (max-width: 768px){
 
-
-
-}

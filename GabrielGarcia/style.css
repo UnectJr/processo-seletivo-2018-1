@@ -255,6 +255,18 @@ footer hr{  /*Estilizando barra hr*/
     margin: 0px;
     border-radius: 100%;
 }
+
+#createdBy p, #createdBy small{
+    margin: -23px 17px;
+    font-family: 'Varela Round';
+    color: black;
+    font-size: 1rem;
+}
+
+#createdBy p{
+    margin-left: 29px;
+}
+
 /*Fim das configurações do footer*/
 
 /*Configurando fotos do arquivo photos.html*/
