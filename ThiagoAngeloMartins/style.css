@@ -1,0 +1,1776 @@
+/* Variáveis Globais */
+
+:root {
+
+    --imagem: url("img/slideshow1/1.jpg");
+}
+
+
+
+
+
+
+
+/* Propriedades para elementos genéricos */
+
+html {
+
+    width: 100%;
+    height: 100%;
+}
+
+body {
+
+    background-color: lightgray;
+    font-family: : verdana, sans-serif;
+    width: 95%;
+    height: 98%;
+    margin: 10px auto 10px auto;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+* {
+    transition: all 0.3s ease;
+}
+
+a {
+
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Estilos para as demais classes */
+
+.main {
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, lightgray, white, lightgray);
+    background-color: white;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    display: none;
+    position: relative;
+}
+
+.cover {
+
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.66);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    display: none;
+    z-index: 2;
+}
+
+.mobileMenu {
+
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    display: none;
+    z-index: 3;
+}
+
+
+.mobileItem {
+
+    width: 100%;
+    height: 10%;
+    color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+    font-family: verdana;
+    padding-top: 20px;
+}
+
+.mobileItem:first:child {
+
+    margin-top: 20px;
+}
+
+.mobileItem:hover {
+
+
+    background-color: #8c8c8c;
+    cursor: pointer;
+}
+
+.mobileItem:active {
+
+    background-color: #b3b3b3;
+}
+
+.clear {
+
+    clear: both;
+}
+
+.banner {
+
+    width: 100%;
+    height: 20%;
+}
+
+.bannerPersonalImg {
+
+    width: 12%;
+    height: 80%;
+    background-image: url("img/porfile.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    border-radius: 30px;
+    float: left;
+    border: 2px solid white;
+    margin-top: 1%;
+    margin-left: 2%;
+}
+
+.bannerInfo {
+
+    width: 80%;
+    height: 100%;
+    float: left;
+    margin-left: 2%;
+}
+
+.infoMainName {
+
+    width: 100%;
+    height: 40%;
+    padding-top: 2.3%;
+    overflow: hidden;
+    display: block;
+}
+
+.mainName {
+
+    margin-left: 10px;
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #000000;
+    font-size: 200%;
+}
+
+.lgray {
+
+    color: gray;
+}
+
+.infoNameMobile {
+
+    width: 100%;
+    height: 100%;
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: black;
+    font-size: 130%;
+    display: none;
+    text-align: center;
+    margin-top: -2%;
+}
+
+.nickName {
+    margin-left: 10px;
+    margin-top: -0.1%;
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #8c8c8c;
+    font-size: 180%;
+}
+
+.infoNickName {
+
+    width: 100%;
+    height: 60%;
+
+    overflow: hidden;
+    display: block;
+}
+
+.menu {
+
+    width: 100%;
+    height: 10%;
+}
+
+.menuNavbar {
+
+    width: 100%;
+    height: 80%;
+    margin: 10px auto 10px auto;
+    overflow: hidden;
+}
+
+.navIcon {
+
+    font-size: 180%;
+    color: white;
+}
+
+.navbarItem {
+
+    width: 16.66%;
+    height: 100%;
+    float: left;
+    background-color: #b3b3b3;
+    text-align: center;
+    text-shadow: 2px 2px 7px white;
+    color: black;
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: background-color 0.4s ease;
+    transition: box-shadow 0.4s ease;
+}
+
+
+.navbarItem:hover {
+
+    box-shadow: inset 0px -4px 0px 0px white, inset 0px 4px 0px 0px white;
+    -webkit-box-shadow: inset 0px -4px 0px 0px white, inset 0px 4px 0px 0px white;
+    -moz-box-shadow: inset 0px -4px 0px 0px white, inset 0px 4px 0px 0px white;
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.navbarItem:active {
+
+    background-color: #e6e6e6;
+}
+
+.navActive {
+
+    box-shadow: inset 0px -4px 0px 0px white, inset 0px 4px 0px 0px white;
+    -webkit-box-shadow: inset 0px -4px 0px 0px white, inset 0px 4px 0px 0px white;
+    -moz-box-shadow: inset 0px -4px 0px 0px white, inset 0px 4px 0px 0px white;
+
+    background-color: #e6e6e6;
+}
+
+.navMobile {
+
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #b3b3b3;
+}
+
+.navMobile:hover {
+
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.navMobile:active {
+    background-color: #e6e6e6;
+}
+
+.mobIcon {
+
+    width: 20%;
+    height: 100%;
+    background-image: url("img/mobile.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+
+    width: 100%;
+    height: 60%;
+    overflow-x: hidden;
+}
+
+.contentSub {
+
+    width: 300%;
+    height: 100%;
+}
+
+
+.infoContain {
+
+    width: 100%;
+    height: 80%;
+}
+
+.infoImg {
+
+    width: 30%;
+    height: 90%;
+    float: right;
+    border-radius: 5px;
+    margin-right: 3%;
+
+    background-image: url("img/love.gif");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 13px -1px rgba(0, 0, 0, 0.75);
+}
+
+.infoText {
+
+    width: 58%;
+    height: 100%;
+    float: left;
+    margin-left: 4%;
+}
+
+.subPage {
+
+    width: 33.33%;
+    height: 100%;
+    box-shadow: inset -2px 0px 0px 0px hsla(0, 0%, 76%, 1), inset 2px 0px 0px 0px hsla(0, 0%, 76%, 0.82);
+    -webkit-box-shadow: inset -2px 0px 0px 0px hsla(0, 0%, 76%, 1), inset 2px 0px 0px 0px hsla(0, 0%, 76%, 0.82);
+    -moz-box-shadow: inset -2px 0px 0px 0px hsla(0, 0%, 76%, 1), inset 2px 0px 0px 0px hsla(0, 0%, 76%, 0.82);
+    float: left;
+}
+
+.red {
+
+    color: red;
+    font-size: 24px;
+}
+
+.pageText {
+
+    text-indent: 10%;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 130%;
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 250%;
+    margin-top: 2%;
+}
+
+.astronomia {
+
+    background-image: url("img/universo.gif");
+}
+
+.subTitle {
+
+    margin-left: 50px;
+    font-size: 180%;
+    font-family: 'Lucida Console', Monaco, monospace;
+}
+
+
+
+.footer {
+    width: 100%;
+    height: 10%;
+    background-color: lightgray;
+    background: linear-gradient(to bottom, white 0%, black 100%);
+}
+
+.powered {
+
+    height: 100%;
+    width: 20%;
+    float: left;
+
+    text-align: center;
+    text-shadow: 2px 2px 7px black;
+    color: lightgray;
+    font-family: verdana, sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-top: 1%;
+}
+
+.socialMedia {
+
+    height: 100%;
+    width: 15%;
+    float: right;
+}
+
+.socialIcon {
+
+    width: 20%;
+    height: 60%;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.socialIcon:hover {
+
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.socialFirst {
+
+    margin-left: 30%;
+}
+
+.stealth {
+
+
+    display: none;
+    opacity: 1;
+}
+
+.loader {
+    border: 16px solid #f2f2f2;
+    border-top: 16px solid #737373;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+    -moz-animation: spin 2s linear infinite;
+    margin: 10px auto 10px auto;
+    margin-top: 25%;
+}
+
+.getup {
+
+    position: relative;
+    animation: subir 1s ease;
+    -webkit-animation: subir 1s ease;
+    -moz-animation: subir 1s ease;
+}
+
+.animes {
+
+    font-weight: 500;
+    line-height: 100%;
+    text-decoration: underline;
+    text-indent: 10%;
+    text-align: justify;
+    letter-spacing: 3px;
+    font-family: 'Lucida Console', Monaco, monospace;
+    font-size: 130%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.animeImg {
+
+    background-image: url("img/slideshow1/1.jpg");
+    opacity: 1;
+}
+
+.gameImg {
+
+    background-image: url("img/slideshow2/1.jpg");
+    opacity: 1;
+}
+
+.filmeImg {
+
+    background-image: url("img/slideshow3/1.jpg");
+    opacity: 1;
+}
+
+.big {
+
+    font-size: 250%;
+    /* Por algum motivo isso não funciona */
+    text-decoration: none!important;
+}
+
+.maestriaImg {
+
+    background-image: url("img/maestria.gif");
+}
+
+
+
+
+
+
+
+/* Classes Definidas Somente para Animações */
+
+.animateAppearLeft {
+
+    animation: apearL 0.3s ease;
+    -webkit-animation: apearL 0.3s ease;
+    -moz-animation: apearL 0.3s ease;
+    display: block;
+}
+
+.animateDisappearLeft {
+
+    animation: disapearL 0.3s ease;
+    -webkit-animation: disapearL 0.3s ease;
+    -moz-animation: disapearL 0.3s ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.animateSlideShow1 {
+
+    -webkit-animation: slideshow 1s ease;
+    -moz-animation: slideshow 1s ease;
+    animation: slideShow 1s ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.animateSlideShow2 {
+
+    -webkit-animation: slideshowb 1s ease;
+    -moz-animation: slideshowb 1s ease;
+    animation: slideShow2 1s ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+.animateSlideShow3 {
+
+    -webkit-animation: slideshowc 1s ease;
+    -moz-animation: slideshowc 1s ease;
+    animation: slideShowc 1s ease;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+/* Keyframes para animações */
+
+
+/* Suporte para chrome, mozilla e safari */
+
+@-webkit-keyframes slideShow {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@-moz-keyframes slideShow {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@keyframes slideShow {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@-webkit-keyframes slideShowb {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@-moz-keyframes slideShowb {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@keyframes slideShowb {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@-webkit-keyframes slideShowc {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@-moz-keyframes slideShowc {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@keyframes slideShowc {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+        background-image: var(--imagem);
+    }
+}
+
+@keyframes apearL {
+
+
+    from {
+
+        left: -20%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes apearL {
+
+
+    from {
+
+        left: -20%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@-moz-keyframes apearL {
+
+
+    from {
+
+        left: -20%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes disapearL {
+
+    from {
+        left: 0;
+    }
+    to {
+
+        left: -40%;
+        display: none;
+    }
+}
+
+@-webkit-keyframes disapearL {
+
+    from {
+        left: 0;
+    }
+    to {
+
+        left: -40%;
+        display: none;
+    }
+}
+
+@-moz-keyframes disapearL {
+
+    from {
+        left: 0;
+    }
+    to {
+
+        left: -40%;
+        display: none;
+    }
+}
+
+@keyframes subir {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes subir {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-moz-keyframes subir {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Propriedades de estilos a serem mudados se a tela tiver menos de 1013 pixels de largura */
+
+@media only screen and (max-width: 1013px) {
+
+    .socialMedia {
+
+        width: 40%;
+    }
+    .powered {
+
+        width: 40%;
+    }
+    .animes {
+
+        font-size: 1.7vh;
+    }
+
+
+    .bannerInfo {
+
+
+        float: none;
+        width: 100%;
+        height: 20%;
+    }
+
+    .bannerPersonalImg {
+        width: 40%;
+        height: 80%;
+        float: none;
+        margin: 10px auto 10px auto;
+    }
+    .infoMainName {
+
+        display: none;
+    }
+    .infoNickName {
+        display: none;
+    }
+    .infoNameMobile {
+
+        display: block;
+    }
+    .navbarItem {
+
+        display: none;
+    }
+    .navMobile {
+
+        display: block;
+    }
+    .infoText {
+
+        float: none;
+        width: 100%;
+        height: 80%;
+        margin-left: 0%;
+    }
+    .pageText {
+
+        line-height: 130%;
+        font-size: 1.9vh;
+    }
+    .subTitle {
+
+        text-align: center;
+    }
+    .infoImg {
+
+        float: none;
+        margin-right: 0%;
+        margin: 20px auto 10px auto;
+        width: 80%;
+        height: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Standard syntax */
+
+@keyframes example {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: yellow;
+    }
+}
