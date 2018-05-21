@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    margin: 0px;
+    overflow: hidden;
+}
+.wish{
+    margin-top: 30px;
+}
+#botao {
+    padding-top: 30px;
+}
+.nomeCompleto {
+    background-image: url("../img/star.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    font-family: sans-serif;
+    height: 100%;
+    color: white;
+    overflow: auto;
+}
+.sobre {
+    background-image: url("../img/trem.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    font-family: sans-serif;
+    height: 100%;
+    color: #FFEAEA;
+    overflow: auto;
+}
+.gostos {
+    background-image: url("../img/coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    font-family: sans-serif;
+    height: 100%;
+    overflow: auto;
+}
+.contato {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5px;
+    font-family: sans-serif;
+    height: 100%;
+    overflow: auto;
+}
+.displayNone {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    color: gray;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+#imagemContato {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
