@@ -257,9 +257,14 @@ footer#footer-principal {
 		}
 
 /* MEDIA QUERIES */
-/* Quando a tela for menor que 600px de largura, esconda todos os links menos o primeiro ("Inicio")
-   Mostre o icone que contem devera abrir e fechar o topnav (.icone) */
-@media screen and (max-width: 600px) {
+/* Dispositivos muito pequenos (celulares, 600px e abaixo) */
+@media only screen and (max-width: 600px) {
+	body {
+        background-color: pink;
+	}
+	/* MENU RESPONSIVO */
+	/* Quando a tela for menor que 600px de largura, esconda todos os links menos o primeiro ("Inicio")
+	Mostre o icone que contem devera abrir e fechar o topnav (.icone) */
 	.topnav a:not(:first-child) {
 		display: none;
 	}
@@ -268,7 +273,7 @@ footer#footer-principal {
 		display: block;
 	}
 	/* A classe "menu-responsivo" eh adicionada ao topnav com JS quando o usuario clicar no icone
-	   Esta classe torna o topnav mais bonito para telas pequenas (mostra lins verticalmente ao inves de horizontalmente) */
+	Esta classe torna o topnav mais bonito para telas pequenas (mostra lins verticalmente ao inves de horizontalmente) */
 	.topnav.menu-responsivo {position: relative;}
 	.topnav.menu-responsivo a.icone {
 		position: absolute;
@@ -279,5 +284,33 @@ footer#footer-principal {
 		float: none;
 		display: block;
 		text-align: left;
+	}
+} 
+
+/* Dispositivos pequenos (portrait tablets e celulares grandes, 600px e acima) */
+@media only screen and (min-width: 600px) {
+	body {
+        background-color: yellowgreen;
+	}
+} 
+
+/* Dispositivos medios (tablets no modo landscape, 768px e acima) */
+@media only screen and (min-width: 768px) {
+	body {
+        background-color: blueviolet;
+    }
+} 
+
+/* Dispositivos grandes (laptops/desktops, 992px e acima) */
+@media only screen and (min-width: 992px) {
+	body {
+        background-color: blue;
+    }
+} 
+
+/* Dispositivos muito grandes (laptops e desktops grandes, 1200px e acima) */
+@media only screen and (min-width: 1200px) {
+	body {
+        background-color: red;
 	}
 }
