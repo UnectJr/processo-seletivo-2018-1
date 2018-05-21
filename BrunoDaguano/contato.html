@@ -19,23 +19,24 @@
 		<h3 class="banner_nome">Bruno Augusto Daguano</h3>
 		<h3 class="banner_curso">Engenheiro de Software</h3>
 	    <ul>
-	        <li><a href="index.html">Home</a></li>
-	        <li><a href="curriculo.html">Currículo</a>
-	        <li><a href="contato.html">Contato</a></li>
+	        <li class="li_index"><a href="index.html">Home</a></li>
+	        <li class="li_curriculo"><a href="curriculo.html">Currículo</a>
+	        <li class="li_contato"><a href="contato.html">Contato</a></li>
 	    </ul>
 		</nav>
 	</div>
+
 	
 	<div class="curriculo">
 
-		<img class="fundo_contato" src="https://png.pngtree.com/thumb_back/fw800/back_pic/04/55/78/815864ce33e4cb7.jpg">
+		<img class="fundo" src="https://png.pngtree.com/thumb_back/fw800/back_pic/04/55/78/815864ce33e4cb7.jpg">
 		
 		<div class="fomulario">
-			<form class="form_email">
+			<form class="form_email" action="enviar.php" method="POST">
 				<p class="p_contato">Entre em Contato</p>
-				<input class="nome" type="text" name="nome" value="Informe seu Nome">
-				<input class="Email" type="email" name="email" value="Informe seu Email">
-				<input class="assunto" type="text" name="assunto" value="Informe o Assusto">
+				<input class="nome" type="text" name="nome" placeholder="Informe seu Nome">
+				<input class="Email" type="email" name="email" placeholder="Informe seu Email">
+				<input class="assunto" type="text" name="assunto" placeholder="Informe o Assusto">
 				<textarea class="mensagem" name="message" rows="10" cols="30">Escreva a Mensagem</textarea>
 				<input class="enviar" type="submit" name="enviar" value="Enviar">
 			</form>

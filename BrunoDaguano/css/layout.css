@@ -1,6 +1,7 @@
 @charset"utf-8";
 
 body {
+
    	padding: 0;
 	margin: 0;
 }
@@ -11,8 +12,7 @@ p{font-size: 17px; color: #000000; font-family: 'Monaco'; }
 
 
 footer{ 
-
-	width: 100%;
+	width: 84.4rem;
 	height: 0%;
 	background-color: gray;
 	float: left;
@@ -54,28 +54,21 @@ footer{
 }
 
 .topbar{
-	padding: 30px;
+	padding: 2%;
+	width: 74.4rem;
 	text-align-last: center;
 	background-color: gray;
 	position: relative;
 }
 
-.menu ul {
-    padding:0px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
-}
 
 #menu ul li a {
-	text-align-last: center;
 	font-style: italic;
 	font-size: 18px;
     padding: 2px 50px;
     display: inline-block;
     background-color:gray;
     color: #333;
-    text-decoration: none;
 
 }
 
@@ -106,9 +99,10 @@ footer{
 	position: relative;
 	display: block;
 	float: left;
-	width: 1350px;
-	height: 550px;
+	width: 500em;
+	height: 40em;
 	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 .fundo_curriculo{
@@ -157,8 +151,9 @@ footer{
 	height: 15%;
 	width: 15%;
 	background-repeat: no-repeat;
-	left: 20%;
+	left: 10%;
 	margin: 3%;
+	top: 5px;
 }
 
 
@@ -166,11 +161,12 @@ footer{
 	position: relative;
 	display: block;
 	float: left;
-	height: 17%;
-	width: 17%;
+	height: 20px;
+	width: 30px;
 	background-repeat: no-repeat;
 	left: 15%;
 	margin: 3%;
+	top: 5px;
 }
 
 .phone{
@@ -178,7 +174,7 @@ footer{
 	position: relative;
 	display: block;
 	float: left;
-	left: 15%;
+	left: 10%;
 	margin: 6%;
 }
 
@@ -188,8 +184,8 @@ footer{
 	position: relative;
 	display: block;
 	float: left;
-	left: 40%;
-	top: -40px;
+	left: 140%;
+	top: -30px;
 }
 
 .face{
@@ -199,7 +195,7 @@ footer{
 	width: 2%;
 	height: 2%;
 	float: left;
-	left: 20%;
+	left: 40%;
 	top: 50px;
 }
 
@@ -210,7 +206,7 @@ footer{
 	width: 2%;
 	height: 2%;
 	float: left;
-	left: 22%;
+	left: 42%;
 	top: 50px;
 }
 
@@ -221,7 +217,7 @@ footer{
 	width: 2%;
 	height: 2%;
 	float: left;
-	left: 24%;
+	left: 44%;
 	top: 50px;
 }
 
@@ -432,4 +428,715 @@ footer{
 	float: right;
 	top: -500px;
 	right: 0%;
+}
+
+
+@media only screen and (max-width: 1600px){
+
+	.fundo{
+		float: left;
+		position: relative;
+		width: 296.1%;
+		left: -280px;
+	}
+
+
+	.topbar{
+		padding: 80px;
+		text-align-last: center;
+		background-color: gray;
+		position: relative;
+	}
+
+	.banner_nome{
+		position: absolute;
+		float: left;
+		top: 20px;
+		left: 42%;
+	}
+
+	.banner_curso{
+		position: absolute;
+		top: 60px;
+		left: 45%;
+	}
+
+
+	.li_index{
+		float: left;
+		position: absolute;
+		left: 0%;
+		top: 140px;
+	}
+
+
+	.li_curriculo{
+		float: left;
+		position: absolute;
+		left:   150px;
+		top: 140px;
+	}
+
+
+	.li_contato{
+		float: left;
+		position: absolute;
+		left:   320px;
+		top: 140px;
+	}
+}
+
+
+
+
+
+@media only screen and (max-width: 800px){
+
+	.fundo{
+		position: relative;
+		width: 65em;
+		left: -250px;
+	}
+
+	footer{ 
+		width: 49.3rem;
+		background-color: gray;
+		float: left;
+		position: relative;
+	}
+
+	#menu{
+		width: 100%;
+		height: 20%;
+	}
+
+	.topbar{
+		padding: 80px;
+		width: 39.4em;
+		text-align-last: center;
+		background-color: gray;
+		position: relative;
+	}
+
+	.banner_nome{
+		float: left;
+		top: 40px;
+		left: 38%;
+	}
+
+	.banner_curso{
+		display: none; 
+	}
+
+	.telefone{
+		position: relative;
+		display: block;
+		float: left;
+		height: 15%;
+		width: 15%;
+		background-repeat: no-repeat;
+		left: 0%;
+		margin: 3%;
+	}
+
+
+	.email{
+		position: relative;
+		display: block;
+		float: left;
+		height: 20%;
+		width: 20%;
+		background-repeat: no-repeat;
+		left: 5%;
+		margin: 3%;
+		top: 4px;
+	}
+
+	.phone{
+		font-family: "Lato";
+		position: relative;
+		display: block;
+		float: left;
+		left: 25%;
+		top: -25px;
+		width: 100px;
+		font-size: 14px;
+	}
+
+
+	.mail{
+		font-family: "Lato";
+		position: relative;
+		display: block;
+		float: left;
+		left: 40%;
+		top: -32px;
+		font-size: 14px;
+	}
+
+	.face{
+		background-repeat: no-repeat;
+		position: relative;
+		display: block;
+		width: 25px;
+		height: 25px;
+		float: left;
+		left: -40%;
+		top: 90px;
+	}
+
+	.git{
+		background-repeat: no-repeat;
+		position: relative;
+		display: block;
+		width: 25px;
+		height: 25px;
+		float: left;
+		left: -30%;
+		top: 90px;
+	}
+
+	.linkedin{
+		background-repeat: no-repeat;
+		position: relative;
+		display: block;
+		width: 25px;
+		height: 25px;
+		float: left;
+		left: -20%;
+		top: 90px;
+	}
+
+	.li_index{
+		float: left;
+		position: absolute;
+		left: 0%;
+		top: 140px;
+	}
+
+
+	.li_curriculo{
+		float: left;
+		position: absolute;
+		left:   150px;
+		top: 140px;
+	}
+
+
+	.li_contato{
+		float: left;
+		position: absolute;
+		left:   320px;
+		top: 140px;
+	}
+
+	.descricao{
+		position: relative;
+		left: 70px;
+		width: 300px;
+	}
+
+
+	.formacao_academica{
+		font-family: 'Trebuchet MS';
+		position: relative;
+		display: block;
+		float: left;
+		left: 20%;
+		top: -630px;	
+	}
+
+	.p_formacao{
+		position: relative;
+		display: block;
+		float: left;
+		left: -20%;
+		width: 50%;
+		top: -590px;
+		font-size: 16px;
+	}
+
+	.experiencia_profissional{
+		font-family: 'Trebuchet MS';
+		position: relative;
+		display: block;
+		float: left;
+		left: 20%;
+		top: -610px;
+	}
+
+	.fundap{
+
+		font-family: 'Trebuchet MS';
+		position: relative;
+		display: block;
+		float: left;
+		left: -13%;
+		top: -580px;
+	}
+
+	.cargo{
+		position: relative;
+		display: block;
+		float: left;
+		left: -49%;
+		top: -180%;
+		font-size: 16px
+	}
+
+	.atividades{
+		position: relative;
+		display: block;
+		float: left;
+		left: 14%;
+		top: -570px;
+		font-size: 16px;
+		width: 300px;
+	}
+
+	.qualificacoes{
+		font-family: 'Trebuchet MS';
+		position: relative;
+		display: block;
+		float: left;
+		left: 5%;
+		top: -580px;
+	}
+
+	.p_ingles{
+		position: relative;
+		display: block;
+		float: left;
+		left: -56%;
+		top: -98%;
+		font-size: 16px;
+	}
+
+	.p_espanhol{
+		position: relative;
+		display: block;
+		float: left;
+		left: -56%;
+		top: -102%;
+		font-size: 16px;
+	}
+
+	.p_gestao{
+		position: relative;
+		display: block;
+		float: left;
+		left: 13.5%;
+		top: -580px;
+		width: 300px;
+		font-size: 16px;
+	}
+
+	.p_instrumental{
+		position: relative;
+		display: block;
+		float: left;
+		left: 13.5%;
+		top: -600px;
+		width: 300px;
+		font-size: 16px;
+	}
+
+	.linguagens, .html_css, .java, .sql, .c{
+		display: none;
+	}
+
+	.nome{
+		position: relative;
+		display: block;
+		float: right;
+		left:  -10%;
+		top: -440px;
+		width: 50%;
+	}
+
+	.Email{
+		position: relative;
+		display: block;
+		float: right;
+		left:  -10%;
+		top: -420px;
+		width: 50%;
+	}
+
+	.assunto{
+		position: relative;
+		display: block;
+		float: right;
+		left: -10%;
+		top: -400px;
+		width: 50%;
+	}
+
+	.mensagem{
+		position: relative;
+		display: block;
+		float: right;
+		left:   -32%;
+		top: -370px;
+		width: 50%;
+		height: 100px;	
+	}
+
+	.enviar{
+		position: relative;
+		display: block;
+		float: right;
+		left:   15%;
+		top: -250px;
+	}
+
+
+	.curriculo{
+		height: 550px;
+		width: 550px;
+	}
+
+
+	.h_nome{
+		position: relative;
+		display: block;
+		float: left;
+		top: -500px;
+		left: 10%; 
+	}
+
+	.p_contato{
+		position: relative;
+		display: block;
+		float: right;
+		top: -500px;
+		right: 50%;
+	}
+
+}
+
+
+
+
+
+@media only screen and (max-width: 460px){
+
+	.fundo{
+
+		position: relative;
+		background-size: 100%;
+		width: 50em;
+		background-size: cover;
+		background-position: left;
+		display: block;
+	}
+
+	#menu{
+		width: 100%;
+		height: 20%;
+	}
+
+	.topbar{
+		padding: 70px;
+		width: 25.6em;
+		text-align-last: center;
+		background-color: gray;
+		position: relative;
+	}
+
+	footer{ 
+		width: 34.4rem;
+		height: 100px;
+		background-color: gray;
+		float: left;
+		position: relative;
+	}
+
+	.banner_nome{
+		position: absolute;
+		top: 0%;
+		left: 20%;
+	}
+
+	.banner_curso{
+		display: none; 
+	}
+
+	.telefone{
+		position: relative;
+		display: block;
+		float: left;
+		height: 20%;
+		width: 20%;
+		background-repeat: no-repeat;
+		left: 0%;
+		margin: 3%;
+	}
+
+
+	.email{
+		position: relative;
+		display: block;
+		float: left;
+		height: 25%;
+		width: 25%;
+		background-repeat: no-repeat;
+		left: 5%;
+		margin: 3%;
+	}
+
+	.phone{
+		font-family: "Lato";
+		position: relative;
+		display: block;
+		float: left;
+		left: 10%;
+		top: -10px;
+		width: 30px;
+		font-size: 14px;
+	}
+
+
+	.mail{
+		font-family: "Lato";
+		position: relative;
+		display: block;
+		float: left;
+		left: 40%;
+		top: -32px;
+		font-size: 14px;
+	}
+
+	.face{
+		background-repeat: no-repeat;
+		position: relative;
+		display: block;
+		width: 20px;
+		height: 20px;
+		float: left;
+		left: 20%;
+		top: 50px;
+	}
+
+	.git{
+		background-repeat: no-repeat;
+		position: relative;
+		display: block;
+		width: 20px;
+		height: 20px;
+		float: left;
+		left: 40%;
+		top: 50px;
+	}
+
+	.linkedin{
+		background-repeat: no-repeat;
+		position: relative;
+		display: block;
+		width: 20px;
+		height: 20px;
+		float: left;
+		left: 60%;
+		top: 50px;
+	}
+
+
+
+	.li_index{
+		position: absolute;
+		left:   -5%;
+		top: 100px;
+	}
+
+
+	.li_curriculo{
+		position: absolute;
+		left:   18%;
+		top: 100px;
+	}
+
+
+	.li_contato{
+		position: absolute;
+		left:   48%;
+		top: 100px;
+	}
+
+
+	.descricao{
+		left: 15px;
+		width: calc(100% - 200px);	
+	}
+
+
+	.formacao_academica{
+		font-family: 'Trebuchet MS';
+		position: relative;
+		display: block;
+		float: left;
+		left: 20%;
+		top: -630px;	
+	}
+
+	.p_formacao{
+		position: relative;
+		display: block;
+		float: left;
+		left: -20%;
+		width: 50%;
+		top: -590px;
+		font-size: 16px;
+	}
+
+	.experiencia_profissional{
+		font-family: 'Trebuchet MS';
+		position: relative;
+		display: block;
+		float: left;
+		left: 20%;
+		top: -610px;
+	}
+
+	.fundap{
+
+		font-family: 'Trebuchet MS';
+		position: relative;
+		display: block;
+		float: left;
+		left: -13%;
+		top: -580px;
+	}
+
+	.cargo{
+		position: relative;
+		display: block;
+		float: left;
+		left: -49%;
+		top: -180%;
+		font-size: 16px
+	}
+
+	.atividades{
+		position: relative;
+		display: block;
+		float: left;
+		left: 14%;
+		top: -590px;
+		font-size: 16px;
+		width: 300px;
+	}
+
+	.qualificacoes{
+		font-family: 'Trebuchet MS';
+		position: relative;
+		display: block;
+		float: left;
+		left: 5%;
+		top: -590px;
+
+	}
+
+	.p_ingles{
+		position: relative;
+		display: block;
+		float: left;
+		left: -56%;
+		top: -100%;
+		font-size: 16px;
+	}
+
+	.p_espanhol{
+		position: relative;
+		display: block;
+		float: left;
+		left: -56%;
+		top: -103%;
+		font-size: 16px;
+	}
+
+	.p_gestao{
+		position: relative;
+		display: block;
+		float: left;
+		left: 13.5%;
+		top: -580px;
+		width: 300px;
+		font-size: 16px;
+	}
+
+	.p_instrumental{
+		position: relative;
+		display: block;
+		float: left;
+		left: 13.5%;
+		top: -600px;
+		width: 300px;
+		font-size: 16px;
+	}
+
+	.linguagens, .html_css, .java, .sql, .c, .phone, .telefone, .mail, .email{
+		display: none;
+	}
+
+	.nome{
+		position: relative;
+		display: block;
+		float: right;
+		left:  -10%;
+		top: -440px;
+		width: 50%;
+	}
+
+	.Email{
+		position: relative;
+		display: block;
+		float: right;
+		left:  -10%;
+		top: -420px;
+		width: 50%;
+	}
+
+	.assunto{
+		position: relative;
+		display: block;
+		float: right;
+		left: -10%;
+		top: -400px;
+		width: 50%;
+	}
+
+	.mensagem{
+		position: relative;
+		display: block;
+		float: right;
+		left:   -32%;
+		top: -370px;
+		width: 50%;
+		height: 100px;	
+	}
+
+	.enviar{
+		position: relative;
+		display: block;
+		float: right;
+		left:   15%;
+		top: -250px;
+	}
+
+
+	.h_nome{
+		position: relative;
+		display: block;
+		float: left;
+		top: -500px;
+		left: 10%; 
+	}
+
+	.p_contato{
+		position: relative;
+		display: block;
+		float: right;
+		top: -550px;
+		right: 45%;
+	}
 }
