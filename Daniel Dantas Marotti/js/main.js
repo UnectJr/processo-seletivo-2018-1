@@ -56,3 +56,66 @@ function saveMessage(email, mensagem){
         mensagem: mensagem
     });
 }
+
+
+// Smooth Scrolling
+$(function () {
+    
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+
+
+$(function() {
+    
+    var navbar = $(".navbar-null");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 700) {
+            navbar.removeClass('navbar-null').addClass("navbar-brand");
+        } else {
+            navbar.removeClass("navbar-brand").addClass('navbar-null');
+        }
+    });
+});
+
+//ANIMACAO NO SCROLL (scrollReveal)
+window.sr = ScrollReveal();
+        sr.reveal('.navbar-nav', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal('.container .figure', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal('.landing-text', {
+            duration: 2000,
+            origin: 'top',
+            distance: '300px'
+        });
+        sr.reveal('#sobre div', {
+            duration: 2000,
+            origin: 'bottom'
+        });
+        sr.reveal('.progress', {
+            duration: 2000,
+            origin: 'left',
+            distance: '300px'
+        });    
+        sr.reveal('.contact', {
+            duration: 2000,
+            origin: 'bottom'
+        });      
+  

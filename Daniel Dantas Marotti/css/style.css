@@ -7,7 +7,7 @@ html, body{
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.7;  
+     
 }
 
 section{
@@ -41,6 +41,12 @@ h2,h3,h4,h5,h6{
 .navbar-brand{
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
+    display: inline-block;
+}
+
+/* navbar desaparece */
+.navbar-null {
+    display: none;
 }
 
 #logo-navbar{
@@ -50,16 +56,6 @@ h2,h3,h4,h5,h6{
 }
 
 /*------------------------------------------------------------------------------*/
-#inicio {
-    /*background-image: url(../images/forest.jpg);
-    background-attachment: fixed;
-    background-size: cover;   
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.7;   */
-    
-}
 
 .landing-text{
     display: table-cell;
@@ -68,8 +64,8 @@ h2,h3,h4,h5,h6{
 }
 
 #logo-homepage{
-    width: 30%;
-    height: 50%;
+    width: 25%;
+    height: 30%;
 }
 
 /*-------------------------------------------------------------------------------*/
@@ -100,7 +96,7 @@ h2,h3,h4,h5,h6{
 }
 #irma-mae{
     width: 30%;
-    height: 10%;
+    height: 5%;
 }
 /*-------------------------------------------------------------------------------*/
 
@@ -157,6 +153,8 @@ h2,h3,h4,h5,h6{
     line-height: 1.6;
     font-family: 'Roboto Mono', monospace;
     padding: 1em;
+    opacity: 0.3;
+
 }
 .contact label{
     font-family:'Roboto Mono', monospace;

@@ -21,7 +21,7 @@
 
     <!--NAVBAR-->
     <nav class="navbar navbar-default navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#inicio">
+        <a class="navbar-null" href="#inicio">
             <img id="logo-navbar" src="images/logo.png">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -73,7 +73,7 @@
             <br>
             <!--Button Modal-->
             <div id="button-modal">
-                <a class="btn btn-outline-dark showcase-btn" href="#" role="button" data-toggle="modal" data-target="#saiba-mais">Saiba mais...</a>
+                <a class="btn btn-outline-dark showcase-btn" role="button" data-toggle="modal" data-target="#saiba-mais">Saiba mais...</a>
             </div>
             <br>
             <br>
@@ -233,55 +233,13 @@
 
 
 
+    
+
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
     <script src="./js/main.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!--ANIMACAO NO SCROLL-->
-
-    <script>
-
-        window.sr = ScrollReveal();
-        sr.reveal('.navbar', {
-            duration: 2000,
-            origin: 'bottom'
-        });
-        sr.reveal('.landing-text', {
-            duration: 2000,
-            origin: 'top',
-            distance: '300px'
-        });
-        sr.reveal('#sobre div', {
-            duration: 2000,
-            origin: 'bottom'
-        });
-        sr.reveal('.progress', {
-            duration: 2000,
-            origin: 'left',
-            distance: '300px'
-        });      
-    </script>
-
-    <!--JQUERY SMOOTH SCROLL-->
-    <script>
-        $(function () {
-            // Smooth Scrolling
-            $('a[href*="#"]:not([href="#"])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-    </script>
 
 </body>
 
