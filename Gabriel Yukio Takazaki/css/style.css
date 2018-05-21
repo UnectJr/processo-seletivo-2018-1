@@ -10,32 +10,26 @@ body {
     padding-top: 30px;
 }
 .nomeCompleto {
-    background-image: url("../img/star.gif");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5px;
     font-family: sans-serif;
-    color: rgb(231, 231, 231);
     height: 100%;
     overflow: auto;
 }
 .sobre {
-    background-image: url("../img/star.gif");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5px;
     font-family: sans-serif;
-    color: rgb(231, 231, 231);
     height: 100%;
     overflow: auto;
 }
 .contato {
-    background-image: url("../img/star.gif");
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 5px;
     font-family: sans-serif;
-    color: rgb(231, 231, 231);
     height: 100%;
     overflow: auto;
 }
@@ -47,7 +41,7 @@ body {
     position: absolute;
     top: 50%;
     padding: 16px;
-    color: white;
+    color: black;
     font-weight: bolder;
     font-size: 30px;
 }
@@ -58,4 +52,8 @@ body {
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
+}
+#imagemContato {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
