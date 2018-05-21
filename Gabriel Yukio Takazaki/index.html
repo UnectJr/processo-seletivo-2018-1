@@ -4,28 +4,26 @@
         <link rel="stylesheet" type="text/css" href="./css/style.css">
     </head>
     <body>
-        <div class="nomeCompleto">
-            <br>
+        <div class="nomeCompleto slides">
             <h1>Gabriel Yukio Takazaki</h1>
-            <br>
             <h2>Make a wish</h2>
-            <br>
-            <h2 id="botao" class="displayNone">Do you see the shooting star?
-                <br><br>
-                <button onclick="wish()">Yes</button>
+            <h2 id="botao" class="displayNone">Do you see the shooting star?<br>
+                <button class="wish" onclick="wish()">Yes</button>
             </h2>
             <h2 id="frase" class="displayNone">Let the dream become truth</h2>
             <img id="imagem" class="displayNone" src="./img/like.gif" >
         </div>
-        <div class="sobre">
-            <h2>Sobre Mim</h2>
+        <div class="sobre slides">
+            <h1>Sobre Mim</h1>
+            <h2></h2>
+
         </div>
-        <div class="hobbies">
-            <h2>Gostos</h2>
+            <div class="contato slides">
+        <h1>Contato</h1>
         </div>
-        <div class="contato">
-            <h2>Contato</h2>
-        </div>        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
         <script src="jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="javascript.js"></script>
     </body>
