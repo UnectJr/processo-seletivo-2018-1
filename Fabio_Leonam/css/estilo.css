@@ -1,0 +1,202 @@
+body{
+	background-color: #DCDCDC;
+}
+
+#centro{
+
+	background-color: #FFFFFF;
+	margin: 0 auto 0 auto;
+	width: 80%;
+	padding-top: 0; 
+	box-shadow: 0px 4px 30px #000000;
+	border-radius: 3px;		
+}
+
+#menu ul{
+	padding:16px;
+	margin:;
+	background-color:#000000; 
+	text-align:center;
+	border-color: #00000;
+	border-radius:2px;
+	font-family:Sans Serif;
+}
+#menu ul li { display: inline; }
+
+#menu ul li a {
+    padding: 4px 30px;
+    display: inline-block;
+    margin-right: 3%;
+
+
+    /* visual do link */
+    background-color:#000000;
+    color: white;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    background-color:#00000;
+    border-bottom:1px solid white;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+#eu{
+	
+	height: 200px;
+	padding: 0 auto;
+	margin-bottom: 30px;
+	margin-left: 2%;
+	margin-right: 2%;
+	font-size: 10px;
+	text-align: left;
+	font-family:sans-serif;
+	border-bottom:2px solid #C0C0C0 ;
+	border-radius: 4px;
+
+}
+#sobremim{
+	font-size: 40px;
+	font-family: sans-serif;
+	text-align: center; 
+
+}
+#text_eu{
+	font-size: 14px;
+	font-family:sans-serif;
+	margin-right: 2%;
+	height: 100px;
+	text-align: center;
+}
+#Bahia{
+	font-size: 40px;
+	font-family: serif;
+}
+#origem{
+	border-bottom:2px solid #C0C0C0;
+	height: 450px;
+	padding: 0 auto;
+	margin-bottom: 30px;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+#mapa{
+	width: 450px;
+	height: 250px;
+	margin-right: 2%;
+	margin-left: 2%;
+	display: block;
+	float: left;
+}				
+#texto_origem{
+	padding-top: 15px;
+	margin-right: 2%;
+	width: 40%;
+	height: 150px;
+	display: block;
+	float: right;
+	text-align: justify;
+}
+#Hb{
+	font-size: 40px;
+	font-family: serif;
+}
+#hobbies{
+	height:400px;
+	margin-right:2%;
+	margin-left:2%;
+	margin-bottom:30px;
+	border-bottom:2px solid #C0C0C0;
+	
+}
+#indicações{
+	width: 40%;
+	margin-right: 8%;
+	height: 250px;
+	float: right;
+	font-size: 15px;
+	font-family:sans-serif;
+}
+#texto_hobbies{
+	width: 40%;
+	height: 200px;
+	display: block;
+	float: left;
+	margin-left: 2%;		
+	text-align: justify;
+	font-family:sans-serif;
+}
+#computação{
+	height: 300px;
+	padding-bottom:10px;
+	margin-right:2%;
+	margin-left:2%;
+	height: 400px;
+	font-family:sans-serif;
+
+}
+#Comp{
+	font-size: 40px;
+	font-family:sans-serif;
+
+}
+#text_comp{
+	padding-top: 15px;
+	margin-right: 2%;
+	width: 55%;
+	height: 200px;
+	display: block;
+	float: left;
+	text-align: justify;
+}
+#img_linguagens{
+	margin-right: 2%;
+	height: 200px;
+	width: 350px;
+	float: right;
+}
+#img_linguagens img{
+	width: 100px;
+	height: 100px;
+}
+#contatos{
+	height: 200px;
+	background-color: #708090;	
+	padding-top: 1px;
+}
+#Contatos{
+	margin-left: 3%;
+}
+
+#redes{
+	margin-left: 3%;
+}
+
+#rodape{
+	background-color: #708090 ;
+	padding:1px;
+	margin:0 auto 0 auto;
+	text-align: center;
+	color:white;
+	font-family:Sans Serif;
+	line-height: 0px;	
+}
+
+#back-to-top{
+	width: 60px;
+	height: 60px;
+	background-image: url(../imagens/voltar_topo.png);
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+
+}
+#back-to-top:hover{
+	cursor: pointer;
+	background-position: 0 -60px;
+
+
+}
+
