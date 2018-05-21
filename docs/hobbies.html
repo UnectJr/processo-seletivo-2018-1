@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<htlm lang="pt-br">
+<html lang="pt-br">
   <head>
     <title>marilia | hobbies</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <meta http-equiv="content-type" content="text/html"; charset="utf-8"> <!--acentuacao ok-->
+    <meta http-equiv="content-type" content="text/html"; charset="utf-8">
   </head>
 
   <body>
-
-      <div class="wrapper2">
+    <div class="wrapper2">
 
         <div class="side">
           <img src="images/perfil.jpg" class="perfil_img" height="300px" width="300px" />
@@ -26,17 +25,51 @@
         </div>
 
         <div class="descricao">
-          <div class="titulo">
             <h2>Hobbies {</h2>
-          </div>
             <p><br />
-              <em><b>(Música)</b></em>
-              Toca piano desde os dez anos de idade, em maioria música clássica e temas de filmes. Também arranha um violão de vez em quando. Gosta de ouvir rock
-              (clássico, hard rock, progressivo, alternativo), mpb, música instrumental (piano e violão clássico), e música clássica.
-            </p>
+              <p>
+                <em><b>(Cinema)</b></em> É apaixonada por filmes, já assistiu uma lista generosa.
+                Gosta de trocar recomendações e discutir sobre filmes.
+              </p>
 
+              <div class="container">
+                <img id="imgID" src="images/1.jpg" />
+                <button class="btn" onclick="nextImg()">>></button>
+                <div class="lista">
+                  <em>watch(again)list:</em>
+                  <br />
+                    <ul>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt0470752/" target="_blank">Ex Machina</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt1798709/?ref_=fn_al_tt_1" target="_blank">Her</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt0211915/" target="_blank">Amelie Poulain</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt2267998/?ref_=nv_sr_1" target="_blank">Gone Girl</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt4972582/?ref_=nv_sr_1" target="_blank">Split</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt3416742/" target="_blank">What We Do In The Shadows</a>
+                      </li>
+                      <li>
+                        <a href="https://www.imdb.com/title/tt0485947/" target="_blank">Mr. Nobody</a>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+
+              <em><b>(Música)</b></em>
+              <p>
+                Toca piano desde os dez anos de idade, em maioria música clássica e temas de filmes. Também arranha um violão de vez em quando. Gosta de ouvir rock
+                (clássico, hard rock, progressivo, alternativo), mpb, música instrumental (piano e violão clássico), e música clássica.
+              </p>
               <em>playlist:</em>
-                <p>
                   <ul>
                     <li>
                       <a href="https://www.youtube.com/watch?v=jhgVu2lsi_k" target="_blank">Figure It Out (Royal Blood)</a>
@@ -60,40 +93,9 @@
                       <a href="https://www.youtube.com/watch?v=fUjOfsoBhMY" target="_blank">Preciso me Encontrar (Cartola)</a>
                     </li>
                   </ul>
-                </p>
 
                 <br />
 
-              <p>
-                <em><b>(Cinema)</b></em> É apaixonada por filmes, já assistiu uma lista generosa.
-                Gosta de trocar recomendações e discutir sobre filmes.
-              </p>
-
-              <em>watch(again)list:</em>
-                <p>
-                  <ul>
-                    <li>
-                      <a href="https://www.imdb.com/title/tt0470752/" target="_blank">Ex Machina</a>
-                    </li>
-                    <li>
-                      <a href="https://www.imdb.com/title/tt1798709/?ref_=fn_al_tt_1" target="_blank">Her</a>
-                    </li>
-                    <li>
-                      <a href="https://www.imdb.com/title/tt0211915/" target="_blank">Amelie Poulain</a>
-                    </li>
-                    <li>
-                      <a href="https://www.imdb.com/title/tt2267998/?ref_=nv_sr_1" target="_blank">Gone Girl</a>
-                    </li>
-                    <li>
-                      <a href="https://www.imdb.com/title/tt4972582/?ref_=nv_sr_1" target="_blank">Split</a>
-                    </li>
-                    <li>
-                      <a href="https://www.imdb.com/title/tt3416742/" target="_blank">What We Do In The Shadows</a>
-                    </li>
-                  </ul>
-                </p>
-
-              <br />
               <em><b>(Tech)</b></em> Gosta de programação e eletrônica. Fez alguns projetos utilizando microcontroladores PIC e
               adora montar coisas aleatórias com Arduino só para ver funcionar.
 
@@ -105,11 +107,27 @@
               <br />
               <h2>}</h2>
 
-              <br />
+              <footer>
+                &copy Marilia Machado Fernandez, 2018
+              </footer>
 
         </div>
         <div class="side_hobbies"></div>
 
       </div>
+
+      <script>
+        var estado = 1;
+        var image = document.getElementById("imgID");
+        setInterval(nextImg,4000);
+        function nextImg(user) {
+          if(estado == 7)
+            estado = 1;
+          else
+            estado++;
+          image.src = `images/${estado}.jpg`;
+        }
+      </script>
+
   </body>
 </html>

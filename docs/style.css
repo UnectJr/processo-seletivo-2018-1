@@ -1,6 +1,3 @@
-/*FIX hover links submenu e descrição*/
-
-
 *{
   padding: 0;
   margin: 0;
@@ -9,6 +6,12 @@
 body{
   background-color: #f4f4f4;
   color: #7F7182;
+}
+
+footer {
+  margin-bottom: 0;
+  font-size: 12px;
+  text-align: right;
 }
 
 a{
@@ -23,14 +26,14 @@ a:hover{
 
 a:visited{
   text-decoration: none;
-  color: brown;
 }
 
 ul{
-  padding-left: 1em;
   font-size: 15px;
   list-style-type: none;
   line-height: 200%;
+  padding-top: 1em;
+  text-align: left;
 }
 
 h1{
@@ -71,8 +74,8 @@ em{
 }
 
 .menu > div{
-  filter:alpha(opacity=70); /*IE 8 e 9*/
-  opacity:.70; /*Firefox 0.9+, Safari 2, Chrome, Opera 9+, IE 9+*/
+  filter:alpha(opacity=70); /*IE 8 e anteriores*/
+  opacity:.70;
   transition: 0.5s;
 }
 
@@ -137,14 +140,6 @@ em{
   height: 100vh;
 }
 
-.titulo{
-  font-family: font;
-  background-color: white;
-  color: black;
-  padding-top: 3em;
-  padding-left: 0;
-}
-
 .descricao{
   padding-left: 3em;
   padding-right: 5em;
@@ -153,8 +148,16 @@ em{
   background-color:white;
   color: black;
   line-height: 300%;
-  font-size: 16px;
+  font-size: 15px;
   text-align:justify;
+}
+
+.descricao h2{
+  font-family: font;
+  background-color: white;
+  color: black;
+  padding-left: 0;
+  padding-top: 1em;
 }
 
 .side{
@@ -176,7 +179,6 @@ em{
   filter:alpha(opacity=70);
   opacity:0.7;
   transition: 1s;
-  /*filter: blur(3px);*/
 }
 
 .side_about:hover{
@@ -200,7 +202,6 @@ em{
 .side_hobbies:hover{
   background-image: url("images/img5.jpg");
   background-size: cover;
-
   filter:alpha(opacity=100);
   opacity:1;
 }
@@ -218,7 +219,6 @@ em{
 .side_social:hover{
   background-image: url("images/img6.jpg");
   background-size: left;
-
   filter:alpha(opacity=100);
   opacity:1;
 }
@@ -227,38 +227,39 @@ em{
   padding-top: 2em;
   padding-left: 3em;
   text-align: center;
-  display:run-in;
+  display:inline-block;
 }
 
-.social_icons > a{
+.social_icons a{
   filter:alpha(opacity=70);
   opacity:0.7;
 }
 
-.social_icons > a:hover{
+.social_icons a:hover{
   filter:alpha(opacity=100);
   opacity:1;
-}
-
-.titulo_menu{
-  text-align: left;
 }
 
 .submenu{
   padding-top: 1em;
 }
 
-.submenu > a:hover{
+.submenu h1{
+  text-align: left;
+}
+
+.submenu a:hover{
   text-align: center;
   filter:alpha(opacity=50);
   opacity:0.5;
+  color: grey;
 }
 
 .perfil_img{
   border-radius: 50%;
   padding-bottom: 3em;
   filter:alpha(opacity=70);
-  opacity:.70;
+  opacity:0.70;
   -webkit-filter: grayscale(60%);
   filter: grayscale(60%);
   max-width: 100%;
@@ -266,12 +267,66 @@ em{
 }
 
 .perfil_img:hover {
-  border-radius: 50%;
+  border-radius: 50;
+  padding-right:4em;
   filter:alpha(opacity=100);
   opacity:1;
   -webkit-filter: grayscale(60%);
   filter: grayscale(60%);
   max-width: 100%;
+}
+
+
+.container{
+  padding-top: 1em;
+  position: relative;
+  width: 100%;
+}
+
+.container img {
+  width: 40%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.container .lista  em{
+  position: absolute;
+  top:0;
+  left:50%;
+}
+
+.container .lista ul {
+  position: absolute;
+  padding-top:4em;
+  top:0;
+  left:50%;
+}
+
+.container .btn {
+  font-family: font;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  opacity: 0.50;
+  filter:alpha(opacity=50);
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  width: 50px;
+  cursor: pointer;
+  margin: 5px;
+  top: 40%;
+  left: 30%;
+  font-size: 16px;
+  padding: 12px 24px;
+  position: absolute;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
 }
 
 @font-face {
