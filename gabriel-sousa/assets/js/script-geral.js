@@ -20,3 +20,28 @@ window.onscroll = function() {
     }
     posAntScroll = posAtualScroll;
 }
+
+// SCROLL SUAVE PARA TODOS OS LINKS
+$(document).ready(function(){
+    // Add scroll suave para todos os links
+    $("a").on('click', function(event) {
+        // Tenha certeza que this.hash tenha um valor antes de sobrepor o comportamento padrao
+        if (this.hash !== "") {
+            // Prevenir comportamento padrao do click ancora
+            event.preventDefault();
+
+            // Armazena o hash
+            var hash = this.hash;
+
+            // Usar o metodo animate() do jQuery para add scroll suave à pagina
+            // O numero opicional (800) especifica o numero em milisegundos que vai levar para rolar para a area especifica
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+            
+                // Add hash (#) à URL quando a rolagem terminar (comportamento padrao do clique)
+                window.location.hash = hash;
+            });
+        } // Termina If
+    });
+});
