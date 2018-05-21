@@ -1,6 +1,13 @@
 html, body{
     height: 100%;
     width: 100%;
+    background-image: url(../images/fundo2.jpg);
+    background-attachment: fixed;
+    background-size: cover;   
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;  
 }
 
 section{
@@ -36,15 +43,21 @@ h2,h3,h4,h5,h6{
     font-weight: bold;
 }
 
+#logo-navbar{
+    width: 10%;
+    height: 10%;
+    margin-left: 10px;
+}
+
 /*------------------------------------------------------------------------------*/
 #inicio {
-    background-image: url(../images/);
+    /*background-image: url(../images/forest.jpg);
     background-attachment: fixed;
     background-size: cover;   
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.7;   
+    opacity: 0.7;   */
     
 }
 
@@ -54,10 +67,15 @@ h2,h3,h4,h5,h6{
     vertical-align: middle;
 }
 
+#logo-homepage{
+    width: 30%;
+    height: 50%;
+}
+
 /*-------------------------------------------------------------------------------*/
 .container{
     /*background-image: url(/images/fundo-home.jpg);*/
-    margin-top: 40px;
+    margin-top: 80px;
     text-align: center;
     vertical-align: middle;
     font-size: 23px;
@@ -66,6 +84,12 @@ h2,h3,h4,h5,h6{
     background-size: cover;
 }
 
+#button-modal{
+    
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 60px;
+}
 
 /*-------------------------------------------------------------------------------*/
 
@@ -100,8 +124,8 @@ h2,h3,h4,h5,h6{
     font-family: 'Roboto Mono', monospace;
 }
 
-.showcase .ferramentas{ 
-    
+
+#ref-ferramentas{     
     display: table-cell;
     vertical-align: middle;
 }
