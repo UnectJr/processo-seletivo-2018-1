@@ -28,7 +28,8 @@ $(document).ready(function(){
         // Tenha certeza que this.hash tenha um valor antes de sobrepor o comportamento padrao
         if (this.hash !== "") {
             // Prevenir comportamento padrao do click ancora
-            event.preventDefault();
+            // para que nao exista smooth scroll no iframe, comentar a linha abaixo
+            /* event.preventDefault(); */
 
             // Armazena o hash
             var hash = this.hash;
