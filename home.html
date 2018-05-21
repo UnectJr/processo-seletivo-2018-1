@@ -6,6 +6,8 @@
         <meta name="description" content="?????">
         <meta name="keywords" content="Tigre, Felino, Salve os Tigres, ">
         <meta name="author" content="Gustavo Marques">
+        <!--Style CSS-->
+        <link rel="stylesheet" href="style.css">
         <!--Materialize CSS-->
         <link rel="stylesheet" href="./materialize/css/materialize.min.css">
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -19,19 +21,27 @@
     </head>
     <body>
         <div class="mom">
-            <nav>
-                <div class="nav-wrapper light-blue">
-                        <a href="#" class="brand-logo">Logo</a>
-                        <ul class="right show-on-large">
-                            <li><a href="#" class="waves-effect waves-orange">Inicio</a></li>
-                            <li><a href="#" class="waves-effect waves-orange">Raças</a></li>
-                            <li><a href="#" class="waves-effect waves-orange">Salve Nossos Felinos</a></li>
-                            <li><a href="#" class="waves-effect waves-orange">Curiosidades</a></li>
-                    </ul>
-                </div>
-            </nav>
             <div class="inicio_p">
-                <center><h1>Inicio (video)</h1></center>
+                <header class="v-header container">
+                    <div class="video-fullscreen">
+                        <video src="./media/eye.mp4" autoplay="true" loop="true" muted="true"></video>
+                    </div>
+                    <div class="video-overlay">
+                        <div class="overlay-content">
+                            <nav>
+                                <div class="nav-wrapper z-depth-5">
+                                    <ul class="right hide-on-med-and-down">
+                                        <li><a href="#" class="waves-effect waves-orange">Raças</a></li>
+                                        <li><a href="#" class="waves-effect waves-orange">Salve Nossos Felinos</a></li>
+                                        <li><a href="#" class="waves-effect waves-orange">Curiosidades</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                            <h1>Salve Nossos Felinos</h1>
+                            <p>Há nove subespécies distintas de tigre, três das quais estão extintas.</p>
+                        </div>
+                    </div>
+                </header>
             </div>
             <div class="racas_p">
                 <center><h1>Raças (carrossel)</h1></center>
