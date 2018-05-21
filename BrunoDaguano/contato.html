@@ -12,38 +12,38 @@
 </head>
 
 <body>
+	<div class="container">	
+		<div class="topbar">
+			<nav id="menu">
+				
+			<h3 class="banner_nome">Bruno Augusto Daguano</h3>
+			<h3 class="banner_curso">Engenheiro de Software</h3>
+		    <ul>
+		        <li class="li_index"><a href="index.html">Home</a></li>
+		        <li class="li_curriculo"><a href="curriculo.html">Currículo</a>
+		        <li class="li_contato"><a href="contato.html">Contato</a></li>
+		    </ul>
+			</nav>
+		</div>
 	
-	<div class="topbar">
-		<nav id="menu">
-			
-		<h3 class="banner_nome">Bruno Augusto Daguano</h3>
-		<h3 class="banner_curso">Engenheiro de Software</h3>
-	    <ul>
-	        <li class="li_index"><a href="index.html">Home</a></li>
-	        <li class="li_curriculo"><a href="curriculo.html">Currículo</a>
-	        <li class="li_contato"><a href="contato.html">Contato</a></li>
-	    </ul>
-		</nav>
-	</div>
+	<div class="contato">
 
-	
-	<div class="curriculo">
-
-		<img class="fundo" src="https://png.pngtree.com/thumb_back/fw800/back_pic/04/55/78/815864ce33e4cb7.jpg">
+		<img class="fundo_contato" src="https://png.pngtree.com/thumb_back/fw800/back_pic/04/55/78/815864ce33e4cb7.jpg">
 		
 		<div class="fomulario">
-			<form class="form_email" action="enviar.php" method="POST">
+			<!--<form action="php/enviar.php" method="POST">-->
+				<form action="index.html">
 				<p class="p_contato">Entre em Contato</p>
 				<input class="nome" type="text" name="nome" placeholder="Informe seu Nome">
 				<input class="Email" type="email" name="email" placeholder="Informe seu Email">
 				<input class="assunto" type="text" name="assunto" placeholder="Informe o Assusto">
-				<textarea class="mensagem" name="message" rows="10" cols="30">Escreva a Mensagem</textarea>
+				<input class="mensagem" type="text" name="message" placeholder="Escreva a Mensagem">
 				<input class="enviar" type="submit" name="enviar" value="Enviar">
 			</form>
 		</div>
 	</div>
 
-	
+
 	<footer >
   	  <div class="imagens">
   	  		<div class="telefone">
@@ -69,7 +69,7 @@
 
   	  </div>
   	</footer> 
-
+</div>
 </body>
 </html>
 
