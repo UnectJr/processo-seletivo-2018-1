@@ -1,13 +1,14 @@
-@charset"utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 body {
    	padding: 0;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 h1{margin:0; padding:0; font-size:22px; margin-top:5px; font-variant:small-caps; color: #EAEAEA;}
 h2, h3, h4{text-align-last: center; color: #3C4348}
-p{font-size: 17px; color: #000000; font-family: 'Monaco'; }
+p{font-size: 17px; color: #000000; }
 
 footer{ 
 	width: 1350px;
@@ -20,14 +21,12 @@ footer{
 
 #menu ul li { 
 	display: inline; 
-	font-family: 'Georgia';
 	margin: 0;
 	padding: 0;
 }
 
 .banner_nome{
 	font-size: 20px;
-	font-family: 'Georgia';
 	color: white;
 	float: left;
 	position: relative;
@@ -40,7 +39,6 @@ footer{
 .banner_curso{
 	top: 2%;
 	font-size: 15px;
-	font-family: 'Georgia';
 	color: white;
 	float: left;
 	position: relative;
@@ -49,7 +47,6 @@ footer{
 	left: -10%;
 	color: #3C4348;
 }
-
 
 .topbar{
 	padding: 70px;
@@ -91,9 +88,7 @@ footer{
 	width: 1350px;
 	height: 550px;
 	background-repeat: no-repeat;
-
 }
-
 
 .fundo_contato{
 	position: relative;
@@ -104,7 +99,6 @@ footer{
 	background-repeat: no-repeat;
 
 }
-
 
 .contato{
 	position: relative;
@@ -125,7 +119,6 @@ footer{
 	height: 600%;	
 }
 
-
 .index{
 	position: relative;
 	display: block;
@@ -134,7 +127,6 @@ footer{
 	width: 40.8%;
 	height: 600px;	
 }
-
 
 .telefone{
 	position: relative;
@@ -147,7 +139,6 @@ footer{
 	margin: 3%;
 	top: 1px;
 }
-
 
 .email{
 	position: relative;
@@ -162,7 +153,6 @@ footer{
 }
 
 .phone{
-	font-family: "Lato";
 	position: relative;
 	display: block;
 	float: left;
@@ -170,9 +160,7 @@ footer{
 	margin: 6%;
 }
 
-
 .mail{
-	font-family: "Lato";
 	position: relative;
 	display: block;
 	float: left;
@@ -214,12 +202,11 @@ footer{
 }
 
 .formacao_academica{
-	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
-	left: 35%;
-	top: -530px;
+	left: 28%;
+	top: -505px;
 	width: 50%;	
 }
 
@@ -228,11 +215,10 @@ footer{
 	display: block;
 	float: left;
 	left: 10%;
-	top: -530px;
+	top: -510px;
 }
 
 .experiencia_profissional{
-	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
@@ -241,8 +227,6 @@ footer{
 }
 
 .fundap{
-
-	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
@@ -265,12 +249,9 @@ footer{
 	left: 10.5%;
 	top: -460px;
 	overflow: inherit;
-	
-
 }
 
 .qualificacoes{
-	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
@@ -282,7 +263,7 @@ footer{
 	position: relative;
 	display: block;
 	float: left;
-	left: 60%;
+	left: 63%;
 	top: -131%;
 }
 
@@ -311,7 +292,6 @@ footer{
 }
 
 .linguagens{
-	font-family: 'Trebuchet MS';
 	position: relative;
 	display: block;
 	float: left;
@@ -386,7 +366,7 @@ footer{
 	position: relative;
 	display: block;
 	float: right;
-	left:   18%;
+	left:   16%;
 	top: -370px;
 	width: 50%;
 	height: 100px;	
@@ -396,16 +376,14 @@ footer{
 	position: relative;
 	display: block;
 	float: right;
-	left:   68%;
+	left:   66%;
 	top: -250px;
 }
-
 
 .curriculo{
 	height: 550px;
 	width: 550px;
 }
-
 
 .h_nome{
 	position: relative;
@@ -423,36 +401,25 @@ footer{
 	right: 0%;
 }
 
-
-
 @media only screen and (max-width: 800px){
 
 	.fundo{
-		position: relative;
 		width: 800px;
 		left: -0px;
 	}
 
-
 	.fundo_curriculo{
-		position: relative;
-		display: block;
 		width: 800px;
 		height: 100%;
 	}
 
 	.fundo_contato{
-		position: relative;
-		display: block;
 		width: 800px;
 		height: 100%;
 	}
 
 	footer{ 
 		width: 800px;
-		background-color: gray;
-		float: left;
-		position: relative;
 	}
 
 	#menu{
@@ -463,13 +430,9 @@ footer{
 	.topbar{
 		padding: 80px;
 		width: 640px;
-		text-align-last: center;
-		background-color: gray;
-		position: relative;
 	}
 
 	.banner_nome{
-		float: left;
 		top: -70px;
 		left: 38%;
 	}
@@ -478,82 +441,51 @@ footer{
 		display: none; 
 	}
 
-
 	.telefone{
-		position: relative;
-		display: block;
-		float: left;
 		height: 15%;
 		width: 15%;
-		background-repeat: no-repeat;
 		left: 0%;
 		margin: 3%;
 	}
 
-
 	.email{
-		position: relative;
-		display: block;
-		float: left;
 		height: 20%;
 		width: 20%;
-		background-repeat: no-repeat;
 		left: 5%;
 		margin: 3%;
 		top: 4px;
 	}
 
 	.phone{
-		font-family: "Lato";
-		position: relative;
-		display: block;
-		float: left;
 		left: 25%;
 		top: -25px;
 		width: 100px;
 		font-size: 14px;
 	}
 
-
 	.mail{
-		font-family: "Lato";
-		position: relative;
-		display: block;
-		float: left;
 		left: 40%;
 		top: -32px;
 		font-size: 14px;
 	}
 
 	.face{
-		background-repeat: no-repeat;
-		position: relative;
-		display: block;
 		width: 25px;
 		height: 25px;
-		float: left;
 		left: -40%;
 		top: 90px;
 	}
 
 	.git{
-		background-repeat: no-repeat;
-		position: relative;
-		display: block;
 		width: 25px;
 		height: 25px;
-		float: left;
 		left: -30%;
 		top: 90px;
 	}
 
 	.linkedin{
-		background-repeat: no-repeat;
-		position: relative;
-		display: block;
 		width: 25px;
 		height: 25px;
-		float: left;
 		left: -20%;
 		top: 90px;
 	}
@@ -565,14 +497,12 @@ footer{
 		top: 140px;
 	}
 
-
 	.li_curriculo{
 		float: left;
 		position: absolute;
 		left:   150px;
 		top: 140px;
 	}
-
 
 	.li_contato{
 		float: left;
@@ -582,25 +512,16 @@ footer{
 	}
 
 	.descricao{
-		position: relative;
 		left: 70px;
 		width: 150%;
 	}
 
-
 	.formacao_academica{
-		font-family: 'Trebuchet MS';
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -530px;	
 	}
 
 	.p_formacao{
-		position: relative;
-		display: block;
-		float: left;
 		left: -30%;
 		width: 50%;
 		top: -490px;
@@ -608,37 +529,22 @@ footer{
 	}
 
 	.experiencia_profissional{
-		font-family: 'Trebuchet MS';
-		position: relative;
-		display: block;
-		float: left;
 		left: 25%;
 		top: -500px;
 	}
 
 	.fundap{
-
-		font-family: 'Trebuchet MS';
-		position: relative;
-		display: block;
-		float: left;
 		left: -5%;
 		top: -470px;
 	}
 
 	.cargo{
-		position: relative;
-		display: block;
-		float: left;
 		left: -43%;
 		top: -80%;
 		font-size: 16px
 	}
 
 	.atividades{
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -470px;
 		font-size: 16px;
@@ -646,36 +552,23 @@ footer{
 	}
 
 	.qualificacoes{
-		font-family: 'Trebuchet MS';
-		position: relative;
-		display: block;
-		float: left;
 		left: 12%;
 		top: -490px;
 	}
 
 	.p_ingles{
-		position: relative;
-		display: block;
-		float: left;
 		left: -50%;
 		top: -82%;
 		font-size: 16px;
 	}
 
 	.p_espanhol{
-		position: relative;
-		display: block;
-		float: left;
 		left: -50%;
 		top: -86%;
 		font-size: 16px;
 	}
 
 	.p_gestao{
-		position: relative;
-		display: block;
-		float: left;
 		left: 19.5%;
 		top: -490px;
 		width: 300px;
@@ -683,9 +576,6 @@ footer{
 	}
 
 	.p_instrumental{
-		position: relative;
-		display: block;
-		float: left;
 		left: 19.5%;
 		top: -500px;
 		width: 300px;
@@ -697,36 +587,24 @@ footer{
 	}
 
 	.nome{
-		position: relative;
-		display: block;
-		float: right;
 		left:  80%;
 		top: -440px;
 		width: 50%;
 	}
 
 	.Email{
-		position: relative;
-		display: block;
-		float: right;
 		left:  80%;
 		top: -420px;
 		width: 50%;
 	}
 
 	.assunto{
-		position: relative;
-		display: block;
-		float: right;
 		left: 80%;
 		top: -400px;
 		width: 50%;
 	}
 
 	.mensagem{
-		position: relative;
-		display: block;
-		float: right;
 		left:   42%;
 		top: -370px;
 		width: 50%;
@@ -734,62 +612,43 @@ footer{
 	}
 
 	.enviar{
-		position: relative;
-		display: block;
-		float: right;
 		left:   93%;
 		top: -250px;
 	}
-
 
 	.curriculo{
 		height: 550px;
 		width: 550px;
 	}
 
-
 	.h_nome{
-		position: relative;
-		display: block;
-		float: left;
 		top: -500px;
 		left: 50%; 
 		width: 100%;
 	}
 
 	.p_contato{
-		position: relative;
-		display: block;
-		float: right;
 		top: -500px;
 		left:  30%;
 	}
-
 }
-
 
 @media only screen and (max-width: 460px){
 
 	.fundo{
-		position: relative;
 		background-size: 100%;
 		width: 550px;
 		height: 100%;
 		background-size: cover;
 		background-position: left;
-		display: block;
 	}
 
 	.fundo_curriculo{
-		position: relative;
-		display: block;
 		width: 550px;
 		height: 100%;
 	}
 
 	.fundo_contato{
-		position: relative;
-		display: block;
 		width: 550px;
 		height: 100%;
 	}
@@ -802,17 +661,11 @@ footer{
 	.topbar{
 		padding: 70px;
 		width: 25.6em;
-		text-align-last: center;
-		background-color: gray;
-		position: relative;
 	}
 
 	footer{ 
 		width: 34.4rem;
 		height: 100px;
-		background-color: gray;
-		float: left;
-		position: relative;
 	}
 
 	.banner_nome{
@@ -826,79 +679,50 @@ footer{
 	}
 
 	.telefone{
-		position: relative;
-		display: block;
-		float: left;
 		height: 20%;
 		width: 20%;
-		background-repeat: no-repeat;
 		left: 0%;
 		margin: 3%;
 	}
 
 
 	.email{
-		position: relative;
-		display: block;
-		float: left;
 		height: 25%;
 		width: 25%;
-		background-repeat: no-repeat;
 		left: 5%;
 		margin: 3%;
 	}
 
 	.phone{
-		font-family: "Lato";
-		position: relative;
-		display: block;
-		float: left;
 		left: 10%;
 		top: -10px;
 		width: 30px;
 		font-size: 14px;
 	}
 
-
 	.mail{
-		font-family: "Lato";
-		position: relative;
-		display: block;
-		float: left;
 		left: 40%;
 		top: -32px;
 		font-size: 14px;
 	}
 
 	.face{
-		background-repeat: no-repeat;
-		position: relative;
-		display: block;
 		width: 20px;
 		height: 20px;
-		float: left;
 		left: 20%;
 		top: 50px;
 	}
 
 	.git{
-		background-repeat: no-repeat;
-		position: relative;
-		display: block;
 		width: 20px;
 		height: 20px;
-		float: left;
 		left: 40%;
 		top: 50px;
 	}
 
 	.linkedin{
-		background-repeat: no-repeat;
-		position: relative;
-		display: block;
 		width: 20px;
 		height: 20px;
-		float: left;
 		left: 60%;
 		top: 50px;
 	}
@@ -931,7 +755,6 @@ footer{
 		height: 50rem;	
 	}
 
-
 	.curriculo{
 			position: relative;
 			display: block;
@@ -958,18 +781,11 @@ footer{
 	}
 
 	.formacao_academica{
-		font-family: 'Trebuchet MS';
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -780px;	
 	}
 
 	.p_formacao{
-		position: relative;
-		display: block;
-		float: left;
 		left: 10%;
 		width: 80%;
 		top: -790px;
@@ -977,29 +793,17 @@ footer{
 	}
 
 	.experiencia_profissional{
-		font-family: 'Trebuchet MS';
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -810px;
 	}
 
 	.fundap{
-		font-family: 'Trebuchet MS';
-		position: relative;
-		display: block;
-		float: left;
 		left: -10%;
 		top: -780px;
 		width: 25%;
 	}
 
-
 	.atividades{
-		position: relative;
-		display: block;
-		float: left;
 		left: 10%;
 		top: -800px;
 		font-size: 16px;
@@ -1007,29 +811,18 @@ footer{
 	}
 
 	.qualificacoes{
-		font-family: 'Trebuchet MS';
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -810px;
 		width: 80%;
-
 	}
 
 	.p_ingles{
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -101%;
 		font-size: 16px;
 	}
 
 	.p_espanhol{
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -103%;
 		font-size: 16px;
@@ -1037,9 +830,6 @@ footer{
 	}
 
 	.p_gestao{
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -835px;
 		width: 80%;
@@ -1047,9 +837,6 @@ footer{
 	}
 
 	.p_instrumental{
-		position: relative;
-		display: block;
-		float: left;
 		left: 20%;
 		top: -850px;
 		width: 80%;
@@ -1061,36 +848,24 @@ footer{
 	}
 
 	.nome{
-		position: relative;
-		display: block;
-		float: right;
 		left:  550%;
 		top: -740px;
 		width: 350%;
 	}
 
 	.Email{
-		position: relative;
-		display: block;
-		float: right;
 		left:  550%;
 		top: -720px;
 		width: 350%;
 	}
 
 	.assunto{
-		position: relative;
-		display: block;
-		float: right;
 		left: 550%;
 		top: -700px;
 		width: 350%;
 	}
 
 	.mensagem{
-		position: relative;
-		display: block;
-		float: right;
 		left:   550%;
 		top: -680px;
 		width: 350%;
@@ -1098,26 +873,16 @@ footer{
 	}
 
 	.enviar{
-		position: relative;
-		display: block;
-		float: right;
 		left:   550%;
 		top: -650px;
 	}
 
-
 	.h_nome{
-		position: relative;
-		display: block;
-		float: left;
 		top: -720px;
 		left: 0%; 
 	}
 
 	.p_contato{
-		position: relative;
-		display: block;
-		float: right;
 		top: -750px;
 		left:  530%;
 		width: 300%;
