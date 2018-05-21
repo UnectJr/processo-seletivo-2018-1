@@ -11,6 +11,36 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Propriedades para elementos genéricos */
 
 html {
@@ -28,6 +58,7 @@ body {
     margin: 10px auto 10px auto;
     transition: all 0.3s ease;
     overflow: hidden;
+    font-size: 100%;
 }
 
 * {
@@ -39,6 +70,36 @@ a {
     color: black;
     text-decoration: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -170,8 +231,20 @@ a {
     font-weight: bold;
     letter-spacing: 3px;
     color: #000000;
-    font-size: 200%;
+    font-size: 1.5em;
 }
+
+.nickName {
+
+    margin-left: 10px;
+    margin-top: -0.1%;
+    font-family: verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #8c8c8c;
+    font-size: 1.5em;
+}
+
 
 .lgray {
 
@@ -186,21 +259,12 @@ a {
     font-weight: bold;
     letter-spacing: 3px;
     color: black;
-    font-size: 130%;
+    font-size: 1.1em;
     display: none;
     text-align: center;
     margin-top: -2%;
 }
 
-.nickName {
-    margin-left: 10px;
-    margin-top: -0.1%;
-    font-family: verdana, sans-serif;
-    font-weight: bold;
-    letter-spacing: 3px;
-    color: #8c8c8c;
-    font-size: 180%;
-}
 
 .infoNickName {
 
@@ -227,7 +291,7 @@ a {
 
 .navIcon {
 
-    font-size: 180%;
+    font-size: 1.8em;
     color: white;
 }
 
@@ -241,7 +305,7 @@ a {
     text-shadow: 2px 2px 7px white;
     color: black;
     font-family: Impact, Charcoal, sans-serif;
-    font-size: 150%;
+    font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 3px;
     transition: background-color 0.4s ease;
@@ -369,7 +433,7 @@ a {
     text-align: justify;
     letter-spacing: 3px;
     font-family: 'Lucida Console', Monaco, monospace;
-    font-size: 130%;
+    font-size: 1.18em;
     margin-left: 2%;
     margin-right: 2%;
     line-height: 250%;
@@ -384,7 +448,7 @@ a {
 .subTitle {
 
     margin-left: 50px;
-    font-size: 180%;
+    font-size: 1.8em;
     font-family: 'Lucida Console', Monaco, monospace;
 }
 
@@ -402,12 +466,11 @@ a {
     height: 100%;
     width: 20%;
     float: left;
-
     text-align: center;
     text-shadow: 2px 2px 7px black;
     color: lightgray;
     font-family: verdana, sans-serif;
-    font-size: 120%;
+    font-size: 1em;
     font-weight: bold;
     letter-spacing: 3px;
     padding-top: 1%;
@@ -476,7 +539,7 @@ a {
     text-align: justify;
     letter-spacing: 3px;
     font-family: 'Lucida Console', Monaco, monospace;
-    font-size: 130%;
+    font-size: 1.18em;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
@@ -502,7 +565,7 @@ a {
 
 .big {
 
-    font-size: 250%;
+    font-size: 2.3em;
     /* Por algum motivo isso não funciona */
     text-decoration: none!important;
 }
@@ -511,6 +574,36 @@ a {
 
     background-image: url("img/maestria.gif");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -567,6 +660,36 @@ a {
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -850,6 +973,36 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Propriedades de estilos a serem mudados se a tela tiver menos de 1013 pixels de largura */
 
 @media only screen and (max-width: 1013px) {
@@ -926,6 +1079,36 @@ a {
         height: 40%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
