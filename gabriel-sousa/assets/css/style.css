@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Roboto'); */
 
 /* RESET CSS */
 html, body, div, span, applet, object, iframe,
@@ -21,14 +22,19 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 	/* remover linha abaixo depois da estrutura*/
-	border: 1px solid rgba(0,0,0,0.7);
+	/* border: 1px solid rgba(0,0,0,0.7); */
 }
 
 html {
 	font-size: 16px;
 	line-height: 1.5;
-	font-family: Helvetica, Arial, sans-serif;
 }
+
+body {
+	background-color: rgb(235, 235, 235);
+	font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+}
+
 /* esconder a ancora para o inicio da pagina */
 #inicio {
 	display: none;
@@ -64,33 +70,44 @@ p {
 
 /* DIVISAO GERAL PARA O CABECALHO PRINCIPAL */
 header#header-principal {
-	background-color: aqua;
+	background-color: rgb(51, 51, 51);
 	width: 100%;
-	height: 3.5rem;
+	height: 3rem;
 	position: fixed;
 	top: 0;
 	transition: top 0.4s;
+	z-index: 1;
 }
 
 /* MENU PRINCIPAL TOPO */
 nav#menu-principal {
-	width: 75%;
+	background-color: inherit;
+	width: 70%;
 	height: inherit;
 	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 	/* estilizar os links dentro do nav */
 	.topnav a {
+		background-color: inherit;
 		float: left;
 		display: block;
-		color: black;
+		color:  rgb(236, 236, 236);
+		font-size: 0.95rem;
 		text-align: center;
-		padding: 0.8rem;
+		padding: 0.8rem 0.55rem;
 		text-decoration: none;
+	}
+	.topnav a:not(:last-child) {
+		margin-right: 1%;
+	}
+	.topnav a:first-child {
+		margin-right: 26%;
 	}
 	/* mudar a cor dos links ao passar por cima */
 	.topnav a:hover {
-		background-color: black;
-		color: white;
+		background-color: rgb(80, 80, 80);
 	}
 	/* esconder o link que deverá abrir e fechar o topnav em telas pequenas */
 	.topnav .icone {
@@ -99,31 +116,34 @@ nav#menu-principal {
 
 /* DIVISAO GERAL PARA O CURRICULO */
 div#divisao-curriculo {
-	width: 75%;
-	margin: 4.5rem auto 0 auto;
-	background-color: red;
+	width: 70%;
+	margin: 3rem auto 0 auto;
 }
 	/* resolve conteudo transborda por causa do float */
 	div#divisao-curriculo::after {
 		content: "";
 		clear: both;
 		display: table;
-  }
+  	}
 
 /* ASIDE ESQUERDA FIXO */
 aside#info-fixo {
 	width: 25%;
-	background-color: brown;
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 4rem;
 	display: block;
 	float: left;
 }
-	div#sub-info-fixo {
-		margin: 2%;
-		background-color: purple;
+	/* Formatacao das fontes do aside */
+	aside h4 {
+		font-size: 0.85rem;
+		margin: 1rem 0;
 	}
 	/* formatação da imagem perfil circular */
 	.foto-perfil {
-		width: 70%;
+		width: 50%;
+		margin-bottom: 1rem;
 	}
 	.foto-perfil img {
 		width: 100%;
@@ -134,22 +154,29 @@ aside#info-fixo {
 
 /* INTERFACE GERAL CONTEUDO */
 div#interface-geral-conteudo {
-	width: 72%;
-	background-color: yellow;
+	width: 65%;
+	margin-top: 0.5rem;
 	display: block;
 	float: right;
 }
 
 	/* SECTIONS DA INTERFACE GERAL */
 	section.sections-conteudo {
-		/* REMOVER AS DUAS LINHAS DEPOIS */
-		margin: 0 1% 1% 1%;
-		padding: 0.3rem;
-		background-color: chartreuse;
+		margin: 1% 0;
+		padding: 1rem 3rem 1rem 1rem;
+		background-color: rgb(255, 255, 255);
+		border: none;
+		box-shadow: -0.5px 0px 10px #CCC;
 	}
 
 	section.sections-conteudo ul {
-		margin-bottom: 2%;
+		margin-bottom: 4%;
+		padding-top: 1rem;
+		border-top: 1px solid rgb(51, 51, 51);
+	}
+
+	.sections-conteudo ul .meta-data {
+		font-size: 0.75rem;
 	}
 
 		section.sections-conteudo ul li {
@@ -158,15 +185,13 @@ div#interface-geral-conteudo {
 
 /* DIVISAO GERAL PARA O BLOG */
 div#divisao-blog {
-	width: 75%;
-	margin: 0.5rem auto 0 auto;
-	background-color: lightcoral;
+	width: 70%;
+	margin: 8rem auto;
 }
 	/* sub divisao de blog para centralizar o header + section */
 	div div#sub-divisao-blog {
 		width: 75%;
 		margin: 0 auto;
-		background-color: fuchsia;
 	}
 	/* resolve conteudo transborda por causa do float */
 	div div#sub-divisao-blog::after {
@@ -179,11 +204,28 @@ div#divisao-blog {
 			width: 35%;
 			display: block;
 			float: left;
-			background-color: gold;
+			background-color: rgb(165, 165, 165);
+			padding: 1rem;
 		}
 			header nav#navbar-blog {
 				width: 100%;
-				background-color: orangered;
+			}
+			nav#navbar-blog ul li {
+				list-style: none;
+				text-transform: uppercase;
+				font-size: 0.8rem;
+			}
+			nav#navbar-blog ul li a {
+				display: block;
+				text-decoration: none;
+				padding: 0.8rem 0.3rem;
+				margin-bottom: 0.5rem;
+				color: rgb(255, 255, 255);
+				background-color: rgb(56, 56, 56);
+				box-sizing: border-box;
+			}
+			nav#navbar-blog ul li a:hover {
+				border-right: 2px solid rgb(47, 120, 255);
 			}
 
 		/* section = iframe, noticias */
@@ -200,23 +242,27 @@ div#divisao-blog {
 				height: 100%;
 				border: none;
 			}
+				
 
 /* DIVISAO GERAL PARA O CONTATO */
 div#divisao-contato {
-	width: 75%;
-	margin: 0.5rem auto 0 auto;
-	background-color: crimson;
+	width: 70%;
+	margin: 0.5rem auto 0 auto; 
 }
+	div#divisao-contato::after {
+		content: "";
+		clear: both;
+		display: table;
+	  }
+	  
 	/* subdivisao de contato para centralizar */
 	div#sub-divisao-contato {
 		width: 75%;
 		margin: 0 auto;
-		background-color: chocolate;
 	}
 		/* sub sub divisao para info de contato */
 		div#sub-contato-info {
 			width: 45%;
-			background-color: darkgreen;
 		}
 		/* add um espacionamento entre as ul */
 		div#sub-contato-info ul {
@@ -227,31 +273,45 @@ div#divisao-contato {
 footer#footer-principal {
 	width: 100%;
 	margin-top: 0.5rem;
-	background-color: blueviolet;
+	background-color: rgb(51, 51, 51);
+	border-top: 1px solid rgb(29, 29, 29);
 }
 	/* divisao que centraliza tudo o que vai no footer */
 	footer div#subfooter-centro {
 		position: relative;
-		width: 75%;
-		height: 10rem;
+		width: 70%;
+		height: 15rem;
 		margin: 0 auto;
-		background-color: blue;
+		border-left: 1px solid rgb(29, 29, 29);
+		border-right: 1px solid rgb(29, 29, 29);
+		box-sizing: border-box;
 	}
 
 	div#subfooter-centro div#direitos {
 		position: absolute;
 		width: 100%;
-		box-sizing: border-box;
 		bottom: 0;
 		margin-bottom: 1rem;
+		padding: 1rem 1rem 0 1rem;
+		box-sizing: border-box;
+		font-weight: 500;
+		font-size: 0.8rem;
+		color: rgb(201, 201, 201);
+		border-top: 1px solid rgb(29, 29, 29);
 	}
-		/* alinhar o primeiro span à esquerda */
-		div#direitos span:first-child {
+		/* alinhar o primeiro div à esquerda */
+		div#direitos div:nth-child(1) {
 			display: block;
 			float: left;
 		}
-		/* alinhar o segundo span à direita */
-		div#direitos span:last-child {
+		/* alinhar o segundo div */
+		div#direitos div:nth-child(2) {
+			display: block;
+			float: right;
+			margin-left: 3%;
+		}
+		/* alinhar o terceiro div à direita */
+		div#direitos div:nth-child(3) {
 			display: block;
 			float: right;
 		}
@@ -259,8 +319,11 @@ footer#footer-principal {
 /* MEDIA QUERIES */
 /* Dispositivos muito pequenos (celulares, 600px e abaixo) */
 @media only screen and (max-width: 600px) {
-	body {
-        background-color: pink;
+	aside#info-fixo {
+		display: none;
+	}
+	nav#menu-principal, div#divisao-curriculo, div#divisao-blog, div#divisao-contato, div#subfooter-centro {
+		width: 98%;
 	}
 	/* MENU RESPONSIVO */
 	/* Quando a tela for menor que 600px de largura, esconda todos os links menos o primeiro ("Inicio")
@@ -285,32 +348,34 @@ footer#footer-principal {
 		display: block;
 		text-align: left;
 	}
+	/* Formatacoes de adaptacao */
+	.topnav a:first-child {
+		margin-right: 0;
+	}
+	nav#menu-principal {
+		overflow: visible;
+	}
 } 
 
 /* Dispositivos pequenos (portrait tablets e celulares grandes, 600px e acima) */
 @media only screen and (min-width: 600px) {
-	body {
-        background-color: yellowgreen;
-	}
 } 
 
 /* Dispositivos medios (tablets no modo landscape, 768px e acima) */
 @media only screen and (min-width: 768px) {
-	body {
-        background-color: blueviolet;
-    }
+	/* FIXAR ASIDE */
+	/* este efeito só será aplicado para telas grandes */
+	aside#info-fixo {
+		position: sticky;
+		top: 0;
+	}
 } 
 
 /* Dispositivos grandes (laptops/desktops, 992px e acima) */
 @media only screen and (min-width: 992px) {
-	body {
-        background-color: blue;
-    }
+
 } 
 
 /* Dispositivos muito grandes (laptops e desktops grandes, 1200px e acima) */
 @media only screen and (min-width: 1200px) {
-	body {
-        background-color: red;
-	}
 }
