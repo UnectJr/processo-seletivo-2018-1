@@ -1,0 +1,199 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    background-image: url(../images//fundo-homepage.jpg);
+    background-attachment: fixed;
+    background-size: cover;   
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+     
+}
+
+section{
+    position: relative;
+    width: 100%;
+    display: table;
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Rubik', sans-serif;
+}
+h2,h3,h4,h5,h6{
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* --------------------------------NAVBAR---------------------------------------- */
+.navbar-default{
+    margin-top: 15px;
+    background: rgba(202, 196, 196, 0) !important;
+    border: 0 !important;
+    font-size: 1.2em;
+    padding: 0 15px 0;  
+    
+}
+.navbar ul a{
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+/* navbar desaparece */
+.navbar-null {
+    display: none;
+}
+
+#navbar-logo img{
+    width: 4%; 
+}
+
+/*------------------------------------------------------------------------------*/
+
+.landing-text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#logo-homepage{
+    width: 23%;
+    height: 30%;
+}
+
+/*-------------------------------------------------------------------------------*/
+.container{
+    margin-top: 80px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 23px;
+    font-family: 'Roboto Mono', monospace;
+    padding: 50px 0 30px 0;
+}
+
+#button-modal{  
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 60px;
+}
+.figure{
+    margin-top: 90px;
+}
+
+#irmas{
+    width: 30%;
+    height: 30%;
+}
+#irma-mae{
+    width: 30%;
+    height: 5%;
+}
+/*-------------------------------------------------------------------------------*/
+
+
+.title-ferramentas{
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 100px !important;
+    font-family: 'Roboto Mono', monospace;
+    
+}
+.progresso{
+    margin-top: 80px;
+    margin-left: 60px;
+    
+}
+.progress{
+    height: 20px;
+    margin-bottom: 10px;
+    max-width: 400px;
+    
+}
+
+
+.progress-text{
+    font-family: Poppins;
+    text-align: center;
+    height: auto;
+    margin-top: 9px;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+#ref-ferramentas{     
+    display: table-cell;
+    vertical-align: middle;
+}
+/*------------------------------------------------------------------------------------------------*/
+.form-container{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.wrapper > *{
+    padding: 1em; 
+}
+
+.contact{
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1em;
+    opacity: 0.6;
+
+}
+.contact label{
+    font-family:'Roboto Mono', monospace;
+}
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.form-container button,.form-container input, .form-container textarea{
+    width: 100%;
+    border:1px solid;
+}
+
+.form-container button{
+    width: 100%;
+    border: 0;
+    margin-top: 6px;
+    
+}
+
+.form-container button:hover, .form-container button:focus{
+    outline: 0;
+    transition: background-color 1s ease-out;
+}
+.alert{
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    background: #79c879;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
+/*------------------------------------------------------------------------------------------------*/
+.social-icon{
+    margin-top: 20px;
+}
+.social-icon a{
+    margin: 0 16px 20px 16px;
+    display: inline-block;
+}
+
+.social-icon .fab{
+    font-size: 30px; 
+    background-color: aliceblue;
+}
+
+#copyright{
+    font-size: 15px;
+}
