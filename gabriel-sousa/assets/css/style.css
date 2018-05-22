@@ -1,0 +1,381 @@
+@charset "UTF-8";
+/* @import url('https://fonts.googleapis.com/css?family=Noto+Serif|Roboto'); */
+
+/* RESET CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/* remover linha abaixo depois da estrutura*/
+	/* border: 1px solid rgba(0,0,0,0.7); */
+}
+
+html {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+body {
+	background-color: rgb(235, 235, 235);
+	font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* esconder a ancora para o inicio da pagina */
+#inicio {
+	display: none;
+}
+
+/* FORMATACAO UNIVERSAL DE FONTES */
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+/* DIVISAO GERAL PARA O CABECALHO PRINCIPAL */
+header#header-principal {
+	background-color: rgb(51, 51, 51);
+	width: 100%;
+	height: 3rem;
+	position: fixed;
+	top: 0;
+	transition: top 0.4s;
+	z-index: 1;
+}
+
+/* MENU PRINCIPAL TOPO */
+nav#menu-principal {
+	background-color: inherit;
+	width: 70%;
+	height: inherit;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+	/* estilizar os links dentro do nav */
+	.topnav a {
+		background-color: inherit;
+		float: left;
+		display: block;
+		color:  rgb(236, 236, 236);
+		font-size: 0.95rem;
+		text-align: center;
+		padding: 0.8rem 0.55rem;
+		text-decoration: none;
+	}
+	.topnav a:not(:last-child) {
+		margin-right: 1%;
+	}
+	.topnav a:first-child {
+		margin-right: 26%;
+	}
+	/* mudar a cor dos links ao passar por cima */
+	.topnav a:hover {
+		background-color: rgb(80, 80, 80);
+	}
+	/* esconder o link que deverá abrir e fechar o topnav em telas pequenas */
+	.topnav .icone {
+		display: none;
+	}
+
+/* DIVISAO GERAL PARA O CURRICULO */
+div#divisao-curriculo {
+	width: 70%;
+	margin: 3rem auto 0 auto;
+}
+	/* resolve conteudo transborda por causa do float */
+	div#divisao-curriculo::after {
+		content: "";
+		clear: both;
+		display: table;
+  	}
+
+/* ASIDE ESQUERDA FIXO */
+aside#info-fixo {
+	width: 25%;
+	margin-top: 1.5rem;
+	padding-top: 1.5rem;
+	padding-bottom: 4rem;
+	display: block;
+	float: left;
+}
+	/* Formatacao das fontes do aside */
+	aside h4 {
+		font-size: 0.85rem;
+		margin: 1rem 0;
+	}
+	/* formatação da imagem perfil circular */
+	.foto-perfil {
+		width: 50%;
+		margin-bottom: 1rem;
+	}
+	.foto-perfil img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+		box-sizing: border-box;
+	}
+
+/* INTERFACE GERAL CONTEUDO */
+div#interface-geral-conteudo {
+	width: 65%;
+	margin-top: 0.5rem;
+	display: block;
+	float: right;
+}
+
+	/* SECTIONS DA INTERFACE GERAL */
+	section.sections-conteudo {
+		margin: 1% 0;
+		padding: 1rem 3rem 1rem 1rem;
+		background-color: rgb(255, 255, 255);
+		border: none;
+		box-shadow: -0.5px 0px 10px #CCC;
+	}
+
+	section.sections-conteudo ul {
+		margin-bottom: 4%;
+		padding-top: 1rem;
+		border-top: 1px solid rgb(51, 51, 51);
+	}
+
+	.sections-conteudo ul .meta-data {
+		font-size: 0.75rem;
+	}
+
+		section.sections-conteudo ul li {
+			list-style: none;
+		}
+
+/* DIVISAO GERAL PARA O BLOG */
+div#divisao-blog {
+	width: 70%;
+	margin: 8rem auto;
+}
+	/* sub divisao de blog para centralizar o header + section */
+	div div#sub-divisao-blog {
+		width: 75%;
+		margin: 0 auto;
+	}
+	/* resolve conteudo transborda por causa do float */
+	div div#sub-divisao-blog::after {
+		content: "";
+		clear: both;
+		display: table;
+  	}
+		/* cabecalho = h2 + nav */
+		header#cabecalho-blog {
+			width: 35%;
+			display: block;
+			float: left;
+			background-color: rgb(165, 165, 165);
+			padding: 1rem;
+		}
+			header nav#navbar-blog {
+				width: 100%;
+			}
+			nav#navbar-blog ul li {
+				list-style: none;
+				text-transform: uppercase;
+				font-size: 0.8rem;
+			}
+			nav#navbar-blog ul li a {
+				display: block;
+				text-decoration: none;
+				padding: 0.8rem 0.3rem;
+				margin-bottom: 0.5rem;
+				color: rgb(255, 255, 255);
+				background-color: rgb(56, 56, 56);
+				box-sizing: border-box;
+			}
+			nav#navbar-blog ul li a:hover {
+				border-right: 2px solid rgb(47, 120, 255);
+			}
+
+		/* section = iframe, noticias */
+		section#noticias-blog {
+			width: 55%;
+			height: 30rem;
+			display: block;
+			float: right;
+			background-color: peru;
+		}
+			/* FORMATACAO GERAL DO IFRAME */
+			iframe#noticias-blog-iframe {
+				width: 100%;
+				height: 100%;
+				border: none;
+			}
+				
+
+/* DIVISAO GERAL PARA O CONTATO */
+div#divisao-contato {
+	width: 70%;
+	margin: 0.5rem auto 0 auto; 
+}
+	div#divisao-contato::after {
+		content: "";
+		clear: both;
+		display: table;
+	  }
+	  
+	/* subdivisao de contato para centralizar */
+	div#sub-divisao-contato {
+		width: 75%;
+		margin: 0 auto;
+	}
+		/* sub sub divisao para info de contato */
+		div#sub-contato-info {
+			width: 45%;
+		}
+		/* add um espacionamento entre as ul */
+		div#sub-contato-info ul {
+			margin: 1.8rem 0;
+		}
+
+/* DIVISAO GERAL PARA O RODAPE */
+footer#footer-principal {
+	width: 100%;
+	margin-top: 0.5rem;
+	background-color: rgb(51, 51, 51);
+	border-top: 1px solid rgb(29, 29, 29);
+}
+	/* divisao que centraliza tudo o que vai no footer */
+	footer div#subfooter-centro {
+		position: relative;
+		width: 70%;
+		height: 15rem;
+		margin: 0 auto;
+		border-left: 1px solid rgb(29, 29, 29);
+		border-right: 1px solid rgb(29, 29, 29);
+		box-sizing: border-box;
+	}
+
+	div#subfooter-centro div#direitos {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		margin-bottom: 1rem;
+		padding: 1rem 1rem 0 1rem;
+		box-sizing: border-box;
+		font-weight: 500;
+		font-size: 0.8rem;
+		color: rgb(201, 201, 201);
+		border-top: 1px solid rgb(29, 29, 29);
+	}
+		/* alinhar o primeiro div à esquerda */
+		div#direitos div:nth-child(1) {
+			display: block;
+			float: left;
+		}
+		/* alinhar o segundo div */
+		div#direitos div:nth-child(2) {
+			display: block;
+			float: right;
+			margin-left: 3%;
+		}
+		/* alinhar o terceiro div à direita */
+		div#direitos div:nth-child(3) {
+			display: block;
+			float: right;
+		}
+
+/* MEDIA QUERIES */
+/* Dispositivos muito pequenos (celulares, 600px e abaixo) */
+@media only screen and (max-width: 600px) {
+	aside#info-fixo {
+		display: none;
+	}
+	nav#menu-principal, div#divisao-curriculo, div#divisao-blog, div#divisao-contato, div#subfooter-centro {
+		width: 98%;
+	}
+	/* MENU RESPONSIVO */
+	/* Quando a tela for menor que 600px de largura, esconda todos os links menos o primeiro ("Inicio")
+	Mostre o icone que contem devera abrir e fechar o topnav (.icone) */
+	.topnav a:not(:first-child) {
+		display: none;
+	}
+	.topnav a.icone {
+		float: right;
+		display: block;
+	}
+	/* A classe "menu-responsivo" eh adicionada ao topnav com JS quando o usuario clicar no icone
+	Esta classe torna o topnav mais bonito para telas pequenas (mostra lins verticalmente ao inves de horizontalmente) */
+	.topnav.menu-responsivo {position: relative;}
+	.topnav.menu-responsivo a.icone {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.topnav.menu-responsivo a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	/* Formatacoes de adaptacao */
+	.topnav a:first-child {
+		margin-right: 0;
+	}
+	nav#menu-principal {
+		overflow: visible;
+	}
+} 
+
+/* Dispositivos pequenos (portrait tablets e celulares grandes, 600px e acima) */
+@media only screen and (min-width: 600px) {
+} 
+
+/* Dispositivos medios (tablets no modo landscape, 768px e acima) */
+@media only screen and (min-width: 768px) {
+	/* FIXAR ASIDE */
+	/* este efeito só será aplicado para telas grandes */
+	aside#info-fixo {
+		position: sticky;
+		top: 0;
+	}
+} 
+
+/* Dispositivos grandes (laptops/desktops, 992px e acima) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Dispositivos muito grandes (laptops e desktops grandes, 1200px e acima) */
+@media only screen and (min-width: 1200px) {
+}
